@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobScraper.Application", "JobScraper.Application\JobScraper.Application.csproj", "{E423CEA4-CD58-4476-94ED-4683A828D272}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "JobScraper.Application\Application.csproj", "{E423CEA4-CD58-4476-94ED-4683A828D272}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{BA6D8BC1-A6EE-44AD-B103-FB37C820FA52}"
 EndProject
