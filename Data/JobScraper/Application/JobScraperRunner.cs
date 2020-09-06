@@ -6,9 +6,15 @@ namespace Application
 {
 	public class JobScraperRunner
 	{
+		private readonly DataService _dataService;
+
+		public JobScraperRunner(DataService dataService)
+		{
+			_dataService = dataService;
+		}
 		public void Run()
 		{
-
+			_dataService.ScrapeUrls();
 		}
 	}
 }
