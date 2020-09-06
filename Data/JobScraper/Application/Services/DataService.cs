@@ -8,7 +8,7 @@ namespace Application
 {
 	public class DataService
 	{
-		private readonly DbContext _context;
+		private readonly DataContext _context;
 		private readonly ScrapeService _scrapeService;
 
 		public DataService(DataContext context, ScrapeService scrapeService)
@@ -19,7 +19,10 @@ namespace Application
 
 		public void ScrapeUrls()
 		{
-			_scrapeService.ScrapeCvOnelineUrls();
+			var urls = _scrapeService.ScrapeCvOnelineUrls();
+
+			_context.JobUrls.AddRange(urls);
+			_context.SaveChanges();
 		}
 	}
 }
