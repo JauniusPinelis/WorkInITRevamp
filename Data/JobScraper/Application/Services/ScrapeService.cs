@@ -2,6 +2,7 @@
 using ScrapySharp.Network;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Application
@@ -27,8 +28,28 @@ namespace Application
 				WebPage homePage = _browser.NavigateToPage(new Uri($"{cvOnlineUrl}?page={i}"));
 
 				var nodes = homePage.Html.CssSelect("div.cvo_module_offer");
+				foreach (var node in nodes)
+				{
+					var name = "";
+					var url = "";
+					
+					var nameResult = node.CssSelect("a[itemprop=title]");
+					if (nameResult.Any())
+					{
+						var infoNode = nameResult.First();
 
-				var test = "test";
+						name = infoNode.InnerText;
+						url = infoNode.Attributes["href"].Value;
+						var salaryNode = infoNode.CssSelect("span.salary-blue");
+						if (salaryNode.Any())
+						{
+							var salaryInfo = salaryNode.First();
+							var salary = salaryInfo.InnerText;
+						}
+					}
+				}
+				
+				
 			}
 		}
 	}
