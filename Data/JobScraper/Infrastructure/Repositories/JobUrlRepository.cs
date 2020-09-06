@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Infrastructure.Repositories
 {
-	class JobUrlRepository
+	public class JobUrlRepository
 	{
 	}
 }
