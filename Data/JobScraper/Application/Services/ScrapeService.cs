@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using Application.Helpers;
+using Domain.Models;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;
 using System;
@@ -23,6 +24,7 @@ namespace Application
 		public ScrapeService()
 		{
 			_browser = new ScrapingBrowser();
+			_browser.Encoding = Encoding.UTF8;
 		}
 
 		public IEnumerable<JobUrl> ScrapeCvOnelineUrls()
@@ -55,15 +57,13 @@ namespace Application
 
 						jobUrl.Title = infoNode.InnerText;
 						jobUrl.Url = infoNode.Attributes["href"].Value;
+						jobUrl.Salary = Selectors.SelectName(node);
+						jobUrl.Company = Selectors.SelectCompany(node);
 
-						var salaryNode = node.CssSelect("span.salary-blue");
-						if (salaryNode.Any())
-						{
-							var salaryInfo = salaryNode.First();
-							jobUrl.Salary = salaryInfo.InnerText;
-						}
 						jobUrls.Add(jobUrl);
 					}
+
+
 				}
 				
 			}
