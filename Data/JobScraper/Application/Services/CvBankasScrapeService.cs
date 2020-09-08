@@ -20,11 +20,19 @@ namespace Application.Services
 		private const int max = 2;
 		private const int delay = 1000; //in ms
 
+		private ScrapeSettings _scrapeSettings;
+
 
 		public CvBankasScrapeService()
 		{
 			_browser = new ScrapingBrowser();
 			_browser.Encoding = Encoding.UTF8;
+
+			_scrapeSettings = new ScrapeSettings()
+			{
+				Company = "span.dib mt5",
+				Salary = "salary_amount"
+			};
 		}
 
 		public IEnumerable<JobUrl> ScrapeUrls()
