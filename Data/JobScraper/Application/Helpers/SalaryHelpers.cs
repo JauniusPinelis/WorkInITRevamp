@@ -18,7 +18,7 @@ namespace Application.Helpers
 				var number = Regex.Match(word, @"\d+.+\d").Value;
 				if (number.Length > 0)
 				{
-					numbers.Add(Int32.Parse(number));
+					numbers.Add(Decimal.ToInt32((Decimal.Parse(number))));
 				}
 			}
 
