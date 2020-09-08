@@ -15,6 +15,16 @@ namespace Infrastructure.Repositories
 			_context = context;
 		}
 
+		public IEnumerable<JobUrl> GetAll()
+		{
+			return _context.JobUrls;
+		}
+
+		public JobUrl FindById(int id)
+		{
+			return _context.JobUrls.Find(id);
+		}
+
 		public void Insert(JobUrl jobUrl)
 		{
 			var exists = _context.JobUrls.Any(
@@ -36,6 +46,15 @@ namespace Infrastructure.Repositories
 			{
 				Insert(jobUrl);
 			}
+		}
+
+		public void UpdateSalary(int jobId, int? min, int? max)
+		{
+			var jobUrl = FindById(jobId);
+			jobUrl.SalaryMin = min;
+			jobUrl.SalaryMax = max;
+
+			_context.SaveChanges();
 		}
 	}
 }

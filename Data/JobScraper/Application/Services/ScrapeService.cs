@@ -17,7 +17,6 @@ namespace Application
 		private const string cvOnlineUrl = "https://www.cvonline.lt/darbo-skelbimai/informacines-technologijos";
 		
 		private const int max = 2;
-		private const int updateLimit = 2;
 		private const int delay = 1000; //in ms
 
 
@@ -29,8 +28,13 @@ namespace Application
 
 		public IEnumerable<JobUrl> ScrapeCvOnelineUrls()
 		{
+			return ScrapeCvOnelineUrls(2);
+		}
+
+		public IEnumerable<JobUrl> ScrapeCvOnelineUrls(int pageLimit)
+		{
 			var jobUrls = new List<JobUrl>();
-			for (int i = 0; i < max; i++)
+			for (int i = 0; i < pageLimit; i++)
 			{
 				//Sleep
 				Thread.Sleep(delay);

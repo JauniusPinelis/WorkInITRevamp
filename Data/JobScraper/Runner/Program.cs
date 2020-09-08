@@ -1,5 +1,6 @@
 ﻿using Application;
 using Infrastructure;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -34,6 +35,7 @@ namespace Runner
             services.AddScoped<JobScraperRunner>();
             services.AddScoped<DataService>();
             services.AddScoped<ScrapeService>();
+            services.AddScoped<JobUrlRepository>();
 
             services.AddDbContext<DataContext>(options
                 => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
