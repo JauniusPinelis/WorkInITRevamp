@@ -10,17 +10,17 @@ using System.Threading;
 
 namespace Application
 {
-	public class ScrapeService
+	public class CvOnlineScrapeService : IScrapeService
 	{
 		private readonly ScrapingBrowser _browser;
 
 		private const string cvOnlineUrl = "https://www.cvonline.lt/darbo-skelbimai/informacines-technologijos";
-		
+
 		private const int max = 2;
 		private const int delay = 1000; //in ms
 
 
-		public ScrapeService()
+		public CvOnlineScrapeService()
 		{
 			_browser = new ScrapingBrowser();
 			_browser.Encoding = Encoding.UTF8;
@@ -51,7 +51,7 @@ namespace Application
 
 				foreach (var node in nodes)
 				{
-					
+
 					var nameResult = node.CssSelect("a[itemprop=title]");
 					if (nameResult.Any())
 					{
@@ -69,7 +69,7 @@ namespace Application
 
 
 				}
-				
+
 			}
 
 			return jobUrls;

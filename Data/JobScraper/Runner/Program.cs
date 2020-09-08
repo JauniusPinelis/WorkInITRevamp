@@ -1,4 +1,5 @@
 ﻿using Application;
+using Application.Services;
 using Infrastructure;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -34,7 +35,8 @@ namespace Runner
 
             services.AddScoped<JobScraperRunner>();
             services.AddScoped<DataService>();
-            services.AddScoped<ScrapeService>();
+            services.AddScoped<CvOnlineScrapeService>();
+            services.AddScoped<CvBankasScrapeService>();
             services.AddScoped<JobUrlRepository>();
 
             services.AddDbContext<DataContext>(options

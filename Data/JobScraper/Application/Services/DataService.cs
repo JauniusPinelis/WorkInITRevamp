@@ -1,4 +1,5 @@
 ﻿using Application.Helpers;
+using Application.Services;
 using Domain.Models;
 using Infrastructure;
 using Infrastructure.Repositories;
@@ -13,12 +14,15 @@ namespace Application
 	public class DataService
 	{
 		private readonly JobUrlRepository _jobUrlRepository;
-		private readonly ScrapeService _scrapeService;
+		private readonly IScrapeService _cvOnlineScrapeService;
+		private readonly IScrapeService _cvBankasScrapeService;
 
-		public DataService(JobUrlRepository jobUrlRepository, ScrapeService scrapeService)
+		public DataService(JobUrlRepository jobUrlRepository, CvOnlineScrapeService cvOnlineScrapeService,
+			CvBankasScrapeService cvBankasScrapeService)
 		{
 			_jobUrlRepository = jobUrlRepository;
-			_scrapeService = scrapeService;
+			_cvOnlineScrapeService = cvOnlineScrapeService;
+			_cvBankasScrapeService = cvBankasScrapeService;
 
 		}
 
@@ -26,12 +30,12 @@ namespace Application
 		{
 			if (_jobUrlRepository.GetAll().Any())
 			{
-				var urls = _scrapeService.ScrapeCvOnelineUrls(2);
+				var urls = _cvOnlineScrapeService.ScrapeCvOnelineUrls(2);
 				_jobUrlRepository.InsertRange(urls);
 			}
 			else
 			{
-				var urls = _scrapeService.ScrapeCvOnelineUrls();
+				var urls = _cvOnlineScrapeService.ScrapeCvOnelineUrls();
 				_jobUrlRepository.InsertRange(urls);
 			}
 
