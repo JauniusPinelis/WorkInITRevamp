@@ -14,7 +14,7 @@ namespace Application
 		}
 		public void Run()
 		{
-			//_dataService.ScrapeUrls();
+			_dataService.ScrapeCvBankasUrls();
 			_dataService.ProcessSalaries();
 		}
 	}

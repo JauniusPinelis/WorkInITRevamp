@@ -5,7 +5,7 @@ namespace Application
 {
 	public interface IScrapeService
 	{
-		IEnumerable<JobUrl> ScrapeCvOnelineUrls();
-		IEnumerable<JobUrl> ScrapeCvOnelineUrls(int pageLimit);
+		IEnumerable<JobUrl> ScrapeUrls();
+		IEnumerable<JobUrl> ScrapeUrls(int pageLimit);
 	}
 }

@@ -27,12 +27,12 @@ namespace Application.Services
 			_browser.Encoding = Encoding.UTF8;
 		}
 
-		public IEnumerable<JobUrl> ScrapeCvOnelineUrls()
+		public IEnumerable<JobUrl> ScrapeUrls()
 		{
-			return ScrapeCvOnelineUrls(2);
+			return ScrapeUrls(2);
 		}
 
-		public IEnumerable<JobUrl> ScrapeCvOnelineUrls(int pageLimit)
+		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
 		{
 			var jobUrls = new List<JobUrl>();
 

@@ -26,25 +26,39 @@ namespace Application
 
 		}
 
-		public void ScrapeUrls()
+		public void ScrapeCvOnlineUrls()
 		{
 			if (_jobUrlRepository.GetAll().Any())
 			{
-				var urls = _cvOnlineScrapeService.ScrapeCvOnelineUrls(2);
+				var urls = _cvOnlineScrapeService.ScrapeUrls(2);
 				_jobUrlRepository.InsertRange(urls);
 			}
 			else
 			{
-				var urls = _cvOnlineScrapeService.ScrapeCvOnelineUrls();
+				var urls = _cvOnlineScrapeService.ScrapeUrls();
 				_jobUrlRepository.InsertRange(urls);
 			}
 
 		}
 
+		public void ScrapeCvBankasUrls()
+		{
+			if (_jobUrlRepository.GetAll().Any())
+			{
+				var urls = _cvBankasScrapeService.ScrapeUrls(2);
+				_jobUrlRepository.InsertRange(urls);
+			}
+			else
+			{
+				var urls = _cvBankasScrapeService.ScrapeUrls();
+				_jobUrlRepository.InsertRange(urls);
+			}
+		}
+
 		public void ProcessSalaries()
 		{
 			var urls = _jobUrlRepository.GetAll()
-				.Where(u => u.SalaryMin == null && u.SalaryMax == null && u.Salary != "").ToList();
+				.Where(u => u.SalaryMin == null && u.SalaryMax == null && (u.Salary != null || u.Salary != "")).ToList();
 
 			foreach(var url in urls)
 			{
