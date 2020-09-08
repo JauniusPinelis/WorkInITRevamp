@@ -23,14 +23,13 @@ namespace Application
 		{
 			var urls = _scrapeService.ScrapeCvOnelineUrls();
 
-			_context.JobUrls.AddRange(urls);
-			_context.SaveChanges();
+			_jobUrlRepository.InsertRange(urls);
 
 		}
 
 		public void ProcessSalaries()
 		{
-			_jobUrls = _
+			
 		}
 	}
 }

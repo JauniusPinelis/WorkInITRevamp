@@ -34,7 +34,7 @@ namespace Infrastructure.Repositories
 		{
 			foreach(var jobUrl in jobUrls)
 			{
-
+				Insert(jobUrl);
 			}
 		}
 	}
