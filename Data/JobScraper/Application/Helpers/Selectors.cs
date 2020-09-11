@@ -9,9 +9,9 @@ namespace Application.Helpers
 {
 	public class Selectors
 	{
-		public static string SelectName(HtmlNode node)
+		public static string SelectName(HtmlNode node, string selectTag)
 		{
-			var salaryNode = node.CssSelect("span.salary-blue");
+			var salaryNode = node.CssSelect(selectTag);
 			if (salaryNode.Any())
 			{
 				var salaryInfo = salaryNode.First();
@@ -23,9 +23,9 @@ namespace Application.Helpers
 			}
 		}
 
-		public static string SelectCompany(HtmlNode node)
+		public static string SelectCompany(HtmlNode node, string selectTag)
 		{
-			var companyNode = node.CssSelect("a[itemprop=name]");
+			var companyNode = node.CssSelect(selectTag);
 			if (companyNode.Any())
 			{
 				var companyInfo = companyNode.First();

@@ -12,7 +12,9 @@ namespace Application
 {
 	public class CvOnlineScrapeService : IScrapeService
 	{
-		private readonly ScrapingBrowser _browser;
+		private readonly Scraper _scraper;
+
+		private ScrapeSettings _scrapeSettings;
 
 		private const string cvOnlineUrl = "https://www.cvonline.lt/darbo-skelbimai/informacines-technologijos";
 
@@ -22,8 +24,16 @@ namespace Application
 
 		public CvOnlineScrapeService()
 		{
-			_browser = new ScrapingBrowser();
-			_browser.Encoding = Encoding.UTF8;
+			_scraper = new Scraper();
+
+			_scrapeSettings = new ScrapeSettings()
+			{
+				Posting = "div.cvo_module_offer",
+				Name = "a[itemprop=title]",
+				Salary = "span.salary-blue",
+				Company = "a[itemprop = name]"
+			};
+
 		}
 
 		public IEnumerable<JobUrl> ScrapeUrls()
@@ -39,9 +49,9 @@ namespace Application
 				//Sleep
 				Thread.Sleep(delay);
 
-				WebPage homePage = _browser.NavigateToPage(new Uri($"{cvOnlineUrl}?page={i}"));
+				var html = _scraper.GetHtml($"{cvOnlineUrl}?page={i}");
 
-				var nodes = homePage.Html.CssSelect("div.cvo_module_offer");
+				var nodes = html.CssSelect("div.cvo_module_offer");
 
 				if (!nodes.Any())
 				{
@@ -52,7 +62,7 @@ namespace Application
 				foreach (var node in nodes)
 				{
 
-					var nameResult = node.CssSelect("a[itemprop=title]");
+					var nameResult = node.CssSelect(_scrapeSettings.Name);
 					if (nameResult.Any())
 					{
 						var jobUrl = new JobUrl();
@@ -61,8 +71,8 @@ namespace Application
 
 						jobUrl.Title = infoNode.InnerText;
 						jobUrl.Url = infoNode.Attributes["href"].Value;
-						jobUrl.Salary = Selectors.SelectName(node);
-						jobUrl.Company = Selectors.SelectCompany(node);
+						jobUrl.Salary = Selectors.SelectName(node,_scrapeSettings.Salary);
+						jobUrl.Company = Selectors.SelectCompany(node, _scrapeSettings.Company);
 
 						jobUrls.Add(jobUrl);
 					}

@@ -13,7 +13,7 @@ namespace Application.Services
 {
 	public class CvBankasScrapeService : IScrapeService
 	{
-		private readonly ScrapingBrowser _browser;
+		private readonly Scraper _scraper;
 
 		private const string url = "https://www.cvbankas.lt/?padalinys%5B0%5D=76&page";
 
@@ -25,8 +25,7 @@ namespace Application.Services
 
 		public CvBankasScrapeService()
 		{
-			_browser = new ScrapingBrowser();
-			_browser.Encoding = Encoding.UTF8;
+			_scraper = new Scraper();
 
 			_scrapeSettings = new ScrapeSettings()
 			{
@@ -49,9 +48,9 @@ namespace Application.Services
 				//Sleep
 				Thread.Sleep(delay);
 
-				WebPage homePage = _browser.NavigateToPage(new Uri($"{url}?page={i}"));
+				var html = _scraper.GetHtml($"{url}?page={i}");
 
-				var nodes = homePage.Html.CssSelect("a.list_a");
+				var nodes = html.CssSelect("a.list_a");
 
 				if (!nodes.Any())
 				{
@@ -71,8 +70,8 @@ namespace Application.Services
 
 						jobUrl.Title = nameInfoNode.InnerText;
 						jobUrl.Url = node.Attributes["href"].Value;
-						//jobUrl.Salary = Selectors.SelectName(node);
-						//jobUrl.Company = Selectors.SelectCompany(node);
+						jobUrl.Salary = Selectors.SelectName(node, "");
+						jobUrl.Company = Selectors.SelectCompany(node, "");
 
 						jobUrls.Add(jobUrl);
 					}
