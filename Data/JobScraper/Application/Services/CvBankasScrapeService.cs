@@ -1,4 +1,5 @@
 ﻿using Application.Helpers;
+using Application.Interfaces;
 using Domain.Models;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;
@@ -13,7 +14,7 @@ namespace Application.Services
 {
 	public class CvBankasScrapeService : IScrapeService
 	{
-		private readonly Scraper _scraper;
+		private readonly IScraper _scraper;
 
 		private const string url = "https://www.cvbankas.lt/?padalinys%5B0%5D=76&page";
 

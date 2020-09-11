@@ -1,4 +1,5 @@
-﻿using HtmlAgilityPack;
+﻿using Application.Interfaces;
+using HtmlAgilityPack;
 using ScrapySharp.Network;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application
 {
-    public class Scraper
+    public class Scraper : IScraper
     {
 		private readonly ScrapingBrowser _browser;
 
