@@ -30,6 +30,8 @@ namespace Application.Services
 
 			_scrapeSettings = new ScrapeSettings()
 			{
+				Posting = "article",
+				Name = "h3.list_h3",
 				Company = "span.dib mt5",
 				Salary = "salary_amount"
 			};
@@ -51,7 +53,7 @@ namespace Application.Services
 
 				var html = _scraper.GetHtml($"{url}?page={i}");
 
-				var nodes = html.CssSelect("a.list_a");
+				var nodes = html.CssSelect(_scrapeSettings.Posting);
 
 				if (!nodes.Any())
 				{
@@ -62,7 +64,7 @@ namespace Application.Services
 				foreach (var node in nodes)
 				{
 
-					var nameResult = node.CssSelect("h3.list_h3");
+					var nameResult = node.CssSelect(_scrapeSettings.Name);
 					if (nameResult.Any())
 					{
 						var nameInfoNode = nameResult.First();

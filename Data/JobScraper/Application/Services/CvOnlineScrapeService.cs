@@ -52,7 +52,7 @@ namespace Application
 
 				var html = _scraper.GetHtml($"{cvOnlineUrl}?page={i}");
 
-				var nodes = html.CssSelect("div.cvo_module_offer");
+				var nodes = html.CssSelect(_scrapeSettings.Posting);
 
 				if (!nodes.Any())
 				{

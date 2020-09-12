@@ -15,30 +15,11 @@ using Xunit;
 
 namespace ApplicationTests
 {
-    public class CvOnlineScrapeServiceTests
+    public class CvOnlineScrapeServiceTests : TestBase
     {
-		private readonly IScraper _scraper;
-		private readonly CvOnlineScrapeService _scrapeService;
 
-		public CvOnlineScrapeServiceTests()
+		public CvOnlineScrapeServiceTests() : base("\\Data\\CvOnline.txt", "CvOnline")
 		{
-			var scraperMock = new Mock<IScraper>();
-
-			var path = Directory.GetCurrentDirectory() + "\\Data\\CvOnline.txt";
-
-			var decodedData = WebUtility.HtmlDecode(File.ReadAllText(path));
-
-			HtmlDocument doc = new HtmlDocument();
-			doc.LoadHtml(decodedData);
-			HtmlNodeCollection nodes = doc.DocumentNode.ChildNodes;
-
-			scraperMock.Setup(s => s.GetHtml(It.IsAny<string>())).Returns(nodes.First());
-
-			_scraper = scraperMock.Object;
-
-			_scrapeService = new CvOnlineScrapeService(_scraper);
-
-
 		}
 
 		[Fact]

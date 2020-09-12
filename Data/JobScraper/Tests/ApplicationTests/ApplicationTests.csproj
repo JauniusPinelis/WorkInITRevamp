@@ -20,6 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Data\CvBankas.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\CvOnline.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
