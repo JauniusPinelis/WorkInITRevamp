@@ -25,16 +25,25 @@ namespace Application.Helpers
 
 		public static string SelectCompany(HtmlNode node, string selectTag)
 		{
-			var companyNode = node.CssSelect(selectTag);
-			if (companyNode.Any())
+			try
 			{
-				var companyInfo = companyNode.First();
-				return companyInfo.InnerText;
+				var companyNode = node.CssSelect(selectTag);
+				if (companyNode.Any())
+				{
+					var companyInfo = companyNode.First();
+					return companyInfo.InnerText;
+				}
+				else
+				{
+					return "";
+				}
 			}
-			else
+			catch(Exception ex)
 			{
+				//Work around for now...
 				return "";
 			}
+			
 			
 		}
 

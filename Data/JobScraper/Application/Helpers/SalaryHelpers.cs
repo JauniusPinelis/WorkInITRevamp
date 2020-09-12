@@ -9,6 +9,11 @@ namespace Application.Helpers
 	{
 		public static (int?,int?) ExtractSalary(string salary)
 		{
+			if (String.IsNullOrEmpty(salary))
+			{
+				return (null, null);
+			}
+
 			salary = salary.ToLower();
 
 			var words = salary.Split(" ");

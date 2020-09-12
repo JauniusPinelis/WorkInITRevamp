@@ -1,4 +1,5 @@
 ﻿using Application;
+using Application.Interfaces;
 using Application.Services;
 using Infrastructure;
 using Infrastructure.Repositories;
@@ -38,6 +39,7 @@ namespace Runner
             services.AddScoped<CvOnlineScrapeService>();
             services.AddScoped<CvBankasScrapeService>();
             services.AddScoped<JobUrlRepository>();
+            services.AddScoped<IScraper, Scraper>();
 
             services.AddDbContext<DataContext>(options
                 => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));

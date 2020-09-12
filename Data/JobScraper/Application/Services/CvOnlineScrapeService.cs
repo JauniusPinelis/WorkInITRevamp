@@ -23,9 +23,9 @@ namespace Application
 		private const int delay = 1000; //in ms
 
 
-		public CvOnlineScrapeService()
+		public CvOnlineScrapeService(IScraper scraper)
 		{
-			_scraper = new Scraper();
+			_scraper = scraper;
 
 			_scrapeSettings = new ScrapeSettings()
 			{

@@ -24,9 +24,9 @@ namespace Application.Services
 		private ScrapeSettings _scrapeSettings;
 
 
-		public CvBankasScrapeService()
+		public CvBankasScrapeService(IScraper scraper)
 		{
-			_scraper = new Scraper();
+			_scraper = scraper;
 
 			_scrapeSettings = new ScrapeSettings()
 			{
