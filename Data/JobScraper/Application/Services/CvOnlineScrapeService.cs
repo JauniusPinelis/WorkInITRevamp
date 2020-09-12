@@ -32,7 +32,7 @@ namespace Application
 				Posting = "div.cvo_module_offer",
 				Name = "a[itemprop=title]",
 				Salary = "span.salary-blue",
-				Company = "a[itemprop = name]"
+				Company = "a[itemprop=name]"
 			};
 
 		}

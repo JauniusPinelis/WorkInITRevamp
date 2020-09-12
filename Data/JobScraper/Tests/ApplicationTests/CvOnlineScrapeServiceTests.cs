@@ -56,5 +56,23 @@ namespace ApplicationTests
 
 			urls.Should().NotBeEmpty();
 		}
-    }
+
+		[Fact]
+		public void ScrapeUrl_GivenMockData_GetsCompanyName()
+		{
+			var urls = _scrapeService.ScrapeUrls();
+
+			urls.Should().NotBeEmpty();
+			urls.First().Company.Should().NotBeNullOrEmpty();
+		}
+
+		[Fact]
+		public void ScrapeUrl_GivenMockData_GetsSalary()
+		{
+			var urls = _scrapeService.ScrapeUrls();
+
+			urls.Should().NotBeEmpty();
+			urls.First().Salary.Should().NotBeNullOrEmpty();
+		}
+	}
 }
