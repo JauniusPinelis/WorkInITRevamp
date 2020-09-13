@@ -1,4 +1,5 @@
 ﻿using Application.Helpers;
+using FluentAssertions;
 using HtmlAgilityPack;
 using ScrapySharp.Extensions;
 using System;
@@ -33,7 +34,24 @@ namespace ApplicationTests
 		[Fact]
 		public void SelectCompany_GivenHtmlNode_GetsCompanyName()
 		{
-			Selectors.SelectCompany(node, )
+			var companyName = Selectors.SelectCompany(_html, "span.dib.mt5");
+			companyName.Should().NotBeNullOrEmpty();
+			companyName.Should().Be("UAB „GINESTRA“");
+		}
+
+		[Fact]
+		public void SelectSalary_GivenCvBankasHtml_GetsSalary()
+		{
+			var salary = Selectors.SelectUrl(_html, "span.salary_amount");
+			salary.Should().NotBeNullOrEmpty();
+			salary.Should().Be("Nuo 2063");
+		}
+
+		[Fact]
+		public void SelectUrl_GivenCvBankasHtml_GetsUrl()
+		{
+			var url = Selectors.SelectUrl(_html, "a.list_a");
+			url.Should().NotBeNullOrEmpty();
 		}
 
 	}

@@ -10,5 +10,7 @@ namespace Domain.Models
 		public string Name { get; set; }
 		public string Salary { get; set; }
 		public string Company { get; set; }
+
+		public string Url { get; set; }
 	}
 }

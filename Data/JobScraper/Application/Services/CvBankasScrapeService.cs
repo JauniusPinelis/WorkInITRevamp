@@ -32,8 +32,9 @@ namespace Application.Services
 			{
 				Posting = "article",
 				Name = "h3.list_h3",
-				Company = "span.dib mt5",
-				Salary = "salary_amount"
+				Company = "span.dib.mt5",
+				Salary = "salary_amount",
+				Url = "a.list_a"
 			};
 		}
 
@@ -70,11 +71,13 @@ namespace Application.Services
 						var nameInfoNode = nameResult.First();
 						var jobUrl = new JobUrl();
 
+						var urlnode = Selectors.SelectUrl(node, _scrapeSettings.Url);
+
 
 						jobUrl.Title = nameInfoNode.InnerText;
 						jobUrl.Url = node.Attributes["href"].Value;
-						jobUrl.Salary = Selectors.SelectName(node, "");
-						jobUrl.Company = Selectors.SelectCompany(node, "");
+						jobUrl.Salary = Selectors.SelectName(node, _scrapeSettings.Salary);
+						jobUrl.Company = Selectors.SelectCompany(node, _scrapeSettings.Company);
 
 						jobUrls.Add(jobUrl);
 					}
