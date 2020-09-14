@@ -1,4 +1,5 @@
-﻿using Application.Helpers;
+﻿using Application.Configuration;
+using Application.Helpers;
 using Application.Interfaces;
 using Domain.Models;
 using ScrapySharp.Extensions;
@@ -21,21 +22,13 @@ namespace Application.Services
 		private const int max = 2;
 		private const int delay = 1000; //in ms
 
-		private ScrapeSettings _scrapeSettings;
+		private IScrapeConfiguration _scrapeSettings;
 
 
-		public CvBankasScrapeService(IScraper scraper)
+		public CvBankasScrapeService(IScraper scraper, CvBankasConfiguration cvBankasConfiguration)
 		{
 			_scraper = scraper;
-
-			_scrapeSettings = new ScrapeSettings()
-			{
-				Posting = "article",
-				Name = "h3.list_h3",
-				Company = "span.dib.mt5",
-				Salary = "salary_amount",
-				Url = "a.list_a"
-			};
+			_scrapeSettings = cvBankasConfiguration;
 		}
 
 		public IEnumerable<JobUrl> ScrapeUrls()
@@ -71,11 +64,8 @@ namespace Application.Services
 						var nameInfoNode = nameResult.First();
 						var jobUrl = new JobUrl();
 
-						var urlnode = Selectors.SelectUrl(node, _scrapeSettings.Url);
-
-
 						jobUrl.Title = nameInfoNode.InnerText;
-						jobUrl.Url = node.Attributes["href"].Value;
+						jobUrl.Url = Selectors.SelectUrl(node, _scrapeSettings.Url);
 						jobUrl.Salary = Selectors.SelectName(node, _scrapeSettings.Salary);
 						jobUrl.Company = Selectors.SelectCompany(node, _scrapeSettings.Company);
 

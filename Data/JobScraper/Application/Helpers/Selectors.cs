@@ -43,7 +43,24 @@ namespace Application.Helpers
 
 		public static string SelectUrl(HtmlNode node, string tag)
 		{
-			return SelectValue(node, tag);
+			try
+			{
+				var valueNode = node.CssSelect(tag);
+				if (valueNode.Any())
+				{
+					var value = valueNode.First();
+					return value.Attributes["href"].Value;
+				}
+				else
+				{
+					return "";
+				}
+			}
+			catch (Exception ex)
+			{
+				//Work around for now...
+				return "";
+			}
 		}
 
 	}

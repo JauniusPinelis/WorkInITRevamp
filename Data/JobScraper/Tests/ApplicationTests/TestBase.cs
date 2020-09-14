@@ -1,4 +1,5 @@
 ﻿using Application;
+using Application.Configuration;
 using Application.Interfaces;
 using Application.Services;
 using HtmlAgilityPack;
@@ -36,11 +37,11 @@ namespace ApplicationTests
 
 			if (name == "CvBankas")
 			{
-				_scrapeService = new CvBankasScrapeService(_scraper);
+				_scrapeService = new CvBankasScrapeService(_scraper, new CvBankasConfiguration());
 			}
 			else
 			{
-				_scrapeService = new CvOnlineScrapeService(_scraper);
+				_scrapeService = new CvOnlineScrapeService(_scraper, new CvOnlineConfiguration());
 			}
 		
 		}

@@ -1,4 +1,5 @@
-﻿using Application.Helpers;
+﻿using Application.Configuration;
+using Application.Helpers;
 using Application.Interfaces;
 using Domain.Models;
 using ScrapySharp.Extensions;
@@ -15,7 +16,7 @@ namespace Application
 	{
 		private readonly IScraper _scraper;
 
-		private ScrapeSettings _scrapeSettings;
+		private IScrapeConfiguration _scrapeSettings;
 
 		private const string cvOnlineUrl = "https://www.cvonline.lt/darbo-skelbimai/informacines-technologijos";
 
@@ -23,18 +24,11 @@ namespace Application
 		private const int delay = 1000; //in ms
 
 
-		public CvOnlineScrapeService(IScraper scraper)
+		public CvOnlineScrapeService(IScraper scraper, CvOnlineConfiguration configuration)
 		{
 			_scraper = scraper;
 
-			_scrapeSettings = new ScrapeSettings()
-			{
-				Posting = "div.cvo_module_offer",
-				Name = "a[itemprop=title]",
-				Salary = "span.salary-blue",
-				Company = "a[itemprop=name]"
-			};
-
+			_scrapeSettings = configuration;
 		}
 
 		public IEnumerable<JobUrl> ScrapeUrls()

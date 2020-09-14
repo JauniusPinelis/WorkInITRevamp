@@ -40,14 +40,6 @@ namespace ApplicationTests
 		}
 
 		[Fact]
-		public void SelectSalary_GivenCvBankasHtml_GetsSalary()
-		{
-			var salary = Selectors.SelectUrl(_html, "span.salary_amount");
-			salary.Should().NotBeNullOrEmpty();
-			salary.Should().Be("Nuo 2063");
-		}
-
-		[Fact]
 		public void SelectUrl_GivenCvBankasHtml_GetsUrl()
 		{
 			var url = Selectors.SelectUrl(_html, "a.list_a");
