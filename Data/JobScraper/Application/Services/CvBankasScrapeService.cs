@@ -62,7 +62,7 @@ namespace Application.Services
 					if (nameResult.Any())
 					{
 						var nameInfoNode = nameResult.First();
-						var jobUrl = new JobUrl();
+						var jobUrl = new CvBankasJob();
 
 						jobUrl.Title = nameInfoNode.InnerText;
 						jobUrl.Url = Selectors.SelectUrl(node, _scrapeSettings.Url);
@@ -71,8 +71,6 @@ namespace Application.Services
 
 						jobUrls.Add(jobUrl);
 					}
-
-
 				}
 
 			}

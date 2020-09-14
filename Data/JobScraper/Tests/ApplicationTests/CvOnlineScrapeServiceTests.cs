@@ -33,7 +33,7 @@ namespace ApplicationTests
 		[Fact]
 		public void ScrapeUrl_GivenMockData_ResultsAreNotEmpty()
 		{
-			var urls = _scrapeService.ScrapeUrls();
+			var urls = _cvOnlineScrapeService.ScrapeUrls();
 
 			urls.Should().NotBeEmpty();
 		}
@@ -41,7 +41,7 @@ namespace ApplicationTests
 		[Fact]
 		public void ScrapeUrl_GivenMockData_GetsCompanyName()
 		{
-			var urls = _scrapeService.ScrapeUrls();
+			var urls = _cvOnlineScrapeService.ScrapeUrls();
 
 			urls.Should().NotBeEmpty();
 			urls.First().Company.Should().NotBeNullOrEmpty();
@@ -50,7 +50,7 @@ namespace ApplicationTests
 		[Fact]
 		public void ScrapeUrl_GivenMockData_GetsSalary()
 		{
-			var urls = _scrapeService.ScrapeUrls();
+			var urls = _cvOnlineScrapeService.ScrapeUrls();
 
 			urls.Should().NotBeEmpty();
 			urls.First().Salary.Should().NotBeNullOrEmpty();

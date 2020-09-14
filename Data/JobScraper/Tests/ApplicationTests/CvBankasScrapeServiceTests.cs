@@ -26,7 +26,7 @@ namespace ApplicationTests
 		[Fact]
 		public void ScrapeUrl_GivenMockData_ResultsAreNotEmpty()
 		{
-			var urls = _scrapeService.ScrapeUrls();
+			var urls = _cvBankasScrapeService.ScrapeUrls();
 
 			urls.Should().NotBeEmpty();
 		}

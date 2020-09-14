@@ -15,5 +15,7 @@ namespace Domain.Models
 
 		public int? SalaryMin { get; set; }
 		public int? SalaryMax { get; set; }
+
+		public string PortalName { get; set; }
 	}
 }

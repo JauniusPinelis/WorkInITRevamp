@@ -60,7 +60,7 @@ namespace Application
 					var nameResult = node.CssSelect(_scrapeSettings.Name);
 					if (nameResult.Any())
 					{
-						var jobUrl = new JobUrl();
+						var jobUrl = new CvOnlineJob();
 
 						var infoNode = nameResult.First();
 
