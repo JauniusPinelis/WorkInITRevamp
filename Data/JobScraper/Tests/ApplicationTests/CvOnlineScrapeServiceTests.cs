@@ -18,14 +18,14 @@ namespace ApplicationTests
     public class CvOnlineScrapeServiceTests : TestBase
     {
 
-		public CvOnlineScrapeServiceTests() : base("\\Data\\CvOnline.txt", "CvOnline")
+		public CvOnlineScrapeServiceTests() : base()
 		{
 		}
 
 		[Fact]
 		public void GetHtml_GivenMockData_IsNotEmpty()
 		{
-			var html = _scraper.GetHtml("");
+			var html = _cvOnlineScraper.GetHtml("");
 
 			html.Should().NotBe(String.Empty);
 		}

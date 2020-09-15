@@ -10,7 +10,7 @@ namespace ApplicationTests
 {
     public class CvBankasScrapeServiceTests : TestBase
     {
-		public CvBankasScrapeServiceTests() : base("\\Data\\CvBankas.txt", "CvBankas")
+		public CvBankasScrapeServiceTests() : base()
 		{
 
 		}
@@ -18,7 +18,7 @@ namespace ApplicationTests
 		[Fact]
 		public void GetHtml_GivenMockData_IsNotEmpty()
 		{
-			var html = _scraper.GetHtml("");
+			var html = _cvBankasScraper.GetHtml("");
 
 			html.Should().NotBe(String.Empty);
 		}

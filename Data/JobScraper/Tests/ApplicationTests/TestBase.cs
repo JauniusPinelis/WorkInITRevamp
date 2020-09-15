@@ -19,13 +19,39 @@ namespace ApplicationTests
 {
     public abstract class TestBase
     {
-		protected readonly IScraper _scraper;
+		protected readonly IScraper _cvBankasScraper;
+		protected readonly IScraper _cvOnlineScraper;
 		protected readonly CvBankasScrapeService _cvBankasScrapeService;
 		protected readonly CvOnlineScrapeService _cvOnlineScrapeService;
 		protected readonly DataService _dataService;
 		protected readonly JobUrlRepository _jobUrlRepository;
 
-		public TestBase(string filePath, string name)
+		private const string cvOnlineFilePath = "\\Data\\CvOnline.txt";
+		private const string cvBankasFilePath = "\\Data\\CvBankas.txt";
+
+		public TestBase()
+		{
+
+			_cvOnlineScraper = SetupMockScraper(cvOnlineFilePath);
+			_cvBankasScraper = SetupMockScraper(cvBankasFilePath);
+
+			_cvOnlineScrapeService = new CvOnlineScrapeService(_cvOnlineScraper, new CvOnlineConfiguration());
+			_cvBankasScrapeService = new CvBankasScrapeService(_cvBankasScraper, new CvBankasConfiguration());
+
+			var options = new DbContextOptionsBuilder<DataContext>()
+			.UseInMemoryDatabase("TestDb")
+			.Options;
+
+			var context = new DataContext(options);
+
+			_jobUrlRepository = new JobUrlRepository(context);
+
+			_dataService = new DataService(_jobUrlRepository, _cvOnlineScrapeService, _cvBankasScrapeService);
+
+
+		}
+
+		private IScraper SetupMockScraper(string filePath)
 		{
 			var scraperMock = new Mock<IScraper>();
 
@@ -39,21 +65,7 @@ namespace ApplicationTests
 
 			scraperMock.Setup(s => s.GetHtml(It.IsAny<string>())).Returns(nodes.First());
 
-			_scraper = scraperMock.Object;
-
-			_cvOnlineScrapeService = new CvOnlineScrapeService(_scraper, new CvOnlineConfiguration());
-			_cvBankasScrapeService = new CvBankasScrapeService(_scraper, new CvBankasConfiguration());
-
-			var options = new DbContextOptionsBuilder<DataContext>()
-			.UseInMemoryDatabase("TestDb")
-			.Options;
-
-			var context = new DataContext(options);
-
-			_jobUrlRepository = new JobUrlRepository(context);
-
-			_dataService = new DataService(_jobUrlRepository, _cvOnlineScrapeService, _cvBankasScrapeService);
-
+			return scraperMock.Object;
 		}
     }
 }

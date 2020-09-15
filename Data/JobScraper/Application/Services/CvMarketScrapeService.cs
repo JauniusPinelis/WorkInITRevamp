@@ -3,32 +3,29 @@ using Application.Helpers;
 using Application.Interfaces;
 using Domain.Models;
 using ScrapySharp.Extensions;
-using ScrapySharp.Network;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
-namespace Application
+namespace Application.Services
 {
-	public class CvOnlineScrapeService : IScrapeService
+	public class CvMarketScrapeService : IScrapeService
 	{
-		private readonly IScraper _scraper;
-
-		private IScrapeConfiguration _scrapeSettings;
-
-		private const string cvOnlineUrl = "https://www.cvonline.lt/darbo-skelbimai/informacines-technologijos";
+		private const string url = "https://www.cvmarket.lt/informacines-technologijos-darbo-skelbimai";
 
 		private const int delay = 1000; //in ms
 
-		public CvOnlineScrapeService(IScraper scraper, CvOnlineConfiguration configuration)
+		private readonly IScrapeConfiguration _scrapeSettings;
+		private readonly IScraper _scraper;
+
+		public CvMarketScrapeService(IScraper scraper, CvBankasConfiguration cvBankasConfiguration)
 		{
 			_scraper = scraper;
-
-			_scrapeSettings = configuration;
+			_scrapeSettings = cvBankasConfiguration;
 		}
-
 		public IEnumerable<JobUrl> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
@@ -37,12 +34,13 @@ namespace Application
 		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
 		{
 			var jobUrls = new List<JobUrl>();
+
 			for (int i = 0; i < pageLimit; i++)
 			{
 				//Sleep
 				Thread.Sleep(delay);
 
-				var html = _scraper.GetHtml($"{cvOnlineUrl}?page={i}");
+				var html = _scraper.GetHtml($"{url}?page={i}");
 
 				var nodes = html.CssSelect(_scrapeSettings.Posting);
 
@@ -58,25 +56,21 @@ namespace Application
 					var nameResult = node.CssSelect(_scrapeSettings.Name);
 					if (nameResult.Any())
 					{
-						var jobUrl = new CvOnlineJob();
+						var nameInfoNode = nameResult.First();
+						var jobUrl = new CvBankasJob();
 
-						var infoNode = nameResult.First();
-
-						jobUrl.Title = infoNode.InnerText;
-						jobUrl.Url = infoNode.Attributes["href"].Value;
-						jobUrl.Salary = Selectors.SelectName(node,_scrapeSettings.Salary);
+						jobUrl.Title = nameInfoNode.InnerText;
+						jobUrl.Url = Selectors.SelectUrl(node, _scrapeSettings.Url);
+						jobUrl.Salary = Selectors.SelectName(node, _scrapeSettings.Salary);
 						jobUrl.Company = Selectors.SelectCompany(node, _scrapeSettings.Company);
 
 						jobUrls.Add(jobUrl);
 					}
-
-
 				}
 
 			}
 
 			return jobUrls;
 		}
-
 	}
 }
