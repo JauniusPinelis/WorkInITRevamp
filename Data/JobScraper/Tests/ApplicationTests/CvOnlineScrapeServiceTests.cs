@@ -18,10 +18,6 @@ namespace ApplicationTests
     public class CvOnlineScrapeServiceTests : TestBase
     {
 
-		public CvOnlineScrapeServiceTests() : base()
-		{
-		}
-
 		[Fact]
 		public void GetHtml_GivenMockData_IsNotEmpty()
 		{

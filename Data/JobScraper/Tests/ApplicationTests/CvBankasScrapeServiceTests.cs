@@ -10,10 +10,6 @@ namespace ApplicationTests
 {
     public class CvBankasScrapeServiceTests : TestBase
     {
-		public CvBankasScrapeServiceTests() : base()
-		{
-
-		}
 
 		[Fact]
 		public void GetHtml_GivenMockData_IsNotEmpty()
@@ -29,6 +25,24 @@ namespace ApplicationTests
 			var urls = _cvBankasScrapeService.ScrapeUrls();
 
 			urls.Should().NotBeEmpty();
+		}
+
+		[Fact]
+		public void ScrapeUrl_GivenMockData_GetsCompanyName()
+		{
+			var urls = _cvBankasScrapeService.ScrapeUrls();
+
+			urls.Should().NotBeEmpty();
+			urls.First().Company.Should().NotBeNullOrEmpty();
+		}
+
+		[Fact]
+		public void ScrapeUrl_GivenMockData_GetsSalary()
+		{
+			var urls = _cvBankasScrapeService.ScrapeUrls();
+
+			urls.Should().NotBeEmpty();
+			urls.First().Salary.Should().NotBeNullOrEmpty();
 		}
 	}
 }
