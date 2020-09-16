@@ -21,10 +21,10 @@ namespace Application.Services
 		private readonly IScrapeConfiguration _scrapeSettings;
 		private readonly IScraper _scraper;
 
-		public CvMarketScrapeService(IScraper scraper, CvBankasConfiguration cvBankasConfiguration)
+		public CvMarketScrapeService(IScraper scraper, CvMarketConfiguration configuration)
 		{
 			_scraper = scraper;
-			_scrapeSettings = cvBankasConfiguration;
+			_scrapeSettings = configuration;
 		}
 		public IEnumerable<JobUrl> ScrapeUrls()
 		{
@@ -40,7 +40,7 @@ namespace Application.Services
 				//Sleep
 				Thread.Sleep(delay);
 
-				var html = _scraper.GetHtml($"{url}?page={i}");
+				var html = _scraper.GetHtml($"{url}-{i}");
 
 				var nodes = html.CssSelect(_scrapeSettings.Posting);
 
@@ -57,7 +57,7 @@ namespace Application.Services
 					if (nameResult.Any())
 					{
 						var nameInfoNode = nameResult.First();
-						var jobUrl = new CvBankasJob();
+						var jobUrl = new CvMarketJob();
 
 						jobUrl.Title = nameInfoNode.InnerText;
 						jobUrl.Url = Selectors.SelectUrl(node, _scrapeSettings.Url);

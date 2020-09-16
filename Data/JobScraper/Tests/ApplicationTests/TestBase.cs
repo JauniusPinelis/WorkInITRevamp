@@ -21,19 +21,25 @@ namespace ApplicationTests
     {
 		protected readonly IScraper _cvBankasScraper;
 		protected readonly IScraper _cvOnlineScraper;
+		protected readonly IScraper _cvMarketScraper;
+
 		protected readonly CvBankasScrapeService _cvBankasScrapeService;
 		protected readonly CvOnlineScrapeService _cvOnlineScrapeService;
+		protected readonly CvMarketScrapeService _cvMarketScrapeService;
+
 		protected readonly DataService _dataService;
 		protected readonly JobUrlRepository _jobUrlRepository;
 
 		private const string cvOnlineFilePath = "\\Data\\CvOnline.txt";
 		private const string cvBankasFilePath = "\\Data\\CvBankas.txt";
+		private const string CvMarketFilePath = "\\Data\\CvMarket.txt";
 
 		public TestBase()
 		{
 
 			_cvOnlineScraper = SetupMockScraper(cvOnlineFilePath);
 			_cvBankasScraper = SetupMockScraper(cvBankasFilePath);
+
 
 			_cvOnlineScrapeService = new CvOnlineScrapeService(_cvOnlineScraper, new CvOnlineConfiguration());
 			_cvBankasScrapeService = new CvBankasScrapeService(_cvBankasScraper, new CvBankasConfiguration());

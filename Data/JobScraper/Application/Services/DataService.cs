@@ -19,7 +19,7 @@ namespace Application
 		private readonly IScrapeService _cvMarketScrapeService;
 
 		public DataService(JobUrlRepository jobUrlRepository, CvOnlineScrapeService cvOnlineScrapeService,
-			CvBankasScrapeService cvBankasScrapeService, Cv)
+			CvBankasScrapeService cvBankasScrapeService, CvMarketScrapeService cvMarketScrapeService)
 		{
 			_jobUrlRepository = jobUrlRepository;
 			_cvOnlineScrapeService = cvOnlineScrapeService;
@@ -53,6 +53,20 @@ namespace Application
 			else
 			{
 				var urls = _cvBankasScrapeService.ScrapeUrls();
+				_jobUrlRepository.InsertRange(urls);
+			}
+		}
+
+		public void ScrapeCvMarketUrls()
+		{
+			if (_jobUrlRepository.GetAll().Any())
+			{
+				var urls = _cvMarketScrapeService.ScrapeUrls(2);
+				_jobUrlRepository.InsertRange(urls);
+			}
+			else
+			{
+				var urls = _cvMarketScrapeService.ScrapeUrls();
 				_jobUrlRepository.InsertRange(urls);
 			}
 		}

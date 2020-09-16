@@ -31,9 +31,13 @@ namespace ApplicationTests
             urls.Where(u => u.PortalName == "CvBankas").Should().NotBeEmpty();
         }
 
+        [Fact]
         public void ScrapeCvMarketUrls_GivenMockData_DbHasCvMarketJobs()
 		{
             _dataService.ScrapeCvMarketUrls();
-		}
+            var urls = _jobUrlRepository.GetAll();
+
+            urls.Where(u => u.PortalName == "CvMarket").Should().NotBeEmpty();
+        }
     }
 }

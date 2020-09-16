@@ -43,6 +43,7 @@ namespace Runner
             services.AddScoped<IScraper, Scraper>();
             services.AddScoped<CvBankasConfiguration>();
             services.AddScoped<CvOnlineConfiguration>();
+            services.AddScoped<CvMarketConfiguration>();
 
             services.AddDbContext<DataContext>(options
                 => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
