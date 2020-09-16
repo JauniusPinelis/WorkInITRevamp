@@ -39,10 +39,12 @@ namespace ApplicationTests
 
 			_cvOnlineScraper = SetupMockScraper(cvOnlineFilePath);
 			_cvBankasScraper = SetupMockScraper(cvBankasFilePath);
+			_cvMarketScraper = SetupMockScraper(CvMarketFilePath);
 
 
 			_cvOnlineScrapeService = new CvOnlineScrapeService(_cvOnlineScraper, new CvOnlineConfiguration());
 			_cvBankasScrapeService = new CvBankasScrapeService(_cvBankasScraper, new CvBankasConfiguration());
+			_cvMarketScrapeService = new CvMarketScrapeService(_cvMarketScraper, new CvMarketConfiguration());
 
 			var options = new DbContextOptionsBuilder<DataContext>()
 			.UseInMemoryDatabase("TestDb")
@@ -52,7 +54,9 @@ namespace ApplicationTests
 
 			_jobUrlRepository = new JobUrlRepository(context);
 
-			_dataService = new DataService(_jobUrlRepository, _cvOnlineScrapeService, _cvBankasScrapeService);
+			_dataService = new DataService(_jobUrlRepository, _cvOnlineScrapeService, _cvBankasScrapeService,
+				_cvMarketScrapeService
+				);
 
 
 		}

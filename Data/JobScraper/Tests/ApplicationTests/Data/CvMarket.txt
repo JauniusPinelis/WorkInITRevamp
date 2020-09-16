@@ -1,0 +1,1912 @@
+﻿<div class="main_content" data-heatmap="content" style="text-align:left; padding:20px 0 0 0; max-width:1000px;">
+    <div class="f_content">
+                        
+    <br class="hidden-sm-up">
+    <div class="f_content_full">
+        <div class="container">
+            <h1 class="job_offers">
+                Darbo skelbimai pagal datą
+                                                            </h1>
+        </div>
+    </div>
+
+
+
+<div class="f_jobs_table f_jobs_table_logos">
+    <div class="f_jobs">
+
+        
+        <div data-tab="jobs_list" id="f_jobs_main">
+            <table width="100%" cellspacing="0" cellpadding="0">
+                                            
+                            
+<tbody><tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 4</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 1 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/aprangos-grupe-imones-darbo-skelbimai-57" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418448-d74d4a7bb64811daebf59c09eead4343.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418448-d74d4a7bb64811daebf59c09eead4343.png" alt="Aprangos grupė darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/krovejo-os-vairuotojo-os-ekspeditoriaus-es-vilnius-aprangos-grupe-418448">KROVĖJO (-OS) - VAIRUOTOJO (-OS) - EKSPEDITORIAUS (-ĖS)</a>
+
+                    <span class="f_job_company">Aprangos grupė</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1225" data-salary-to="1509">
+                <b>1225 - 1509</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>4</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418448/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/krovejo-os-vairuotojo-os-ekspeditoriaus-es-vilnius-aprangos-grupe-418448">KROVĖJO (-OS) - VAIRUOTOJO (-OS) - EKSPEDITORIAUS (-ĖS)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Aprangos grupė</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>1225 - 1509</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418448/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 4</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 1 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/aprangos-grupe-imones-darbo-skelbimai-57" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418441-248e9d5517878e20d31584c2431206bf.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418441-248e9d5517878e20d31584c2431206bf.png" alt="Aprangos grupė darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/sandelininkas-e-skenuotojas-a-vilnius-aprangos-grupe-418441">SANDĖLININKAS (-Ė) - SKENUOTOJAS (-A)</a>
+
+                    <span class="f_job_company">Aprangos grupė</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="839" data-salary-to="967">
+                <b>839 - 967</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>4</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418441/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/sandelininkas-e-skenuotojas-a-vilnius-aprangos-grupe-418441">SANDĖLININKAS (-Ė) - SKENUOTOJAS (-A)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Aprangos grupė</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>839 - 967</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418441/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 3</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 6 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/cv-market-klientas-imones-darbo-skelbimai-25051" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418114-5edbb1cc352eace93420b9a1f64faa7e.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418114-5edbb1cc352eace93420b9a1f64faa7e.png" alt="CVMarket.lt darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+                    <span data-tooltip="Atranka vykdoma per virtualias programas arba telefonu.">
+                <span class="bubble bubble-green">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    Atranka internetu                </span>
+            </span>
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/verslo-klientu-vadybininkas-e-vilnius-cvmarketlt-418114">VERSLO KLIENTŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company">CVMarket.lt</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1100" data-salary-to="0">
+                Nuo <b>1100</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>3</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 6 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418114/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+                    <div>
+                <span class="bubble bubble-green">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    Atranka internetu                </span>
+            </div>
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/verslo-klientu-vadybininkas-e-vilnius-cvmarketlt-418114">VERSLO KLIENTŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">CVMarket.lt</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile ">Nuo <b>1100</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418114/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 23 val. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/snaige-ab-imones-darbo-skelbimai-3103" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418585-8c10fb2bb31370bd85833bb1edb62a01.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418585-8c10fb2bb31370bd85833bb1edb62a01.png" alt="Snaigė, AB darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/kokybes-vadybos-inzinierius-alytus-snaige-ab-418585">KOKYBĖS VADYBOS INŽINIERIUS</a>
+
+                    <span class="f_job_company">Snaigė, AB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="900" data-salary-to="1400">
+                <b>900 - 1400</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 23 val. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418585/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/kokybes-vadybos-inzinierius-alytus-snaige-ab-418585">KOKYBĖS VADYBOS INŽINIERIUS</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Snaigė, AB</span> • Alytus</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>900 - 1400</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Alytus        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418585/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 1 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/elis-textile-service-uab-imones-darbo-skelbimai-1234" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418544-1292df1a74ceeb29407c477748fbb475.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418544-1292df1a74ceeb29407c477748fbb475.png" alt="Elis Textile Service, UAB darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aktyviu-pardavimu-vadybininkas-e-vilnius-elis-textile-service-uab-418544">AKTYVIŲ PARDAVIMŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company">Elis Textile Service, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="2000" data-salary-to="0">
+                Nuo <b>2000</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418544/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aktyviu-pardavimu-vadybininkas-e-vilnius-elis-textile-service-uab-418544">AKTYVIŲ PARDAVIMŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Elis Textile Service, UAB</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile ">Nuo <b>2000</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418544/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 1 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/elis-textile-service-uab-imones-darbo-skelbimai-1234" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418543-cabd55bc003cdb695adfe0b0c3f10a65.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418543-cabd55bc003cdb695adfe0b0c3f10a65.png" alt="Elis Textile Service, UAB darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aktyviu-pardavimu-vadybininkas-e-siauliai-elis-textile-service-uab-418543">AKTYVIŲ PARDAVIMŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company">Elis Textile Service, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="2000" data-salary-to="0">
+                Nuo <b>2000</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418543/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aktyviu-pardavimu-vadybininkas-e-siauliai-elis-textile-service-uab-418543">AKTYVIŲ PARDAVIMŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Elis Textile Service, UAB</span> • Šiauliai</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile ">Nuo <b>2000</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Šiauliai        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418543/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 1 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/caverion-lietuva-uab-imones-darbo-skelbimai-826" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418533-6483216abd762f43f90fd2db762224b1.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418533-6483216abd762f43f90fd2db762224b1.png" alt="Caverion Lietuva, UAB darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aukstalipis-e-brigadininkas-e-norvegijoje-norvegija-caverion-lietuva-uab-418533">AUKŠTALIPIS (-Ė) - BRIGADININKAS (-Ė) NORVEGIJOJE</a>
+
+                    <span class="f_job_company">Caverion Lietuva, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary salary-after-taxes" data-salary-from="2500" data-salary-to="2500">
+                <b>2500</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Į rankas                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418533/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aukstalipis-e-brigadininkas-e-norvegijoje-norvegija-caverion-lietuva-uab-418533">AUKŠTALIPIS (-Ė) - BRIGADININKAS (-Ė) NORVEGIJOJE</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Caverion Lietuva, UAB</span> • Norvegija</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile salary-after-taxes"><b>2500</b> €/mėn.</span><span class="salary-type">Į rankas</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Norvegija        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418533/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 1 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/autolink-uab-imones-darbo-skelbimai-78779" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418124-d7ea0bb83062844627c11bd4951a2b12.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418124-d7ea0bb83062844627c11bd4951a2b12.png" alt="Autolink, UAB darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/transporto-vadybininkas-e-darbui-su-nuosavu-transportu-vilniuje-vilnius-autolink-uab-418124">TRANSPORTO VADYBININKAS/-Ė (DARBUI SU NUOSAVU TRANSPORTU) VILNIUJE</a>
+
+                    <span class="f_job_company">Autolink, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1580" data-salary-to="0">
+                Nuo <b>1580</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418124/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/transporto-vadybininkas-e-darbui-su-nuosavu-transportu-vilniuje-vilnius-autolink-uab-418124">TRANSPORTO VADYBININKAS/-Ė (DARBUI SU NUOSAVU TRANSPORTU) VILNIUJE</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Autolink, UAB</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile ">Nuo <b>1580</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418124/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 2 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/myworld-lithuania-uab-imones-darbo-skelbimai-81486" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="https://www.cvmarket.lt/job_logos/thmb-90-60-418433-5f6320618571ab8a5ad4023ecbbf000d.png" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418433-5f6320618571ab8a5ad4023ecbbf000d.png" alt="myWorld Lithuania, UAB darbo skelbimai" class="f_firm_logo">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/nepriklausomas-pardavimu-atstovas-e-klaipeda-myworld-lithuania-uab-418433">NEPRIKLAUSOMAS PARDAVIMŲ ATSTOVAS (-Ė)</a>
+
+                    <span class="f_job_company">myWorld Lithuania, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="45" data-salary-to="500">
+                <b>45 - 500</b> €/d.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 2 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418433/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/nepriklausomas-pardavimu-atstovas-e-klaipeda-myworld-lithuania-uab-418433">NEPRIKLAUSOMAS PARDAVIMŲ ATSTOVAS (-Ė)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">myWorld Lithuania, UAB</span> • Klaipėda</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>45 - 500</b> €/d.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Klaipėda        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418433/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                <span class="extra-item f_new">NAUJAS</span>
+                                                </div>
+                <div class="time-left-block">prieš 2 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/snaige-ab-imones-darbo-skelbimai-3103" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418427-2ca78ef7834c85341e6f4045d8ab2b9e.png" alt="Snaigė, AB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/inzinierius-technologas-alytus-snaige-ab-418427">INŽINIERIUS TECHNOLOGAS</a>
+
+                    <span class="f_job_company">Snaigė, AB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="800" data-salary-to="1200">
+                <b>800 - 1200</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                            <span class="extra-item f_new">N</span>
+                                                            </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 2 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418427/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/inzinierius-technologas-alytus-snaige-ab-418427">INŽINIERIUS TECHNOLOGAS</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Snaigė, AB</span> • Alytus</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>800 - 1200</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Alytus        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418427/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 5 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/myworld-lithuania-uab-imones-darbo-skelbimai-81486" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418199-cd7c0bac3ef61d5e7885535efc5d3342.png" alt="myWorld Lithuania, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/nepriklausomas-pardavimu-atstovas-e-panevezys-myworld-lithuania-uab-418199">NEPRIKLAUSOMAS PARDAVIMŲ ATSTOVAS (-Ė)</a>
+
+                    <span class="f_job_company">myWorld Lithuania, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="45" data-salary-to="500">
+                <b>45 - 500</b> €/d.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 5 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418199/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/nepriklausomas-pardavimu-atstovas-e-panevezys-myworld-lithuania-uab-418199">NEPRIKLAUSOMAS PARDAVIMŲ ATSTOVAS (-Ė)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">myWorld Lithuania, UAB</span> • Panevėžys</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>45 - 500</b> €/d.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Panevėžys        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418199/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 5 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/snaige-ab-imones-darbo-skelbimai-3103" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418191-f556794885ee2e8eeea3e11aadbf8a8b.png" alt="Snaigė, AB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/darbu-saugos-ir-sveikatos-specialistas-alytus-snaige-ab-418191">DARBŲ SAUGOS IR SVEIKATOS SPECIALISTAS</a>
+
+                    <span class="f_job_company">Snaigė, AB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="900" data-salary-to="1400">
+                <b>900 - 1400</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 5 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418191/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/darbu-saugos-ir-sveikatos-specialistas-alytus-snaige-ab-418191">DARBŲ SAUGOS IR SVEIKATOS SPECIALISTAS</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Snaigė, AB</span> • Alytus</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>900 - 1400</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Alytus        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418191/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 6 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/skaitmenine-rinkodara-uab-imones-darbo-skelbimai-110074" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-416139-f382ca6e4d3cfa8388297216bd0800c7.png" alt="Skaitmeninė rinkodara, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/seo-specialistas-e-kaunas-skaitmenine-rinkodara-uab-416139">SEO SPECIALISTAS (-Ė )</a>
+
+                    <span class="f_job_company">Skaitmeninė rinkodara, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1500" data-salary-to="2000">
+                <b>1500 - 2000</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 6 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/416139/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/seo-specialistas-e-kaunas-skaitmenine-rinkodara-uab-416139">SEO SPECIALISTAS (-Ė )</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Skaitmeninė rinkodara, UAB</span> • Kaunas</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>1500 - 2000</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Kaunas        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/416139/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 6 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/uab-ecredo-imones-darbo-skelbimai-110413" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-416015-77590780ea33f72ca158f0bfd0509963.png" alt="UAB eCREDO darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+                    <span data-tooltip="Atranka vykdoma per virtualias programas arba telefonu.">
+                <span class="bubble bubble-green">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    Atranka internetu                </span>
+            </span>
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/electronic-payments-compliance-officer-and-aml-officer-vilnius-uab-ecredo-416015">ELECTRONIC PAYMENTS-COMPLIANCE OFFICER AND AML OFFICER</a>
+
+                    <span class="f_job_company">UAB eCREDO</span>
+        
+            </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 6 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/416015/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+                    <div>
+                <span class="bubble bubble-green">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    Atranka internetu                </span>
+            </div>
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/electronic-payments-compliance-officer-and-aml-officer-vilnius-uab-ecredo-416015">ELECTRONIC PAYMENTS-COMPLIANCE OFFICER AND AML OFFICER</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">UAB eCREDO</span> • Vilnius</span>
+        
+        
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/416015/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 6 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/uab-ecredo-imones-darbo-skelbimai-110413" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-414982-5a284031ca1b8738cdac0bc11c727e6f.png" alt="UAB eCREDO darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+                    <span data-tooltip="Atranka vykdoma per virtualias programas arba telefonu.">
+                <span class="bubble bubble-green">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    Atranka internetu                </span>
+            </span>
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/electronic-payments-country-manager-and-member-of-management-board-vilnius-uab-ecredo-414982">ELECTRONIC PAYMENTS - COUNTRY MANAGER AND MEMBER OF MANAGEMENT BOARD</a>
+
+                    <span class="f_job_company">UAB eCREDO</span>
+        
+            </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 6 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/414982/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+                    <div>
+                <span class="bubble bubble-green">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    Atranka internetu                </span>
+            </div>
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/electronic-payments-country-manager-and-member-of-management-board-vilnius-uab-ecredo-414982">ELECTRONIC PAYMENTS - COUNTRY MANAGER AND MEMBER OF MANAGEMENT BOARD</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">UAB eCREDO</span> • Vilnius</span>
+        
+        
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/414982/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 6 d. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/telia-lietuva-ab-imones-darbo-skelbimai-86873" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-418086-81e8bcd6d903b73b1797d213ccf0c8d5.png" alt="Telia Global Services Lithuania, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/klientu-aptarnavimo-specialistas-e-telefonu-kaune-kaunas-telia-global-services-lithuania-uab-418086">KLIENTŲ APTARNAVIMO SPECIALISTAS (-Ė) TELEFONU KAUNE</a>
+
+                    <span class="f_job_company">Telia Global Services Lithuania, UAB</span>
+        
+            </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 6 d. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/418086/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/klientu-aptarnavimo-specialistas-e-telefonu-kaune-kaunas-telia-global-services-lithuania-uab-418086">KLIENTŲ APTARNAVIMO SPECIALISTAS (-Ė) TELEFONU KAUNE</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Telia Global Services Lithuania, UAB</span> • Kaunas</span>
+        
+        
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Kaunas        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/418086/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/lietuvos-juru-muziejus-imones-darbo-skelbimai-92243" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-417967-0f9f3ee3754de56a41e484acf6d5e716.png" alt="BĮ Lietuvos jūrų muziejus darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/viesuju-pirkimu-ir-turto-valdymo-skyriaus-vedejas-teisininkas-klaipeda-bi-lietuvos-juru-muziejus-417967">VIEŠŲJŲ PIRKIMŲ IR TURTO VALDYMO SKYRIAUS VEDĖJAS (TEISININKAS)</a>
+
+                    <span class="f_job_company">BĮ Lietuvos jūrų muziejus</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1689" data-salary-to="1760">
+                <b>1689 - 1760</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/417967/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/viesuju-pirkimu-ir-turto-valdymo-skyriaus-vedejas-teisininkas-klaipeda-bi-lietuvos-juru-muziejus-417967">VIEŠŲJŲ PIRKIMŲ IR TURTO VALDYMO SKYRIAUS VEDĖJAS (TEISININKAS)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">BĮ Lietuvos jūrų muziejus</span> • Klaipėda</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>1689 - 1760</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Klaipėda        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/417967/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/balto-print-uab-imones-darbo-skelbimai-40105" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-417932-af30689823b8f324a7d7b9aee4f0ebad.png" alt="BALTO PRINT, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/ieskomi-patyre-spaustuves-darbuotojai-vilnius-balto-print-uab-417932">IEŠKOMI PATYRĘ SPAUSTUVĖS DARBUOTOJAI</a>
+
+                    <span class="f_job_company">BALTO PRINT, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="820" data-salary-to="1600">
+                <b>820 - 1600</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/417932/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/ieskomi-patyre-spaustuves-darbuotojai-vilnius-balto-print-uab-417932">IEŠKOMI PATYRĘ SPAUSTUVĖS DARBUOTOJAI</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">BALTO PRINT, UAB</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>820 - 1600</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/417932/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/aprangos-grupe-imones-darbo-skelbimai-57" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-417928-9320dcd3f8d10b5ed83e600767363118.png" alt="Aprangos grupė darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aldo-pardaveja-as-konsultante-as-0625-etatu-klaipedoje-klaipeda-aprangos-grupe-417928">"ALDO" PARDAVĖJA (-AS) - KONSULTANTĖ (-AS), (0,625 ETATU), KLAIPĖDOJE</a>
+
+                    <span class="f_job_company">Aprangos grupė</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="0" data-salary-to="625">
+                Iki <b>625</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/417928/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/aldo-pardaveja-as-konsultante-as-0625-etatu-klaipedoje-klaipeda-aprangos-grupe-417928">"ALDO" PARDAVĖJA (-AS) - KONSULTANTĖ (-AS), (0,625 ETATU), KLAIPĖDOJE</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Aprangos grupė</span> • Klaipėda</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile ">Iki <b>625</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Klaipėda        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/417928/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/kosmolat-baltic-sia-imones-darbo-skelbimai-80145" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-417741-bd302afd0975647d7258f6ffb71cd207.png" alt="KOSMOLAT BALTIC, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/menedzer-po-rabote-krupnimi-klientami-key-account-manager-vilnius-kosmolat-baltic-uab-417741">МЕНЕДЖЕР ПО РАБОТЕ КРУПНЫМИ КЛИЕНТАМИ (KEY ACCOUNT MANAGER)</a>
+
+                    <span class="f_job_company">KOSMOLAT BALTIC, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1700" data-salary-to="2000">
+                <b>1700 - 2000</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/417741/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/menedzer-po-rabote-krupnimi-klientami-key-account-manager-vilnius-kosmolat-baltic-uab-417741">МЕНЕДЖЕР ПО РАБОТЕ КРУПНЫМИ КЛИЕНТАМИ (KEY ACCOUNT MANAGER)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">KOSMOLAT BALTIC, UAB</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile "><b>1700 - 2000</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/417741/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/network-eg-imones-darbo-skelbimai-9536" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-417680-4c0d6889f71fbb961f16679140e19ede.png" alt="Thermo Fisher Scientific darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/technikas-e-vilnius-thermo-fisher-scientific-417680">TECHNIKAS (-Ė )</a>
+
+                    <span class="f_job_company">Thermo Fisher Scientific</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1200" data-salary-to="0">
+                Nuo <b>1200</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/417680/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/technikas-e-vilnius-thermo-fisher-scientific-417680">TECHNIKAS (-Ė )</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Thermo Fisher Scientific</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile ">Nuo <b>1200</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/417680/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/mv-steel-group-uab-imones-darbo-skelbimai-21350" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-417599-251ce90afa1fe85f61c750acaf71ae2c.png" alt="MV steel group, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/pardavimu-vadybininkas-e-kaunas-mv-steel-group-uab-417599">PARDAVIMŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company">MV steel group, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary salary-after-taxes" data-salary-from="1200" data-salary-to="2500">
+                <b>1200 - 2500</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Į rankas                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/417599/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/pardavimu-vadybininkas-e-kaunas-mv-steel-group-uab-417599">PARDAVIMŲ VADYBININKAS (-Ė)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">MV steel group, UAB</span> • Kaunas</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile salary-after-taxes"><b>1200 - 2500</b> €/mėn.</span><span class="salary-type">Į rankas</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Kaunas        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/417599/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/wilo-lietuva-uab-imones-darbo-skelbimai-2564" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-417480-115020fbcde4001c2118dcccb674266d.png" alt="WILO LIETUVA, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/serviso-inzinierius-e-kaunas-wilo-lietuva-uab-417480">SERVISO INŽINIERIUS (-Ė )</a>
+
+                    <span class="f_job_company">WILO LIETUVA, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary " data-salary-from="1600" data-salary-to="0">
+                Nuo <b>1600</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Neatskaičius mokesčių                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/417480/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/serviso-inzinierius-e-kaunas-wilo-lietuva-uab-417480">SERVISO INŽINIERIUS (-Ė )</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">WILO LIETUVA, UAB</span> • Kaunas</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile ">Nuo <b>1600</b> €/mėn.</span><span class="salary-type">Neatskaičius mokesčių</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Kaunas        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/417480/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/statybos-valdymo-biuras-uab-imones-darbo-skelbimai-5873" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-415500-74da750e708c52dfde2fcdcced9b8d08.png" alt="Statybos valdymo biuras, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/projekto-konstrukcines-dalies-vadovas-e-kaunas-statybos-valdymo-biuras-uab-415500">PROJEKTO KONSTRUKCINĖS DALIES VADOVAS (-Ė)</a>
+
+                    <span class="f_job_company">Statybos valdymo biuras, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary salary-after-taxes" data-salary-from="1200" data-salary-to="2000">
+                <b>1200 - 2000</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Į rankas                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color: #e54f02; line-height:17px;" class="days-left"><i class="fa fa-clock-o"></i>
+                        liko 2 d.                    </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/415500/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/projekto-konstrukcines-dalies-vadovas-e-kaunas-statybos-valdymo-biuras-uab-415500">PROJEKTO KONSTRUKCINĖS DALIES VADOVAS (-Ė)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">Statybos valdymo biuras, UAB</span> • Kaunas</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile salary-after-taxes"><b>1200 - 2000</b> €/mėn.</span><span class="salary-type">Į rankas</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Kaunas        </div>
+
+                    
+                            <div class="time-left-block">
+                    <div style="color: #e54f02;padding-top:3px;">
+                        <i class="fa fa-clock-o" style="vertical-align: baseline"></i>
+                        liko 2 d.                    </div>
+                </div>
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/415500/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                
+                            
+<tr class="f_job_row2" data-forward-job-click=".main_job_link">
+    <td class="column1 hidden-sm-down zero-column">
+                    <div class="extra-block text-left">
+                                                            <span class="extra-item f_vip"><i class="fa fa-star"></i>VIP 1</span>
+                                                                    </div>
+                <div class="time-left-block">prieš 1 sav. </div>
+    </td>
+    <td class="column text-center first-column logo-column">
+        <span class="f_firm_logo_wrapper"><span class="f_image_helper"></span><!--
+                            --><a href="/vmg-food-uab-imones-darbo-skelbimai-9339" onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
+                            <img src="" data-src="https://www.cvmarket.lt/job_logos/thmb-90-60-416023-42add5c4c8b827c07b0eff5acbd0d848.png" alt="VMG Food, UAB darbo skelbimai" class="f_firm_logo lazy">
+                        </a>
+                    </span>
+    </td>
+    <td class="column hidden-xs-down main-column">
+        
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/gamybos-linijos-krovejas-a-vilnius-vmg-food-uab-416023">GAMYBOS LINIJOS KROVĖJAS(-A)</a>
+
+                    <span class="f_job_company">VMG Food, UAB</span>
+        
+                    <br>
+
+            <span class="f_job_salary salary-after-taxes" data-salary-from="650" data-salary-to="750">
+                <b>650 - 750</b> €/mėn.            </span>
+
+                            <span class="salary-type">
+                    Į rankas                </span>
+                        </td>
+    <td class="column js_left_indent hidden-sm-up main-column-mobile" style="padding-top:36px; padding-bottom:36px;">
+        <div style="position:relative;">
+                                    <div class="extra-block">
+                                                                        <span class="extra-item f_vip"><i class="fa fa-star"></i>1</span>
+                                                                                    </div>
+                                                                        <span style="color:#828282; line-height:17px;">prieš 1 sav. </span>
+                                    
+                            <div style="position:absolute; bottom:0px; right:0px;">
+                    <a href="#" data-href="/jobs/416023/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+                </div>
+                    </div>
+
+        
+        <a class="f_job_title main_job_link limited-lines" data-lines="3" target="_blank" href="/gamybos-linijos-krovejas-a-vilnius-vmg-food-uab-416023">GAMYBOS LINIJOS KROVĖJAS(-A)</a>
+
+                    <span class="f_job_company limited-lines" data-lines="2" data-shorten-class="f_comp_title"><span class="f_comp_title">VMG Food, UAB</span> • Vilnius</span>
+        
+        
+                    <div>
+                <span class="f_job_salary salary-mobile salary-after-taxes"><b>650 - 750</b> €/mėn.</span><span class="salary-type">Į rankas</span>            </div>
+            </td>
+
+    <td class="column column4 hidden-xs-down text-left location-column">
+        <div class="f_job_city">
+            Vilnius        </div>
+
+                    
+                        </td>
+
+    <td class="column column5 faded hidden-xs-down text-right" style="color:#828282; position:relative;">
+        <div style="display:inline-block; text-align:center;" class="save-ad-block">
+
+                    <a href="#" data-href="/jobs/416023/{op}?ajax=1" onclick="return change_heart(this, 'fa fa-heart-o icon-heart icon-heart-blank', 'fa fa-heart icon-heart icon-heart-orange');" class="fa fa-heart-o icon-heart icon-heart-blank"></a>
+        </div>
+            </td>
+</tr>
+
+                                                                                    </tbody></table>
+        </div>
+    </div>
+</div>
+
+
+            <br>
+        <div class="text-center"><style>
+<!--
+.pager_xs .fa,
+.pager_xs li a {
+    font-size: 12px;
+    line-height: 15px;
+}
+.pager_xs li {
+    margin-right: 3px;
+}
+-->
+</style>
+<ul class="pager_xs pagination">
+<li class="hidden-sm-up"><a href="/informacines-technologijos-darbo-skelbimai-0"><i class="fa fa-angle-left"></i><i class="fa fa-angle-left"></i></a></li><li class="hidden-xs-down"><a href="/informacines-technologijos-darbo-skelbimai-0" class="previous"><i class="fa fa-angle-left"></i>Atgal</a></li><li class="hidden-sm-up"><a href="/informacines-technologijos-darbo-skelbimai-0"><i class="fa fa-angle-left"></i></a></li><li class=""><a href="/informacines-technologijos-darbo-skelbimai-0" class="act">1</a></li><li class=""><a href="?start=25">2</a></li><li class=""><a href="?start=50">3</a></li><li class="hidden-xs-down"><a href="?start=75">4</a></li><li class="hidden-xs-down"><a href="?start=100">5</a></li><li class="hidden-xs-down"><a href="?start=125">6</a></li><li class="hidden-xs-down"><a href="?start=150">7</a></li><li class="hidden-xs-down"><a href="?start=175">8</a></li><li class="hidden-xs-down"><a href="?start=200">9</a></li><li class="hidden-xs-down"><a href="?start=25" class="next">Kitas<i class="fa fa-angle-right"></i></a></li><li class="hidden-sm-up"><a href="?start=25"><i class="fa fa-angle-right"></i></a></li><li class="hidden-sm-up"><a href="?start=2225"><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a></li></ul>
+</div>
+    
+<div style="clear:both"></div><br>
+<div style="display:none" class="f_lightbox_wrapper" id="saved_jobs_lightbox">
+    <div class="f_lightbox f_lightbox_small">
+        <div class="header">
+            <b class="link">Dėmesio!</b>
+            <a href="" class="f_close_lightbox" data-lightbox-bg="#f_lightbox_bg" data-close-lightbox="#saved_jobs_lightbox"><i class="icon icon-lightbox_x"></i></a>
+        </div>
+        <div id="msg-login-lightbox"></div>
+        <div class="content">
+            <div class="message warn no-top-margin">
+                <div><i class="fa fa-exclamation-triangle"></i> Jūs pasiekėte saugomų skelbimų limitą.</div>
+            </div>
+            Spauskite "Gerai", jei norite išsaugoti skelbimą ir pasirinkite kuriuos skelbimus panaikinti. Spauskite "Atšaukti", jeigu norite pasilikti visus išsaugotus skelbimus, kuriuos turite dabar.            <br>
+            <br>
+            <div class="text-center">
+                <a href="" class="button light-blue no-margin-bottom inline-block" style="width:100px;margin-right:20px" data-lightbox-bg="#f_lightbox_bg" data-close-lightbox="#saved_jobs_lightbox">Atšaukti</a>
+                <a href="https://www.cvmarket.lt/jobs/saved" class="button orange no-margin-bottom inline-block" style="width: 100px;">
+                    Gerai                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+                                <div class="f_sidebar">
+            
+            <table cellpadding="0" cellspacing="0" class="rightside_ads_table hidden-xs-down">
+                                        
+                        <tbody><tr><td class="banner_place" colspan="3" style="padding-bottom: 14px;"><script type="text/javascript">
+                googletag.cmd.push(function() {
+                    googletag.defineSlot('/21580727/content_top_250X250', [250, 250], 'div-gpt-ad-1454064585609-0').addService(googletag.pubads());
+                    googletag.enableServices();
+                });
+            </script>
+            <div id="div-gpt-ad-1454064585609-0" style="width: 250px; height: 250px;">
+            <script type="text/javascript">
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1454064585609-0'); });
+            </script>
+            <div id="google_ads_iframe_/21580727/content_top_250X250_0__container__" style="border: 0pt none; width: 250px; height: 250px;"></div></div></td></tr>                    <tr>
+                        <td>
+                                                            <div class="f_block_title f_block_title_standalone"><h2>VIP darbo skelbimai</h2></div>
+<div class="f_block_white f_block_no_padding">
+    <div class="f_vips_container f_vips_jobs"><!--
+
+        
+            --><a class="f_vip" target="_blank" href="/projekto-vadybininkas-e-vilnius-416973"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img alt="Projekto vadybininkas ..." height="25" width="70" border="0" src="/gfx/transl/lt/gfx503.jpg">                                <span class="f_vip_title">Projekto vadybininkas ...</span>
+            </a><!--
+        
+            --><a class="f_vip" target="_blank" href="/aktyviu-pardavimu-vadybininkas-e-siauliai-elis-textile-service-uab-418543"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img src="/job_logos/thmb-62-42-418543-cabd55bc003cdb695adfe0b0c3f10a65.png" border="0" alt="Aktyvių pardavimų vady...">
+                                <span class="f_vip_title">Aktyvių pardavimų vady...</span>
+            </a><!--
+        
+            --><a class="f_vip" target="_blank" href="/serviso-inzinierius-e-kaunas-wilo-lietuva-uab-417480"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img src="/job_logos/thmb-62-42-417480-115020fbcde4001c2118dcccb674266d.png" border="0" alt="Serviso inžinierius (-ė )">
+                                <span class="f_vip_title">Serviso inžinierius (-ė )</span>
+            </a><!--
+        
+            --><a class="f_vip" target="_blank" href="/kokybes-vadybos-inzinierius-alytus-snaige-ab-418585"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img src="/job_logos/thmb-62-42-418585-8c10fb2bb31370bd85833bb1edb62a01.png" border="0" alt="Kokybės vadybos inžini...">
+                                <span class="f_vip_title">Kokybės vadybos inžini...</span>
+            </a><!--
+        
+            --><a class="f_vip" target="_blank" href="/pardavimu-vadybininkas-e-medicina-vilnius-baltikameda-uab-416680"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img src="/job_logos/thmb-62-42-416680-147b40846fcf07ee739d573a3d3037c4.png" border="0" alt="Pardavimų vadybininkas...">
+                                <span class="f_vip_title">Pardavimų vadybininkas...</span>
+            </a><!--
+        
+            --><a class="f_vip" target="_blank" href="/krovejo-os-vairuotojo-os-ekspeditoriaus-es-vilnius-aprangos-grupe-418448"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img src="/job_logos/thmb-62-42-418448-d74d4a7bb64811daebf59c09eead4343.png" border="0" alt="Krovėjo (-os) - vairuo...">
+                                <span class="f_vip_title">Krovėjo (-os) - vairuo...</span>
+            </a><!--
+        
+            --><a class="f_vip" target="_blank" href="/it-sistemu-sandelio-valdymo-sistemos-prieziuros-specialistas-e-kaunas-equinox-europe-uab-416487"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img src="/job_logos/thmb-62-42-416487-b9b53dd80a4f2cebd108b88b4f4ec963.png" border="0" alt="IT sistemų (Sandėlio v...">
+                                <span class="f_vip_title">IT sistemų (Sandėlio v...</span>
+            </a><!--
+        
+            --><a class="f_vip" target="_blank" href="/pardavimu-vadybininkas-e-vilnius-azet-media-uab-416553"><!--
+                --><span class="f_vip_image"></span><!--
+                                    --><img src="/job_logos/thmb-62-42-416553-a2f9f859b20fb88c17c7da7b6774bf73.png" border="0" alt="Pardavimų vadybininkas...">
+                                <span class="f_vip_title">Pardavimų vadybininkas...</span>
+            </a><!--
+            --></div>
+</div>
+                                                    </td>
+                    </tr>
+                    <tr>
+                        <td class="banner_place" colspan="3">
+                                                </td>
+                    </tr>
+                
+                        <tr>
+                <td class="banner_place" colspan="3">
+                <script type="text/javascript">
+                googletag.cmd.push(function() {
+                    googletag.defineSlot('/21580727/content_middle_250X250', [250, 250], 'div-gpt-ad-1454064664270-0').addService(googletag.pubads());
+                    googletag.enableServices();
+                });
+            </script>
+            <div id="div-gpt-ad-1454064664270-0" style="width: 250px; height: 250px;">
+            <script type="text/javascript">
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1454064664270-0'); });
+            </script>
+            <div id="google_ads_iframe_/21580727/content_middle_250X250_0__container__" style="border: 0pt none; width: 250px; height: 250px;"></div></div>                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 20px;"></td>
+            </tr>
+            <tr>
+                <td class="banner_place" colspan="3">
+                <script type="text/javascript">
+                googletag.cmd.push(function() {
+                    googletag.defineSlot('/21580727/content_bottom_250X250', [250, 250], 'div-gpt-ad-1454064734131-0').addService(googletag.pubads());
+                    googletag.enableServices();
+                });
+            </script>
+            <div id="div-gpt-ad-1454064734131-0" style="width: 250px; height: 250px;">
+            <script type="text/javascript">
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1454064734131-0'); });
+            </script>
+            <div id="google_ads_iframe_/21580727/content_bottom_250X250_0__container__" style="border: 0pt none; width: 250px; height: 250px;"></div></div>                </td>
+            </tr>
+                                    <tr>
+                <td colspan="3" style="height: 20px;"></td>
+            </tr>
+                     </tbody></table>
+    </div>
+        <div style="clear:both">&nbsp;</div>
+    <div>
+            </div>
+</div>
