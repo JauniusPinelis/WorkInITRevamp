@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-	public class CvMarketScrapeService : IScrapeService
+	public class CvMarketScrapeService : IScrapeService<CvMarketJob>
 	{
 		private const string url = "https://www.cvmarket.lt/informacines-technologijos-darbo-skelbimai";
 
@@ -26,14 +26,14 @@ namespace Application.Services
 			_scraper = scraper;
 			_scrapeSettings = configuration;
 		}
-		public IEnumerable<JobUrl> ScrapeUrls()
+		public IEnumerable<CvMarketJob> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
 		}
 
-		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
+		public IEnumerable<CvMarketJob> ScrapeUrls(int pageLimit)
 		{
-			var jobUrls = new List<JobUrl>();
+			var jobUrls = new List<CvMarketJob>();
 
 			for (int i = 0; i < pageLimit; i++)
 			{

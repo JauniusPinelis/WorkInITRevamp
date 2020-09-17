@@ -28,7 +28,6 @@ namespace ApplicationTests
 		protected readonly CvMarketScrapeService _cvMarketScrapeService;
 
 		protected readonly DataService _dataService;
-		protected readonly ReadRepositoryBase _jobUrlRepository;
 
 		private const string cvOnlineFilePath = "\\Data\\CvOnline.txt";
 		private const string cvBankasFilePath = "\\Data\\CvBankas.txt";

@@ -11,9 +11,11 @@ namespace Infrastructure.Repositories
 		public readonly CvBankasRepository CvBankas;
 		public readonly CvOnlineRepostory CvOnline;
 		public readonly CvMarketRepository CvMarket;
+		public DataContext Context;
 
 		public UnitOfWork(DataContext context)
 		{
+			Context = context;
 			CvBankas = new CvBankasRepository(context);
 			CvOnline = new CvOnlineRepostory(context);
 			CvMarket = new CvMarketRepository(context);
