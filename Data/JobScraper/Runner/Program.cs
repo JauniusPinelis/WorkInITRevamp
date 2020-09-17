@@ -39,7 +39,7 @@ namespace Runner
             services.AddScoped<DataService>();
             services.AddScoped<CvOnlineScrapeService>();
             services.AddScoped<CvBankasScrapeService>();
-            services.AddScoped<JobUrlRepository>();
+            services.AddScoped<UnitOfWork>();
             services.AddScoped<IScraper, Scraper>();
             services.AddScoped<CvBankasConfiguration>();
             services.AddScoped<CvOnlineConfiguration>();

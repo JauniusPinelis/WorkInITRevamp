@@ -13,15 +13,15 @@ namespace Application
 {
 	public class DataService
 	{
-		private readonly JobUrlRepository _jobUrlRepository;
+		private readonly UnitOfWork _unitOfWork;
 		private readonly IScrapeService _cvOnlineScrapeService;
 		private readonly IScrapeService _cvBankasScrapeService;
 		private readonly IScrapeService _cvMarketScrapeService;
 
-		public DataService(JobUrlRepository jobUrlRepository, CvOnlineScrapeService cvOnlineScrapeService,
+		public DataService(UnitOfWork unitOfWork, CvOnlineScrapeService cvOnlineScrapeService,
 			CvBankasScrapeService cvBankasScrapeService, CvMarketScrapeService cvMarketScrapeService)
 		{
-			_jobUrlRepository = jobUrlRepository;
+			_unitOfWork = unitOfWork;
 			_cvOnlineScrapeService = cvOnlineScrapeService;
 			_cvBankasScrapeService = cvBankasScrapeService;
 			_cvMarketScrapeService = cvMarketScrapeService;
