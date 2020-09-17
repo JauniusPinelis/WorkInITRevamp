@@ -27,6 +27,12 @@ namespace ApplicationTests
 		protected readonly CvOnlineScrapeService _cvOnlineScrapeService;
 		protected readonly CvMarketScrapeService _cvMarketScrapeService;
 
+		protected readonly CvBankasRepository _cvBankasRepository;
+		protected readonly CvOnlineRepostory _cvOnlineRepostory;
+		protected readonly CvMarketRepository _cvMarketRepository;
+
+		protected readonly UnitOfWork _unitOfWork;
+
 		protected readonly DataService _dataService;
 
 		private const string cvOnlineFilePath = "\\Data\\CvOnline.txt";
@@ -51,9 +57,13 @@ namespace ApplicationTests
 
 			var context = new DataContext(options);
 
-			_jobUrlRepository = new ReadRepositoryBase(context);
+			_cvOnlineRepostory = new CvOnlineRepostory(context);
+			_cvBankasRepository = new CvBankasRepository(context);
+			_cvMarketRepository = new CvMarketRepository(context);
 
-			_dataService = new DataService(_jobUrlRepository, _cvOnlineScrapeService, _cvBankasScrapeService,
+
+
+			_dataService = new DataService(, _cvOnlineScrapeService, _cvBankasScrapeService,
 				_cvMarketScrapeService
 				);
 
