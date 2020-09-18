@@ -17,5 +17,9 @@ namespace Domain.Models
 		public int? SalaryMax { get; set; }
 
 		public string PortalName { get; set; }
+
+		public string Html { get; set; }
+		
+		public ICollection<jobUrlTag> Tags { get; set; }
 	}
 }

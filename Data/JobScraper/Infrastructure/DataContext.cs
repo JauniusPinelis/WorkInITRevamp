@@ -17,6 +17,10 @@ namespace Infrastructure
 
 		public DbSet<JobUrl> JobUrls { get; set; }
 
+		public DbSet<Tag> Tags { get; set; }
+
+		public DbSet<jobUrlTag> JobUrlTags { get; set; }
+
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			if (!optionsBuilder.IsConfigured)
@@ -27,6 +31,15 @@ namespace Infrastructure
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
+				modelBuilder.Entity<jobUrlTag>()
+			.HasOne(bc => bc.JobUrl)
+			.WithMany(b => b.Tags)
+			.HasForeignKey(bc => bc.TagId);
+
+			modelBuilder.Entity<jobUrlTag>()
+				.HasOne(bc => bc.Tag)
+				.WithMany(c => c.JobUrls)
+				.HasForeignKey(bc => bc.JobUrlId);
 		}
 	}
 }
