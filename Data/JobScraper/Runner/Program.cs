@@ -2,6 +2,8 @@
 using Application.Configuration;
 using Application.Interfaces;
 using Application.Services;
+using AutoMapper;
+using Domain;
 using Infrastructure;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -47,6 +49,16 @@ namespace Runner
 
             services.AddDbContext<DataContext>(options
                 => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
+
+            //Automapper
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
 
             return services;
         }

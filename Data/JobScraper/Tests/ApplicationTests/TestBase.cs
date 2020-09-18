@@ -2,6 +2,8 @@
 using Application.Configuration;
 using Application.Interfaces;
 using Application.Services;
+using AutoMapper;
+using Domain;
 using HtmlAgilityPack;
 using Infrastructure;
 using Infrastructure.Repositories;
@@ -22,6 +24,8 @@ namespace ApplicationTests
 		protected readonly IScraper _cvBankasScraper;
 		protected readonly IScraper _cvOnlineScraper;
 		protected readonly IScraper _cvMarketScraper;
+
+		private readonly IMapper _mapper;
 
 		protected readonly CvBankasScrapeService _cvBankasScrapeService;
 		protected readonly CvOnlineScrapeService _cvOnlineScrapeService;
@@ -57,13 +61,17 @@ namespace ApplicationTests
 
 			var context = new DataContext(options);
 
-			_cvOnlineRepostory = new CvOnlineRepostory(context);
-			_cvBankasRepository = new CvBankasRepository(context);
-			_cvMarketRepository = new CvMarketRepository(context);
+			var mapperConfig = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
 
+			var _mapper = mapperConfig.CreateMapper();
 
+			_cvOnlineRepostory = new CvOnlineRepostory(context, _mapper);
+			_cvBankasRepository = new CvBankasRepository(context, _mapper);
+			_cvMarketRepository = new CvMarketRepository(context, _mapper);
 
-			_dataService = new DataService(, _cvOnlineScrapeService, _cvBankasScrapeService,
+			_unitOfWork = new UnitOfWork(context, _mapper);
+
+			_dataService = new DataService(_unitOfWork, _cvOnlineScrapeService, _cvBankasScrapeService,
 				_cvMarketScrapeService
 				);
 

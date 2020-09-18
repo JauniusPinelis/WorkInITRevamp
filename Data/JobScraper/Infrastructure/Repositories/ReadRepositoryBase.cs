@@ -1,4 +1,6 @@
-﻿using Domain.Models;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
@@ -11,23 +13,27 @@ namespace Infrastructure.Repositories
 	public abstract class ReadRepositoryBase<T> where T : Entity
 	{
 		private readonly DataContext _context;
+		private readonly IMapper _mapper;
 
-		private DbSet<T> entities;
+		private DbSet<JobUrl> entities;
 
-		public ReadRepositoryBase(DataContext context)
+		public ReadRepositoryBase(DataContext context, IMapper mapper)
 		{
 			_context = context;
-			entities = _context.Set<T>();
+			_mapper = mapper;
+
+			entities = _context.Set<JobUrl>();
 		}
 
-		public IQueryable<T> GetAll()
+		public IEnumerable<T> GetAll()
 		{
-			return entities;
+			return entities.ProjectTo<T>(_mapper.ConfigurationProvider);
 		}
 
 		public T FindById(int id)
 		{
-			return entities.SingleOrDefault(e => e.Id == id);
+			return 
+				_mapper.Map<T>(entities.SingleOrDefault(e => e.Id == id));
 		}
 	}
 }

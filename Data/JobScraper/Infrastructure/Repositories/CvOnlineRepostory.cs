@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using AutoMapper;
+using Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Infrastructure.Repositories
 {
     public class CvOnlineRepostory : JobRepositoryBase<CvOnlineJob>
     {
-		public CvOnlineRepostory(DataContext context) : base(context)
+		public CvOnlineRepostory(DataContext context, IMapper _mapper) : base(context, _mapper)
 		{
 
 		}

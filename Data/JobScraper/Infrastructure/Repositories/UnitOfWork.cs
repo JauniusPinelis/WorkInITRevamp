@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,12 @@ namespace Infrastructure.Repositories
 		public readonly CvMarketRepository CvMarket;
 		public DataContext Context;
 
-		public UnitOfWork(DataContext context)
+		public UnitOfWork(DataContext context, IMapper mapper)
 		{
 			Context = context;
-			CvBankas = new CvBankasRepository(context);
-			CvOnline = new CvOnlineRepostory(context);
-			CvMarket = new CvMarketRepository(context);
+			CvBankas = new CvBankasRepository(context, mapper);
+			CvOnline = new CvOnlineRepostory(context, mapper);
+			CvMarket = new CvMarketRepository(context, mapper);
 		}
     }
 }

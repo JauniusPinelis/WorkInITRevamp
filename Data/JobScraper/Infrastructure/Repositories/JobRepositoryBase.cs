@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using AutoMapper;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,10 @@ namespace Infrastructure.Repositories
 		where T: JobUrl
     {
 		private readonly DataContext _context;
+
 		private DbSet<T> _entities;
 
-		public JobRepositoryBase(DataContext context) : base(context)
+		public JobRepositoryBase(DataContext context, IMapper mapper) : base(context, mapper)
 		{
 			_context = context;
 
