@@ -26,7 +26,7 @@ namespace Application.DataServices
 
 		public void ScrapeHtmls()
 		{
-			throw new NotImplementedException();
+			 var html = _scrapeService.ScrapeInfo()
 		}
 
 		public void ScrapeJobs()

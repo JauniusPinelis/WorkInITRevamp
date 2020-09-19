@@ -13,5 +13,7 @@ namespace Application.Configuration
 		public string Salary { get; set; } = "span.salary_amount";
 		public string Company { get; set; } = "span.dib.mt5";
 		public string Url { get; set; } = "a.list_a";
+
+		public string Info { get; set; } = ".jobad_txt";
  	}
 }

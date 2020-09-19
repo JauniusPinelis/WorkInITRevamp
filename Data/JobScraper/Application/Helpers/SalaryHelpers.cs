@@ -16,7 +16,7 @@ namespace Application.Helpers
 
 			salary = salary.ToLower();
 
-			var words = salary.Split(" ");
+			var words = salary.Split( new char[] { ' ', '-' });
 			var numbers = new List<int>();
 			foreach (var word in words)
 			{

@@ -26,7 +26,7 @@ namespace Infrastructure
 			if (!optionsBuilder.IsConfigured)
 			{
 				// Dublicate will need to resolve it later
-				optionsBuilder.UseSqlServer("Server=LAPTOP-9RMR1NCR\\SQLEXPRESS; Database=JobData; Trusted_Connection=True; MultipleActiveResultSets=true");
+				optionsBuilder.UseSqlServer("Server=LAPTOP-9RMR1NCR\\SQLEXPRESS; Database=JobDb; Trusted_Connection=True; MultipleActiveResultSets=true");
 			}
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -49,7 +49,9 @@ namespace Application.Helpers
 				if (valueNode.Any())
 				{
 					var value = valueNode.First();
-					return value.Attributes["href"].Value;
+					var url =  value.Attributes["href"].Value;
+
+					return UrlHelpers.ProcessUrl(url);
 				}
 				else
 				{

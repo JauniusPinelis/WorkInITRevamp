@@ -14,5 +14,7 @@ namespace Application.Configuration
         public string Name { get; set; } = "a.f_job_title";
         public string Url { get; set; } = "a.f_job_title";
 
+        public string Info { get; set; } = ".job-offer";
+
     }
 }

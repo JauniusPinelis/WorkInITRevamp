@@ -13,5 +13,7 @@ namespace Application.Configuration
 		public string Salary { get; set; } = "span.salary-blue";
 		public string Company { get; set; } = "a[itemprop=name]";
 		public string Url { get; set; } = "";
+
+		public string Info { get; set; } = "#main";
 	}
 }

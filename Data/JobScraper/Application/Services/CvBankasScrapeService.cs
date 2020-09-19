@@ -36,6 +36,18 @@ namespace Application.Services
 			return ScrapeUrls(2);
 		}
 
+		public string ScrapeInfo(string url)
+		{
+			var node = _scraper.GetHtml(url);
+			var html = node.CssSelect(_scrapeSettings.Info);
+			if (html.Any())
+			{
+				return html.First().InnerText;
+			}
+
+			return "";
+		}
+
 		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
 		{
 			var jobUrls = new List<CvBankasJob>();

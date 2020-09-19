@@ -7,5 +7,7 @@
 		string Posting { get; set; }
 		string Salary { get; set; }
 		string Url { get; set; }
+
+		string Info { get; set; }
 	}
 }

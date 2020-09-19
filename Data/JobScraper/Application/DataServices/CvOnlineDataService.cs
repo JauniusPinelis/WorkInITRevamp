@@ -31,7 +31,8 @@ namespace Application.DataServices
 
 			foreach(var job in jobs)
 			{
-
+				var url = job.Url;
+				var html = _scrapeService.ScrapeUrls
 			}
 		}
 

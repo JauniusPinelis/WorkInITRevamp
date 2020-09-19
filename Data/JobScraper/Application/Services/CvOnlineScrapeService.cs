@@ -29,6 +29,18 @@ namespace Application
 			_scrapeSettings = configuration;
 		}
 
+		public string ScrapeInfo(string url)
+		{
+			var node = _scraper.GetHtml(url);
+			var html = node.CssSelect(_scrapeSettings.Info);
+			if (html.Any())
+			{
+				return html.First().InnerText;
+			}
+
+			return "";
+		}
+
 		public IEnumerable<JobUrl> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
@@ -63,14 +75,12 @@ namespace Application
 						var infoNode = nameResult.First();
 
 						jobUrl.Title = infoNode.InnerText;
-						jobUrl.Url = infoNode.Attributes["href"].Value;
+						jobUrl.Url = UrlHelpers.ProcessUrl(infoNode.Attributes["href"].Value);
 						jobUrl.Salary = Selectors.SelectName(node,_scrapeSettings.Salary);
 						jobUrl.Company = Selectors.SelectCompany(node, _scrapeSettings.Company);
 
 						jobUrls.Add(jobUrl);
 					}
-
-
 				}
 
 			}

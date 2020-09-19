@@ -24,6 +24,11 @@ namespace Runner
 
             var serviceProvider = services.BuildServiceProvider();
 
+            using (var client = new DataContext())
+            {
+                client.Database.Migrate();
+            }
+
             // calls the Run method in App, which is replacing Main
             serviceProvider.GetService<JobScraperRunner>().Run();
         }
@@ -42,6 +47,7 @@ namespace Runner
             services.AddScoped<DataService>();
             services.AddScoped<CvOnlineScrapeService>();
             services.AddScoped<CvBankasScrapeService>();
+            services.AddScoped<CvMarketScrapeService>();
             services.AddScoped<UnitOfWork>();
             services.AddScoped<IScraper, Scraper>();
             services.AddScoped<CvBankasConfiguration>();
