@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-	public class CvBankasScrapeService : IScrapeService<CvBankasJob>
+	public class CvBankasScrapeService : IScrapeService
 	{
 		private readonly IScraper _scraper;
 
@@ -31,12 +31,12 @@ namespace Application.Services
 			_scrapeSettings = cvBankasConfiguration;
 		}
 
-		public IEnumerable<CvBankasJob> ScrapeUrls()
+		public IEnumerable<JobUrl> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
 		}
 
-		public IEnumerable<CvBankasJob> ScrapeUrls(int pageLimit)
+		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
 		{
 			var jobUrls = new List<CvBankasJob>();
 

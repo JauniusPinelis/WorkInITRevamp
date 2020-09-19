@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Application
 {
-	public interface IScrapeService<T> where T : JobUrl
+	public interface IScrapeService
 	{
-		IEnumerable<T> ScrapeUrls();
-		IEnumerable<T> ScrapeUrls(int pageLimit);
+		IEnumerable<JobUrl> ScrapeUrls();
+		IEnumerable<JobUrl> ScrapeUrls(int pageLimit);
 	}
 }

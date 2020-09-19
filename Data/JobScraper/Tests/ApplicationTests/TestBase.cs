@@ -71,11 +71,9 @@ namespace ApplicationTests
 
 			_unitOfWork = new UnitOfWork(context, _mapper);
 
-			_dataService = new DataService(_unitOfWork, _cvOnlineScrapeService, _cvBankasScrapeService,
-				_cvMarketScrapeService
+			_dataService = new DataService(_unitOfWork, _mapper, 
+				_cvOnlineScrapeService, _cvBankasScrapeService,_cvMarketScrapeService
 				);
-
-
 		}
 
 		private IScraper SetupMockScraper(string filePath)

@@ -1,5 +1,6 @@
 ﻿using Application.Helpers;
 using Application.Services;
+using AutoMapper;
 using Domain.Models;
 using Infrastructure;
 using Infrastructure.Repositories;
@@ -14,30 +15,45 @@ namespace Application
 	public class DataService
 	{
 		private readonly UnitOfWork _unitOfWork;
-		private readonly IScrapeService<CvOnlineJob> _cvOnlineScrapeService;
-		private readonly IScrapeService<CvBankasJob> _cvBankasScrapeService;
-		private readonly IScrapeService<CvMarketJob> _cvMarketScrapeService;
+		private readonly IMapper _mapper;
 
-		public DataService(UnitOfWork unitOfWork, CvOnlineScrapeService cvOnlineScrapeService,
+		private readonly IEnumerable<IScrapeService> _scrapeServices;
+
+		public DataService(UnitOfWork unitOfWork, IMapper mapper, CvOnlineScrapeService cvOnlineScrapeService,
 			CvBankasScrapeService cvBankasScrapeService, CvMarketScrapeService cvMarketScrapeService)
 		{
 			_unitOfWork = unitOfWork;
-			_cvOnlineScrapeService = cvOnlineScrapeService;
-			_cvBankasScrapeService = cvBankasScrapeService;
-			_cvMarketScrapeService = cvMarketScrapeService;
+			_mapper = mapper;
 
+			_scrapeServices = new List<IScrapeService>()
+			{
+				cvOnlineScrapeService,
+				cvBankasScrapeService,
+				cvMarketScrapeService
+			};
+
+		}
+
+		public void ScrapeUrls()
+		{
+			foreach(var services in _scrapeServices)
+			{
+
+			}
 		}
 
 		public void ScrapeCvOnlineUrls()
 		{
 			if (_unitOfWork.CvOnline.GetAll().Any())
 			{
-				var urls = _cvOnlineScrapeService.ScrapeUrls(2);
+				var urlDtos = _cvOnlineScrapeService.ScrapeUrls(2);
+				var urls = _mapper.Map<IEnumerable<CvOnlineJob>>(urlDtos);
 				_unitOfWork.CvOnline.InsertRange(urls);
 			}
 			else
 			{
-				var urls = _cvOnlineScrapeService.ScrapeUrls();
+				var urlDtos = _cvOnlineScrapeService.ScrapeUrls();
+				var urls = _mapper.Map<IEnumerable<CvOnlineJob>>(urlDtos);
 				_unitOfWork.CvOnline.InsertRange(urls);
 			}
 
@@ -47,12 +63,14 @@ namespace Application
 		{
 			if (_unitOfWork.CvBankas.GetAll().Any())
 			{
-				var urls = _cvBankasScrapeService.ScrapeUrls(2);
+				var urlDtos = _cvBankasScrapeService.ScrapeUrls(2);
+				var urls = _mapper.Map<IEnumerable<CvBankasJob>>(urlDtos);
 				_unitOfWork.CvBankas.InsertRange(urls);
 			}
 			else
 			{
-				var urls = _cvBankasScrapeService.ScrapeUrls();
+				var urlDtos = _cvBankasScrapeService.ScrapeUrls();
+				var urls = _mapper.Map<IEnumerable<CvBankasJob>>(urlDtos);
 				_unitOfWork.CvBankas.InsertRange(urls);
 			}
 		}
@@ -61,12 +79,14 @@ namespace Application
 		{
 			if (_unitOfWork.CvMarket.GetAll().Any())
 			{
-				var urls = _cvMarketScrapeService.ScrapeUrls(2);
+				var urlDtos = _cvMarketScrapeService.ScrapeUrls(2);
+				var urls = _mapper.Map<IEnumerable<CvMarketJob>>(urlDtos);
 				_unitOfWork.CvMarket.InsertRange(urls);
 			}
 			else
 			{
-				var urls = _cvMarketScrapeService.ScrapeUrls();
+				var urlDtos = _cvMarketScrapeService.ScrapeUrls();
+				var urls = _mapper.Map<IEnumerable<CvMarketJob>>(urlDtos);
 				_unitOfWork.CvMarket.InsertRange(urls);
 			}
 		}

@@ -12,7 +12,7 @@ using System.Threading;
 
 namespace Application
 {
-	public class CvOnlineScrapeService : IScrapeService<CvOnlineJob>
+	public class CvOnlineScrapeService : IScrapeService
 	{
 		private readonly IScraper _scraper;
 
@@ -29,12 +29,12 @@ namespace Application
 			_scrapeSettings = configuration;
 		}
 
-		public IEnumerable<CvOnlineJob> ScrapeUrls()
+		public IEnumerable<JobUrl> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
 		}
 
-		public IEnumerable<CvOnlineJob> ScrapeUrls(int pageLimit)
+		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
 		{
 			var jobUrls = new List<CvOnlineJob>();
 			for (int i = 0; i < pageLimit; i++)
