@@ -1,7 +1,7 @@
 ﻿using Domain.Models;
 using System.Collections.Generic;
 
-namespace Application
+namespace Application.Interfaces
 {
 	public interface IScrapeService
 	{

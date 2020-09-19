@@ -1,5 +1,6 @@
 ﻿using Application;
 using Application.Configuration;
+using Application.DataServices;
 using Application.Interfaces;
 using Application.Services;
 using AutoMapper;
@@ -46,6 +47,9 @@ namespace Runner
             services.AddScoped<CvBankasConfiguration>();
             services.AddScoped<CvOnlineConfiguration>();
             services.AddScoped<CvMarketConfiguration>();
+            services.AddScoped<CvOnlineDataService>();
+            services.AddScoped<CvBankasDataService>();
+            services.AddScoped<CvMarketDataService>();
 
             services.AddDbContext<DataContext>(options
                 => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
