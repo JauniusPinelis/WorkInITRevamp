@@ -1,5 +1,6 @@
 ﻿using Application;
 using Application.Configuration;
+using Application.DataServices;
 using Application.Interfaces;
 using Application.Services;
 using AutoMapper;
@@ -30,6 +31,10 @@ namespace ApplicationTests
 		protected readonly CvBankasScrapeService _cvBankasScrapeService;
 		protected readonly CvOnlineScrapeService _cvOnlineScrapeService;
 		protected readonly CvMarketScrapeService _cvMarketScrapeService;
+
+		protected readonly CvOnlineDataService _cvOnlineDataService;
+		protected readonly CvBankasDataService _cvBankasDataService;
+		protected readonly CvMarketDataService _cvMarketDataService;
 
 		protected readonly CvBankasRepository _cvBankasRepository;
 		protected readonly CvOnlineRepostory _cvOnlineRepostory;
@@ -69,10 +74,20 @@ namespace ApplicationTests
 			_cvBankasRepository = new CvBankasRepository(context, _mapper);
 			_cvMarketRepository = new CvMarketRepository(context, _mapper);
 
+			_cvOnlineDataService = new CvOnlineDataService(
+				_cvOnlineScrapeService, _cvOnlineRepostory, _mapper);
+
+			_cvBankasDataService = new CvBankasDataService(
+			_cvBankasScrapeService, _cvBankasRepository, _mapper);
+
+			_cvMarketDataService = new CvMarketDataService(
+			_cvMarketScrapeService, _cvMarketRepository, _mapper);
+
+
 			_unitOfWork = new UnitOfWork(context, _mapper);
 
 			_dataService = new DataService(_unitOfWork, _mapper, 
-				_cvOnlineScrapeService, _cvBankasScrapeService,_cvMarketScrapeService
+				_cvOnlineDataService, _cvBankasDataService,_cvMarketDataService
 				);
 		}
 

@@ -14,7 +14,7 @@ namespace ApplicationTests
         [Fact]
         public void ScrapeCvOnlineUrls_GivenMockData_DbHasCvOnlineJobs()
 		{
-            _dataService.ScrapeCvOnlineUrls();
+            _dataService.ScrapeJobs();
 
             var urls = _unitOfWork.CvOnline.GetAll();
 
@@ -24,7 +24,7 @@ namespace ApplicationTests
         [Fact]
         public void ScrapeCvBankasUrls_GivenMockData_DbHasCvBankasJobs()
         {
-            _dataService.ScrapeCvBankasUrls();
+            _dataService.ScrapeJobs();
 
             var urls = _unitOfWork.CvBankas.GetAll();
 
@@ -34,7 +34,7 @@ namespace ApplicationTests
         [Fact]
         public void ScrapeCvMarketUrls_GivenMockData_DbHasCvMarketJobs()
 		{
-            _dataService.ScrapeCvMarketUrls();
+            _dataService.ScrapeJobs();
             var urls = _unitOfWork.CvMarket.GetAll();
 
             urls.Where(u => u.PortalName == "CvMarket").Should().NotBeEmpty();

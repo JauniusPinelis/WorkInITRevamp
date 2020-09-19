@@ -50,6 +50,9 @@ namespace Runner
             services.AddScoped<CvOnlineDataService>();
             services.AddScoped<CvBankasDataService>();
             services.AddScoped<CvMarketDataService>();
+            services.AddScoped<CvOnlineRepostory>();
+            services.AddScoped<CvBankasRepository>();
+            services.AddScoped<CvMarketRepository>();
 
             services.AddDbContext<DataContext>(options
                 => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
