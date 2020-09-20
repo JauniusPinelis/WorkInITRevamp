@@ -10,30 +10,18 @@ using System.Threading.Tasks;
 
 namespace Application.DataServices
 {
-	public class CvOnlineDataService : IDataService
+	public class CvOnlineDataService : DataServiceBase<CvOnlineJob>, IDataService
 	{
 		private readonly CvOnlineScrapeService _scrapeService;
 		private readonly CvOnlineRepostory _repository;
 		private readonly IMapper _mapper;
 
 		public CvOnlineDataService(CvOnlineScrapeService scrapeService, CvOnlineRepostory repository,
-			IMapper mapper)
+			IMapper mapper) : base(scrapeService, repository)
 		{
 			_scrapeService = scrapeService;
 			_repository = repository;
 			_mapper = mapper;
-		}
-
-		public void ScrapeHtmls()
-		{
-			var jobs = _repository.GetAll()
-				.Where(j => String.IsNullOrEmpty(j.Html) && !String.IsNullOrEmpty(j.Url));
-
-			foreach(var job in jobs)
-			{
-				var url = job.Url;
-				var html = _scrapeService.ScrapeUrls
-			}
 		}
 
 		public void ScrapeJobs()

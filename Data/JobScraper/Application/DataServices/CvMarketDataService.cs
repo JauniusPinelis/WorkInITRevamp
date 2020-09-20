@@ -10,23 +10,18 @@ using System.Threading.Tasks;
 
 namespace Application.DataServices
 {
-    public class CvMarketDataService : IDataService
+    public class CvMarketDataService : DataServiceBase<CvMarketJob>, IDataService
     {
 		private readonly CvMarketScrapeService _scrapeService;
 		private readonly CvMarketRepository _repository;
 		private readonly IMapper _mapper;
 
 		public CvMarketDataService(CvMarketScrapeService scrapeService, CvMarketRepository repository,
-			IMapper mapper)
+			IMapper mapper) : base(scrapeService, repository)
 		{
 			_scrapeService = scrapeService;
 			_repository = repository;
 			_mapper = mapper;
-		}
-
-		public void ScrapeHtmls()
-		{
-			throw new NotImplementedException();
 		}
 
 		public void ScrapeJobs()

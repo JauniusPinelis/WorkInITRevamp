@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Models;
+using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,9 +10,8 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public abstract class JobRepositoryBase<T> : ReadRepositoryBase<T>
-		where T: JobUrl
-    {
+	public abstract class JobRepositoryBase<T> : ReadRepositoryBase<T>, IRepository<T> where T : JobUrl
+	{
 		private readonly DataContext _context;
 
 		private DbSet<T> _entities;
@@ -51,6 +51,14 @@ namespace Infrastructure.Repositories
 			var jobEntity = FindById(id);
 			jobEntity.SalaryMin = min;
 			jobEntity.SalaryMax = max;
+
+			_context.SaveChanges();
+		}
+
+		public void UpdateHtml(int id, string html)
+		{
+			var jobEntity = FindById(id);
+			jobEntity.Html = html;
 
 			_context.SaveChanges();
 		}

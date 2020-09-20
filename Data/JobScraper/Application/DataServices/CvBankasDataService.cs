@@ -10,23 +10,18 @@ using System.Threading.Tasks;
 
 namespace Application.DataServices
 {
-    public class CvBankasDataService : IDataService
+    public class CvBankasDataService : DataServiceBase<CvBankasJob>, IDataService
     {
 		private readonly CvBankasScrapeService _scrapeService;
 		private readonly CvBankasRepository _repository;
 		private readonly IMapper _mapper;
 
 		public CvBankasDataService(CvBankasScrapeService scrapeService, CvBankasRepository repository,
-			IMapper mapper)
+			IMapper mapper) : base(scrapeService, repository)
 		{
 			_scrapeService = scrapeService;
 			_repository = repository;
 			_mapper = mapper;
-		}
-
-		public void ScrapeHtmls()
-		{
-			 var html = _scrapeService.ScrapeInfo()
 		}
 
 		public void ScrapeJobs()

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Domain.Models;
+using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
@@ -10,7 +11,7 @@ using System.Text;
 
 namespace Infrastructure.Repositories
 {
-	public abstract class ReadRepositoryBase<T> where T : Entity
+	public abstract class ReadRepositoryBase<T> : IReadRepository<T> where T : Entity
 	{
 		private readonly DataContext _context;
 		private readonly IMapper _mapper;
@@ -32,7 +33,7 @@ namespace Infrastructure.Repositories
 
 		public T FindById(int id)
 		{
-			return 
+			return
 				_mapper.Map<T>(entities.SingleOrDefault(e => e.Id == id));
 		}
 	}
