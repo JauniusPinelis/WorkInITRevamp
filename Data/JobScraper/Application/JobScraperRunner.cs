@@ -15,9 +15,9 @@ namespace Application
 		public void Run()
 		{
 			//_dataService.ScrapeJobs();
-			//_dataService.ProcessSalaries();
-			_dataService.ScrapeHtmls();
-			_dataService.ProcessTags();
+			_dataService.ProcessSalaries();
+			//_dataService.ScrapeHtmls();
+			//_dataService.ProcessTags();
 		}
 	}
 }

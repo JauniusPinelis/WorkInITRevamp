@@ -5,7 +5,7 @@ namespace Infrastructure.Interfaces
 {
 	public interface IReadRepository<T> where T : Entity
 	{
-		T FindById(int id);
+		JobUrl FindById(int id);
 		IEnumerable<T> GetAll();
 	}
 }

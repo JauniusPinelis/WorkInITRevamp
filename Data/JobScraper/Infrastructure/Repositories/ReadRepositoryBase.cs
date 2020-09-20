@@ -16,25 +16,25 @@ namespace Infrastructure.Repositories
 		private readonly DataContext _context;
 		private readonly IMapper _mapper;
 
-		private DbSet<JobUrl> entities;
+		private DbSet<JobUrl> _entities;
 
 		public ReadRepositoryBase(DataContext context, IMapper mapper)
 		{
 			_context = context;
 			_mapper = mapper;
 
-			entities = _context.Set<JobUrl>();
+			_entities = _context.Set<JobUrl>();
 		}
 
 		public IEnumerable<T> GetAll()
 		{
-			return entities.ProjectTo<T>(_mapper.ConfigurationProvider);
+			return _entities.ProjectTo<T>(_mapper.ConfigurationProvider);
 		}
 
-		public T FindById(int id)
+		public JobUrl FindById(int id)
 		{
 			return
-				_mapper.Map<T>(entities.SingleOrDefault(e => e.Id == id));
+				_entities.SingleOrDefault(e => e.Id == id);
 		}
 	}
 }
