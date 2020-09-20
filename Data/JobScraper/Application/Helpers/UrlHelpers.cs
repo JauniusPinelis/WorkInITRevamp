@@ -14,6 +14,11 @@ namespace Application.Helpers
 			{
                 url = url.Substring(2);
 			}
+            if (url.StartsWith("www"))
+            {
+                url = "https://" + url;
+            }
+
             return url;
 		}
     }

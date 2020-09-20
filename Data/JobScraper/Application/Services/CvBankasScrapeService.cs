@@ -38,11 +38,14 @@ namespace Application.Services
 
 		public string ScrapeInfo(string url)
 		{
+			//Sleep
+			Thread.Sleep(1);
+
 			var node = _scraper.GetHtml(url);
 			var html = node.CssSelect(_scrapeSettings.Info);
 			if (html.Any())
 			{
-				return html.First().InnerText;
+				return html.First().InnerHtml;
 			}
 
 			return "";

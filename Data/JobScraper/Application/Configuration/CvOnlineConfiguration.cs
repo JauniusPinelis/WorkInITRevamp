@@ -14,6 +14,6 @@ namespace Application.Configuration
 		public string Company { get; set; } = "a[itemprop=name]";
 		public string Url { get; set; } = "";
 
-		public string Info { get; set; } = "#main";
+		public string Info { get; set; } = "div#main";
 	}
 }
