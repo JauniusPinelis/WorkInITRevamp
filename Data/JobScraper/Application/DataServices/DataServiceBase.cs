@@ -23,7 +23,7 @@ namespace Application.DataServices
 		public void ScrapeHtmls()
 		{
 			var jobs = _repository.GetAll()
-				.Where(j => !String.IsNullOrEmpty(j.Url) && String.IsNullOrEmpty(j.Html));
+				.Where(j => !String.IsNullOrEmpty(j.Url) && String.IsNullOrEmpty(j.Html)).ToList();
 
 			foreach (var job in jobs)
 			{
