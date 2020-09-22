@@ -31,15 +31,31 @@ namespace Infrastructure
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-				modelBuilder.Entity<jobUrlTag>()
-			.HasOne(bc => bc.JobUrl)
-			.WithMany(b => b.Tags)
-			.HasForeignKey(bc => bc.TagId);
+			modelBuilder.Entity<jobUrlTag>()
+				.HasOne(bc => bc.JobUrl)
+				.WithMany(b => b.Tags)
+				.HasForeignKey(bc => bc.TagId);
 
 			modelBuilder.Entity<jobUrlTag>()
 				.HasOne(bc => bc.Tag)
 				.WithMany(c => c.JobUrls)
 				.HasForeignKey(bc => bc.JobUrlId);
+
+			SeedData(modelBuilder);
+		}
+
+		private void SeedData(ModelBuilder builder)
+		{
+			builder.Entity<Tag>().HasData(
+				new Tag { Id = 1, Name = ".NET" },
+				new Tag { Id = 2, Name = "c#" },
+				new Tag { Id = 3, Name = "React" },
+				new Tag { Id = 4, Name = "Angular" },
+				new Tag { Id = 5, Name = "Vue" },
+				new Tag { Id = 6, Name = "Typescript" },
+				new Tag { Id = 7, Name = "Php" },
+				new Tag { Id = 8, Name = "Java" }
+				);
 		}
 	}
 }

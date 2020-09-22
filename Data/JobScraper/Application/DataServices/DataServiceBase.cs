@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Domain.Models;
 using Infrastructure.Interfaces;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,17 @@ namespace Application.DataServices
 				var html = _scrapeService.ScrapeInfo(job.Url);
 
 				_repository.UpdateHtml(job.Id, html);
+			}
+		}
+
+		public void ProcessTags()
+		{
+			var jobsWithNoTags = _repository.GetAll()
+				.Where(j => !j.Tags.Any() && String.IsNullOrEmpty(j.Html));
+
+			foreach(var job in jobsWithNoTags)
+			{
+				var html = job.Html;
 			}
 		}
 	}
