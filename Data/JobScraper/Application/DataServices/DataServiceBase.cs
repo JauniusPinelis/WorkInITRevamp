@@ -38,7 +38,7 @@ namespace Application.DataServices
 		public void ProcessTags()
 		{
 			var jobsWithNoTags = _repository.GetAll()
-				.Where(j => !j.Tags.Any() && String.IsNullOrEmpty(j.Html)).ToList();
+				.Where(j => !j.Tags.Any() && !String.IsNullOrEmpty(j.Html)).ToList();
 
 			var tags = _repository.GetAllTags().ToList();
 
