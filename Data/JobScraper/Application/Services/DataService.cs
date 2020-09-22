@@ -59,7 +59,10 @@ namespace Application
 
 		internal void ProcessTags()
 		{
-			throw new NotImplementedException();
+			foreach (var service in _dataServices)
+			{
+				service.ProcessTags();
+			}
 		}
 
 		internal void ScrapeHtmls()

@@ -1,4 +1,5 @@
-﻿using Application.Interfaces;
+﻿using Application.Helpers;
+using Application.Interfaces;
 using Domain.Models;
 using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore.Internal;
@@ -37,12 +38,19 @@ namespace Application.DataServices
 		public void ProcessTags()
 		{
 			var jobsWithNoTags = _repository.GetAll()
-				.Where(j => !j.Tags.Any() && String.IsNullOrEmpty(j.Html));
+				.Where(j => !j.Tags.Any() && String.IsNullOrEmpty(j.Html)).ToList();
+
+			var tags = _repository.GetAllTags().ToList();
 
 			foreach(var job in jobsWithNoTags)
 			{
 				var html = job.Html;
+				var extractedTags = TagHelpers.ExtractTags(html, tags);
+
+				_repository.UpdateTags(job.Id, extractedTags);
 			}
+
+			
 		}
 	}
 }

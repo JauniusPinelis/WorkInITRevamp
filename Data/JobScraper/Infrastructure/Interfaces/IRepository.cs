@@ -9,5 +9,6 @@ namespace Infrastructure.Interfaces
 		void InsertRange(IEnumerable<T> entities);
 		void UpdateHtml(int id, string html);
 		void UpdateSalary(int id, int? min, int? max);
+		void UpdateTags(int id, IEnumerable<Tag> tags);
 	}
 }

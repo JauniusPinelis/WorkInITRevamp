@@ -62,5 +62,27 @@ namespace Infrastructure.Repositories
 
 			_context.SaveChanges();
 		}
+
+		public void UpdateTags(int id, IEnumerable<Tag> tags)
+		{
+			var JobEntity = FindById(id);
+
+			//Removing previous tags
+			var tagsToRemove = _context.JobUrlTags.Where(j => j.JobUrlId == id);
+			_context.RemoveRange(tagsToRemove);
+			_context.SaveChanges();
+			// Adding new ones
+
+			foreach(var tag in tags)
+			{
+				_context.JobUrlTags.Add(new jobUrlTag()
+				{
+					JobUrlId = id,
+					TagId = tag.Id
+				});
+			}
+
+			_context.SaveChanges();
+		}
 	}
 }

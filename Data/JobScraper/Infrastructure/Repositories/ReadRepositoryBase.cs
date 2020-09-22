@@ -36,5 +36,10 @@ namespace Infrastructure.Repositories
 			return
 				_entities.SingleOrDefault(e => e.Id == id);
 		}
+
+		public IQueryable<Tag> GetAllTags()
+		{
+			return _context.Tags;
+		}
 	}
 }

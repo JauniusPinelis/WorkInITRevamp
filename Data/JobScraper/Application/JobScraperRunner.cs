@@ -16,8 +16,8 @@ namespace Application
 		{
 			//_dataService.ScrapeJobs();
 			//_dataService.ProcessSalaries();
-			_dataService.ScrapeHtmls();
-			//_dataService.ProcessTags();
+			//_dataService.ScrapeHtmls();
+			_dataService.ProcessTags();
 		}
 	}
 }

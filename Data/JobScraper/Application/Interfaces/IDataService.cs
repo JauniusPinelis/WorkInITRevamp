@@ -4,5 +4,6 @@
 	{
 		void ScrapeJobs();
 		void ScrapeHtmls();
+		void ProcessTags();
 	}
 }
