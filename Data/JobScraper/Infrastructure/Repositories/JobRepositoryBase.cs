@@ -77,8 +77,8 @@ namespace Infrastructure.Repositories
 			{
 				_context.JobUrlTags.Add(new jobUrlTag()
 				{
-					JobUrlId = id,
-					TagId = tag.Id
+					JobUrl = JobEntity,
+					Tag = tag
 				});
 			}
 
