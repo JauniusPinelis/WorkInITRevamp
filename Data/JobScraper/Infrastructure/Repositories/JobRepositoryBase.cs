@@ -71,6 +71,7 @@ namespace Infrastructure.Repositories
 			var tagsToRemove = _context.JobUrlTags.Where(j => j.JobUrlId == id);
 			_context.RemoveRange(tagsToRemove);
 			_context.SaveChanges();
+
 			// Adding new ones
 
 			foreach(var tag in tags)
