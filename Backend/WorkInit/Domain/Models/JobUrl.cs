@@ -20,8 +20,6 @@ namespace Domain.Models
 
 		public string PortalName { get; set; }
 
-		public string Html { get; set; }
-
 		public DateTime Created { get; set; } = DateTime.Now;
 		public DateTime? LastModified { get; set; }
 
