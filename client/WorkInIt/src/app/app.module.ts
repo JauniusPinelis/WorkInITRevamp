@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { JobtableComponent } from './components/jobtable/jobtable.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JobtableComponent
   ],
   imports: [
     BrowserModule,
