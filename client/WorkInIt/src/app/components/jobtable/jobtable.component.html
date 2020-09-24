@@ -1,1 +1,8 @@
-<p>jobtable works!</p>
+<div class="job-table">
+    <p>jobtable works!</p>
+    <ul *ngFor="let job of jobs; let i = index">
+        {{job.title}}
+    </ul>
+
+</div>
+
