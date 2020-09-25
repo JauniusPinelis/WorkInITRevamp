@@ -1,8 +1,26 @@
 <div class="job-table">
-    <p>jobtable works!</p>
-    <ul *ngFor="let job of jobs; let i = index">
-        {{job.title}}
-    </ul>
 
+    <nz-table #basicTable [nzData]="jobs">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let job of jobs">
+            <td>{{data.title}}</td>
+            <td>{{data.title}}</td>
+            <td>{{data.title}}</td>
+            <td>
+              <a>Action 一 {{data.title}}</a>
+              <nz-divider nzType="vertical"></nz-divider>
+              <a>Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
 </div>
 

@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { JobService } from 'src/app/services/job.service';
 
+export interface Job {
+  title: string,
+  salary: string
+}
+
 @Component({
   selector: 'job-table',
   templateUrl: './jobtable.component.html',
@@ -8,7 +13,7 @@ import { JobService } from 'src/app/services/job.service';
 })
 export class JobtableComponent implements OnInit {
 
-  jobs: any;
+  jobs: Job[];
 
   constructor(private jobService: JobService) { }
 
