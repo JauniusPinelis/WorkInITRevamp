@@ -26,7 +26,7 @@ namespace Infrastructure.Repositories
 		public void Insert(T entity)
 		{
 			var exists = _context.JobUrls.Any(
-				j => j.Title == entity.Title
+				j => j.Name == entity.Name
 			&& j.Company == entity.Company
 			&& j.Salary == entity.Salary);
 

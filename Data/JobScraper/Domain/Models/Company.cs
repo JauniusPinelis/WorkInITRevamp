@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class Tag : NamedEntity
+    public class Company : NamedEntity
     {
-		public ICollection<jobUrlTag> JobUrls { get; set; }
-	}
+        
+    }
 }

@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { JobService } from 'src/app/services/job.service';
  import {Job } from '../../models/Job';
 
-
-
 @Component({
   selector: 'job-table',
   templateUrl: './jobtable.component.html',

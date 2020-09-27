@@ -78,7 +78,7 @@ namespace Application
 
 						var infoNode = nameResult.First();
 
-						jobUrl.Title = infoNode.InnerText;
+						jobUrl.Name = infoNode.InnerText;
 						jobUrl.Url = UrlHelpers.ProcessUrl(infoNode.Attributes["href"].Value);
 						jobUrl.Salary = Selectors.SelectName(node,_scrapeSettings.Salary);
 						jobUrl.Company = Selectors.SelectCompany(node, _scrapeSettings.Company);
