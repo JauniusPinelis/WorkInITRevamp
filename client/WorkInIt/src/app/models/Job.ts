@@ -3,6 +3,6 @@ export interface Job {
     salary: string,
     salaryMin: Number,
     salaryMax: Number,
-    Title: string,
-    Url : string
+    url : string,
+    company: string
 }

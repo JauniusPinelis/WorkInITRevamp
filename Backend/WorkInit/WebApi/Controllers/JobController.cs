@@ -24,7 +24,7 @@ namespace WebApi.Controllers
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<JobUrl>>> GetJobUrls()
 		{
-			return await _context.JobUrls.Take(10).ToListAsync();
+			return await _context.JobUrls.Take(40).ToListAsync();
 		}
     }
 }

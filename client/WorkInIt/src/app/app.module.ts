@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NzTableModule } from 'ng-zorro-antd/table';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,7 @@ registerLocaleData(en);
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgZorroAntdModule,
     NzTableModule,
     FormsModule,
     HttpClientModule,
