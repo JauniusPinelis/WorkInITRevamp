@@ -10,12 +10,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let job of jobs">
-            <td>{{data.title}}</td>
-            <td>{{data.title}}</td>
-            <td>{{data.title}}</td>
+          <tr *ngFor="let job of basicTable.data">
+            <td>{{job.title}}</td>
+            <td>{{job.salary}}</td>
+            <td>{{job.title}}</td>
             <td>
-              <a>Action 一 {{data.title}}</a>
+              <a>View 一 {{job.url}}</a>
               <nz-divider nzType="vertical"></nz-divider>
               <a>Delete</a>
             </td>

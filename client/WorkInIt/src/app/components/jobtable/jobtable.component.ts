@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { JobService } from 'src/app/services/job.service';
+ import {Job } from '../../models/Job';
 
-export interface Job {
-  title: string,
-  salary: string
-}
+
 
 @Component({
   selector: 'job-table',
