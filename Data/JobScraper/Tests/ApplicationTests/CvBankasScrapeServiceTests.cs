@@ -33,7 +33,7 @@ namespace ApplicationTests
 			var urls = _cvBankasScrapeService.ScrapeUrls();
 
 			urls.Should().NotBeEmpty();
-			urls.First().Company.Should().NotBeNullOrEmpty();
+			urls.First().CompanyName.Should().NotBeNullOrEmpty();
 		}
 
 		[Fact]

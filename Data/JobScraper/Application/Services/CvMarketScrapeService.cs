@@ -78,7 +78,7 @@ namespace Application.Services
 						jobUrl.Name = nameInfoNode.InnerText;
 						jobUrl.Url = "https://www.cvmarket.lt/" + Selectors.SelectUrl(node, _scrapeSettings.Url);
 						jobUrl.Salary = Selectors.SelectName(node, _scrapeSettings.Salary);
-						jobUrl.Company = Selectors.SelectCompany(node, _scrapeSettings.Company);
+						jobUrl.CompanyName = Selectors.SelectCompany(node, _scrapeSettings.Company);
 
 						jobUrls.Add(jobUrl);
 					}

@@ -21,6 +21,8 @@ namespace Infrastructure
 
 		public DbSet<jobUrlTag> JobUrlTags { get; set; }
 
+		public DbSet<Company> Companies { get; set; }
+
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			if (!optionsBuilder.IsConfigured)
@@ -40,6 +42,12 @@ namespace Infrastructure
 				.HasOne(bc => bc.Tag)
 				.WithMany(c => c.JobUrls)
 				.HasForeignKey(bc => bc.JobUrlId);
+
+			modelBuilder.Entity<Company>()
+				.HasMany(c => c.Jobs)
+				.WithOne(j => j.Company)
+				.HasForeignKey(j => j.CompanyId);
+				
 
 			SeedData(modelBuilder);
 		}

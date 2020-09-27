@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class Logo : Entity
+    public class Logo : NamedEntity
     {
         public JobUrl JobUrl { get; set; }
+
+        public int JobUrlId { get; set; }
     }
 }

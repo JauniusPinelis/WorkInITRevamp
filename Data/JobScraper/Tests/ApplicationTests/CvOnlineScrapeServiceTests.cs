@@ -40,7 +40,7 @@ namespace ApplicationTests
 			var urls = _cvOnlineScrapeService.ScrapeUrls();
 
 			urls.Should().NotBeEmpty();
-			urls.First().Company.Should().NotBeNullOrEmpty();
+			urls.First().CompanyName.Should().NotBeNullOrEmpty();
 		}
 
 		[Fact]

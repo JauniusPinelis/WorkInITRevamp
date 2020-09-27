@@ -10,7 +10,7 @@ namespace Domain.Models
 		public string Url { get; set; }
 		public string Salary { get; set; }
 
-		public string Company { get; set; }
+		public string CompanyName { get; set; }
 
 		public int? SalaryMin { get; set; }
 		public int? SalaryMax { get; set; }
@@ -23,5 +23,8 @@ namespace Domain.Models
 		public DateTime? LastModified { get; set; }
 		
 		public ICollection<jobUrlTag> Tags { get; set; }
+
+		public Company Company { get; set; }
+		public int? CompanyId { get; set; }
 	}
 }

@@ -8,6 +8,6 @@ namespace Domain.Models
 {
     public class Company : NamedEntity
     {
-        
+        public ICollection<JobUrl> Jobs { get; set; }
     }
 }

@@ -27,7 +27,7 @@ namespace Infrastructure.Repositories
 		{
 			var exists = _context.JobUrls.Any(
 				j => j.Name == entity.Name
-			&& j.Company == entity.Company
+			&& j.CompanyName == entity.CompanyName
 			&& j.Salary == entity.Salary);
 
 			if (!exists)
