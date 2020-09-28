@@ -16,5 +16,7 @@ namespace Application.Configuration
 
         public string Info { get; set; } = ".job-offer";
 
+        public string LogoUrl { get; set; } = ".f_firm_logo_wrapper img";
+
     }
 }

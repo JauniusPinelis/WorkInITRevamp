@@ -9,5 +9,7 @@
 		string Url { get; set; }
 
 		string Info { get; set; }
+
+		string LogoUrl { get; set; }
 	}
 }

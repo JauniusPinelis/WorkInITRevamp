@@ -41,6 +41,30 @@ namespace Application.Helpers
 			return SelectValue(node, tag);
 		}
 
+		public static string SelectLogoUrl(HtmlNode node, string tag)
+		{
+			try
+			{
+				var valueNode = node.CssSelect(tag);
+				if (valueNode.Any())
+				{
+					var value = valueNode.First();
+					var url = value.Attributes["src"].Value;
+
+					return UrlHelpers.ProcessUrl(url);
+				}
+				else
+				{
+					return "";
+				}
+			}
+			catch (Exception ex)
+			{
+				//Work around for now...
+				return "";
+			}
+		}
+
 		public static string SelectUrl(HtmlNode node, string tag)
 		{
 			try

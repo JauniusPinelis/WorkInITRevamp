@@ -84,6 +84,7 @@ namespace Application.Services
 						jobUrl.Url = Selectors.SelectUrl(node, _scrapeSettings.Url);
 						jobUrl.Salary = Selectors.SelectName(node, _scrapeSettings.Salary);
 						jobUrl.CompanyName = Selectors.SelectCompany(node, _scrapeSettings.Company);
+						jobUrl.Logourl = Selectors.SelectLogoUrl(node, _scrapeSettings.LogoUrl);
 
 						jobUrls.Add(jobUrl);
 					}

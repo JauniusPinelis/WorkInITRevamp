@@ -15,5 +15,7 @@ namespace Application.Configuration
 		public string Url { get; set; } = "";
 
 		public string Info { get; set; } = "#wrapper";
+
+		public string LogoUrl { get; set; } = ".offer_logo img";
 	}
 }

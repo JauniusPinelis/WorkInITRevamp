@@ -44,5 +44,14 @@ namespace ApplicationTests
 			urls.Should().NotBeEmpty();
 			urls.First().Salary.Should().NotBeNullOrEmpty();
 		}
+
+		[Fact]
+		public void ScrapeUrl_GivenMockData_GetsLogoUrl()
+		{
+			var urls = _cvBankasScrapeService.ScrapeUrls();
+
+			urls.Should().NotBeEmpty();
+			urls.First().Logourl.Should().NotBeNullOrEmpty();
+		}
 	}
 }

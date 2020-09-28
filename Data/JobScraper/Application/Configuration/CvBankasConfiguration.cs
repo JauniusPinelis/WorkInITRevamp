@@ -15,5 +15,7 @@ namespace Application.Configuration
 		public string Url { get; set; } = "a.list_a";
 
 		public string Info { get; set; } = "div.jobad_txt";
+
+		public string LogoUrl { get; set; } = ".list_logo_c img";
  	}
 }
