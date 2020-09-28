@@ -16,8 +16,9 @@ namespace Application.DataServices
 		private readonly CvOnlineRepostory _repository;
 		private readonly IMapper _mapper;
 
-		public CvOnlineDataService(CvOnlineScrapeService scrapeService, CvOnlineRepostory repository,
-			IMapper mapper) : base(scrapeService, repository)
+		public CvOnlineDataService(
+			CvOnlineScrapeService scrapeService, CvOnlineRepostory repository,
+			IMapper mapper, CompanyService companyService) : base(scrapeService, repository, companyService)
 		{
 			_scrapeService = scrapeService;
 			_repository = repository;

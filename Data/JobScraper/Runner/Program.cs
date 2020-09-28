@@ -4,7 +4,6 @@ using Application.DataServices;
 using Application.Interfaces;
 using Application.Services;
 using AutoMapper;
-using Domain;
 using Infrastructure;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +15,7 @@ using System.IO;
 
 namespace Runner
 {
-    public class Program
+	public class Program
     {
         static void Main(string[] args)
         {
@@ -59,6 +58,8 @@ namespace Runner
             services.AddScoped<CvOnlineRepostory>();
             services.AddScoped<CvBankasRepository>();
             services.AddScoped<CvMarketRepository>();
+
+            services.AddScoped<CompanyService>();
 
             services.AddDbContext<DataContext>(options
                 => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));

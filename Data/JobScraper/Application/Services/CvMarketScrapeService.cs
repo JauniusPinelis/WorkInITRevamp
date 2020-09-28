@@ -1,4 +1,5 @@
 ﻿using Application.Configuration;
+using Application.Dtos;
 using Application.Helpers;
 using Application.Interfaces;
 using Domain.Models;
@@ -42,14 +43,14 @@ namespace Application.Services
 			return "";
 		}
 
-		public IEnumerable<JobUrl> ScrapeUrls()
+		public IEnumerable<JobDto> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
 		}
 
-		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
+		public IEnumerable<JobDto> ScrapeUrls(int pageLimit)
 		{
-			var jobUrls = new List<CvMarketJob>();
+			var jobUrls = new List<JobDto>();
 
 			for (int i = 0; i < pageLimit; i++)
 			{
@@ -73,7 +74,7 @@ namespace Application.Services
 					if (nameResult.Any())
 					{
 						var nameInfoNode = nameResult.First();
-						var jobUrl = new CvMarketJob();
+						var jobUrl = new JobDto();
 
 						jobUrl.Name = nameInfoNode.InnerText;
 						jobUrl.Url = "https://www.cvmarket.lt/" + Selectors.SelectUrl(node, _scrapeSettings.Url);

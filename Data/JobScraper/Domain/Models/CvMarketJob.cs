@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class CvMarketJob : JobUrl
-    {
+	public class CvMarketJob : JobUrl
+	{
 		public CvMarketJob()
 		{
 			PortalName = "CvMarket";
 		}
-    }
+	}
 }

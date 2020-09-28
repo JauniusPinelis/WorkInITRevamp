@@ -1,5 +1,6 @@
 ﻿using Application.Configuration;
 using Application.DataServices;
+using Application.Dtos;
 using Application.Helpers;
 using Application.Interfaces;
 using Domain.Models;
@@ -45,14 +46,14 @@ namespace Application
 			return "";
 		}
 
-		public IEnumerable<JobUrl> ScrapeUrls()
+		public IEnumerable<JobDto> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
 		}
 
-		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
+		public IEnumerable<JobDto> ScrapeUrls(int pageLimit)
 		{
-			var jobUrls = new List<CvOnlineJob>();
+			var jobUrls = new List<JobDto>();
 			for (int i = 0; i < pageLimit; i++)
 			{
 				//Sleep
@@ -74,7 +75,7 @@ namespace Application
 					var nameResult = node.CssSelect(_scrapeSettings.Name);
 					if (nameResult.Any())
 					{
-						var jobUrl = new CvOnlineJob();
+						var jobUrl = new JobDto();
 
 						var infoNode = nameResult.First();
 

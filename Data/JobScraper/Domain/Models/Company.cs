@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class Company : NamedEntity
+	public class Company : NamedEntity
     {
         public ICollection<JobUrl> Jobs { get; set; }
+
+        public byte[] ImageData { get; set; }
     }
 }

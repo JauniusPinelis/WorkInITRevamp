@@ -1,5 +1,7 @@
-﻿using Application.Helpers;
+﻿using Application.Dtos;
+using Application.Helpers;
 using Application.Interfaces;
+using Application.Services;
 using Domain.Models;
 using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore.Internal;
@@ -14,12 +16,15 @@ namespace Application.DataServices
     public abstract class DataServiceBase<T> where T : JobUrl
     {
 		private readonly IScrapeService _scrapeService;
+		private readonly CompanyService _companyService;
 		private readonly IRepository<T> _repository;
 		
-		public DataServiceBase(IScrapeService scrapeService, IRepository<T> repository)
+		public DataServiceBase(IScrapeService scrapeService, IRepository<T> repository, 
+			CompanyService companyService)
 		{
 			_repository = repository;
 			_scrapeService = scrapeService;
+			_companyService = companyService;
 		}
 
 		public void ScrapeHtmls()

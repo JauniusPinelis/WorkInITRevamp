@@ -1,4 +1,5 @@
 ﻿using Application.Configuration;
+using Application.Dtos;
 using Application.Helpers;
 using Application.Interfaces;
 using Domain.Models;
@@ -31,7 +32,7 @@ namespace Application.Services
 			_scrapeSettings = cvBankasConfiguration;
 		}
 
-		public IEnumerable<JobUrl> ScrapeUrls()
+		public IEnumerable<JobDto> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
 		}
@@ -51,9 +52,9 @@ namespace Application.Services
 			return "";
 		}
 
-		public IEnumerable<JobUrl> ScrapeUrls(int pageLimit)
+		public IEnumerable<JobDto> ScrapeUrls(int pageLimit)
 		{
-			var jobUrls = new List<CvBankasJob>();
+			var jobUrls = new List<JobDto>();
 
 			for (int i = 0; i < pageLimit; i++)
 			{
@@ -77,7 +78,7 @@ namespace Application.Services
 					if (nameResult.Any())
 					{
 						var nameInfoNode = nameResult.First();
-						var jobUrl = new CvBankasJob();
+						var jobUrl = new JobDto();
 
 						jobUrl.Name = nameInfoNode.InnerText;
 						jobUrl.Url = Selectors.SelectUrl(node, _scrapeSettings.Url);

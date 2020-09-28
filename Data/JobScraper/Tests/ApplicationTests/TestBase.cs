@@ -4,7 +4,6 @@ using Application.DataServices;
 using Application.Interfaces;
 using Application.Services;
 using AutoMapper;
-using Domain;
 using HtmlAgilityPack;
 using Infrastructure;
 using Infrastructure.Repositories;
@@ -20,7 +19,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationTests
 {
-    public abstract class TestBase
+	public abstract class TestBase
     {
 		protected readonly IScraper _cvBankasScraper;
 		protected readonly IScraper _cvOnlineScraper;
@@ -39,6 +38,8 @@ namespace ApplicationTests
 		protected readonly CvBankasRepository _cvBankasRepository;
 		protected readonly CvOnlineRepostory _cvOnlineRepostory;
 		protected readonly CvMarketRepository _cvMarketRepository;
+
+		protected readonly CompanyService _companyService;
 
 		protected readonly UnitOfWork _unitOfWork;
 
@@ -74,14 +75,16 @@ namespace ApplicationTests
 			_cvBankasRepository = new CvBankasRepository(context, _mapper);
 			_cvMarketRepository = new CvMarketRepository(context, _mapper);
 
+			_companyService = new CompanyService(context);
+
 			_cvOnlineDataService = new CvOnlineDataService(
-				_cvOnlineScrapeService, _cvOnlineRepostory, _mapper);
+				_cvOnlineScrapeService, _cvOnlineRepostory, _mapper, _companyService);
 
 			_cvBankasDataService = new CvBankasDataService(
-			_cvBankasScrapeService, _cvBankasRepository, _mapper);
+			_cvBankasScrapeService, _cvBankasRepository, _mapper, _companyService);
 
 			_cvMarketDataService = new CvMarketDataService(
-			_cvMarketScrapeService, _cvMarketRepository, _mapper);
+			_cvMarketScrapeService, _cvMarketRepository, _mapper, _companyService);
 
 
 			_unitOfWork = new UnitOfWork(context, _mapper);

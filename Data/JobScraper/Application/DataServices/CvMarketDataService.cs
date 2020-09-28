@@ -10,14 +10,15 @@ using System.Threading.Tasks;
 
 namespace Application.DataServices
 {
-    public class CvMarketDataService : DataServiceBase<CvMarketJob>, IDataService
+	public class CvMarketDataService : DataServiceBase<CvMarketJob>, IDataService
     {
 		private readonly CvMarketScrapeService _scrapeService;
 		private readonly CvMarketRepository _repository;
 		private readonly IMapper _mapper;
 
-		public CvMarketDataService(CvMarketScrapeService scrapeService, CvMarketRepository repository,
-			IMapper mapper) : base(scrapeService, repository)
+		public CvMarketDataService(
+			CvMarketScrapeService scrapeService, CvMarketRepository repository,
+			IMapper mapper, CompanyService companyService) : base(scrapeService, repository, companyService)
 		{
 			_scrapeService = scrapeService;
 			_repository = repository;

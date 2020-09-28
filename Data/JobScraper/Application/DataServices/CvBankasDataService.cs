@@ -10,14 +10,16 @@ using System.Threading.Tasks;
 
 namespace Application.DataServices
 {
-    public class CvBankasDataService : DataServiceBase<CvBankasJob>, IDataService
+	public class CvBankasDataService : DataServiceBase<CvBankasJob>, IDataService
     {
 		private readonly CvBankasScrapeService _scrapeService;
 		private readonly CvBankasRepository _repository;
 		private readonly IMapper _mapper;
 
-		public CvBankasDataService(CvBankasScrapeService scrapeService, CvBankasRepository repository,
-			IMapper mapper) : base(scrapeService, repository)
+		public CvBankasDataService(
+			CvBankasScrapeService scrapeService, CvBankasRepository repository,
+			IMapper mapper, CompanyService companyService
+			) : base(scrapeService, repository, companyService)
 		{
 			_scrapeService = scrapeService;
 			_repository = repository;
@@ -29,6 +31,9 @@ namespace Application.DataServices
 			if (_repository.GetAll().Any())
 			{
 				var urlDtos = _scrapeService.ScrapeUrls(2);
+
+				//ProcessCompaniesAndLogos();
+
 				var urls = _mapper.Map<IEnumerable<CvBankasJob>>(urlDtos);
 				_repository.InsertRange(urls);
 			}
