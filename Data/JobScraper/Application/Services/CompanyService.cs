@@ -26,17 +26,34 @@ namespace Application.Services
 			return _context.Companies.Where(c => c.Name.ToLower().Contains(name.ToLower())).Any();
 		}
 
-		public void Insert(string name, byte[] imageData)
+		public int Insert(string name, string logoUrl)
 		{
-			_context.Companies.Add(
-				new Company()
-				{
-					Name = name,
-					ImageData = imageData
-				});
+			var company = new Company()
+			{
+				Name = name,
+				Logourl = logoUrl
+			};
+
+			_context.Companies.Add(company);
 
 			_context.SaveChanges();
-				
+
+			return company.Id;
+		}
+
+		public int Insert(string name, byte[] imageData)
+		{
+			var company = new Company()
+			{
+				Name = name,
+				ImageData = imageData
+			};
+
+			_context.Companies.Add(company);
+
+			_context.SaveChanges();
+
+			return company.Id;
 		}
 	}
 }

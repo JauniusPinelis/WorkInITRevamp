@@ -1,4 +1,5 @@
 ﻿using Application.DataServices;
+using Application.Extensions;
 using Application.Helpers;
 using Application.Interfaces;
 using Application.Services;
@@ -42,6 +43,11 @@ namespace Application
 			{
 				services.ScrapeJobs();
 			}
+		}
+
+		public void ProcessCompanies()
+		{
+			_dataServices.ForEach(d => d.ProcessCompanies());
 		}
 
 		public void ProcessSalaries()

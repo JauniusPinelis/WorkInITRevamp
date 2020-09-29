@@ -40,6 +40,25 @@ namespace Application.DataServices
 			}
 		}
 
+		public void ProcessCompanies()
+		{
+			var jobsWithNoCompanies = _repository.GetAll().Where(j => !j.CompanyId.HasValue 
+			&& !String.IsNullOrEmpty(j.CompanyName)).ToList();
+
+			foreach (var job in jobsWithNoCompanies)
+			{
+				if (!_companyService.DoesContain(job.CompanyName))
+				{
+					var companyId = _companyService.Insert(job.Name, job.LogoUrl);
+					job.CompanyId = companyId;
+				}
+				else
+				{
+
+				}
+			}
+		}
+
 		public void ProcessTags()
 		{
 			var jobsWithNoTags = _repository.GetAll()

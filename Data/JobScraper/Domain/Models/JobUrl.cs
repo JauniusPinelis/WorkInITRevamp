@@ -9,6 +9,7 @@ namespace Domain.Models
 	{
 
 		public string Url { get; set; }
+		public string LogoUrl { get; set; }
 		public string Salary { get; set; }
 
 		public string CompanyName { get; set; }

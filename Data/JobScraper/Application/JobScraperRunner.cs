@@ -16,6 +16,7 @@ namespace Application
 		{
 			_dataService.ScrapeJobs();
 			_dataService.ProcessSalaries();
+			_dataService.ProcessCompanies();
 			_dataService.ScrapeHtmls();
 			_dataService.ProcessTags();
 		}
