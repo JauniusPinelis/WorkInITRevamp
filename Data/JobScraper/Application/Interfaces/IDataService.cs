@@ -6,5 +6,7 @@
 		void ScrapeHtmls();
 		void ProcessTags();
 		void ProcessCompanies();
+
+		void ProcessCompanyLogos();
 	}
 }

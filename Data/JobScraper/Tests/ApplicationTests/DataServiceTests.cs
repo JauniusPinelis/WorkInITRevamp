@@ -51,5 +51,17 @@ namespace ApplicationTests
 
             companies.Should().NotBeEmpty();
 		}
+
+        [Fact]
+        public void ProcessLogos_GivenMockData_CompanieshaveLogos()
+		{
+            _dataService.ScrapeJobs();
+            _dataService.ProcessCompanyLogos();
+
+            var companies = _companyService.GetAll().ToList();
+            companies.Select(c => c.ImageData).Where(i => i.Length > 0).Should().NotBeEmpty();
+
+
+		}
     }
 }

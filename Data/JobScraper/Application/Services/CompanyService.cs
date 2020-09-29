@@ -21,6 +21,13 @@ namespace Application.Services
 			return _context.Companies;
 		}
 
+		public Company FindById(int id)
+		{
+			var company = _context.Companies.FirstOrDefault(c => c.Id == id);
+
+			return company;
+		}
+
 		public bool DoesContain(string name)
 		{
 			return _context.Companies.Where(c => c.Name.ToLower().Contains(name.ToLower())).Any();
@@ -61,6 +68,17 @@ namespace Application.Services
 			var company = _context.Companies.FirstOrDefault(c => c.Name == companyName);
 
 			return company;
+		}
+
+		public void UpdateImage(int id, byte[] imageData)
+		{
+			var company = FindById(id);
+
+			if (company != null)
+			{
+				company.ImageData = imageData;
+				_context.SaveChanges();
+			}
 		}
 	}
 }

@@ -69,7 +69,19 @@ namespace Application.DataServices
 
 			foreach (var company in companiesWithNoLogos)
 			{
+				Task.Delay(1000); //Maybe create a service for this delayer?
 
+				var image = _scrapeService.ScrapeLogo(company.Logourl);
+				if (image != null)
+				{
+					using (System.IO.MemoryStream stream = new System.IO.MemoryStream())
+					{
+						image.Save(stream, System.Drawing.Imaging.ImageFormat.Bmp);
+						company.ImageData = stream.ToArray();
+
+						
+					}
+				}
 			}
 		}
 

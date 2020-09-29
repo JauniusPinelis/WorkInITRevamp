@@ -32,8 +32,6 @@ namespace Application.DataServices
 			{
 				var urlDtos = _scrapeService.ScrapeUrls(2);
 
-				//ProcessCompaniesAndLogos();
-
 				var urls = _mapper.Map<IEnumerable<CvBankasJob>>(urlDtos);
 				_repository.InsertRange(urls);
 			}

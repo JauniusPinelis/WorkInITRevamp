@@ -10,6 +10,7 @@ using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -71,12 +72,15 @@ namespace Application
 			}
 		}
 
-		internal void ScrapeHtmls()
+		public void ScrapeHtmls()
 		{
 			foreach(var service in _dataServices)
 			{
 				service.ScrapeHtmls();
 			}
 		}
+
+		public void ProcessCompanyLogos() =>
+			_dataServices.ForEach(d => d.ProcessCompanyLogos());
 	}
 }
