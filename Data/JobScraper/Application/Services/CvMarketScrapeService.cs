@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-	public class CvMarketScrapeService : IScrapeService
+	public class CvMarketScrapeService : ScrapeServiceBase, IScrapeService
 	{
 		private const string url = "https://www.cvmarket.lt/informacines-technologijos-darbo-skelbimai";
 
@@ -23,6 +23,7 @@ namespace Application.Services
 		private readonly IScraper _scraper;
 
 		public CvMarketScrapeService(IScraper scraper, CvMarketConfiguration configuration)
+			:base(scraper)
 		{
 			_scraper = scraper;
 			_scrapeSettings = configuration;

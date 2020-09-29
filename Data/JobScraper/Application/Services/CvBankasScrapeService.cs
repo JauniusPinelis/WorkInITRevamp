@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Application.Services
 {
-	public class CvBankasScrapeService : IScrapeService
+	public class CvBankasScrapeService : ScrapeServiceBase, IScrapeService
 	{
 		private readonly IScraper _scraper;
 
@@ -27,6 +27,7 @@ namespace Application.Services
 
 
 		public CvBankasScrapeService(IScraper scraper, CvBankasConfiguration cvBankasConfiguration)
+			:base(scraper)
 		{
 			_scraper = scraper;
 			_scrapeSettings = cvBankasConfiguration;

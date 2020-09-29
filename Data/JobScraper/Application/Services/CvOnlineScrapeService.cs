@@ -3,6 +3,7 @@ using Application.DataServices;
 using Application.Dtos;
 using Application.Helpers;
 using Application.Interfaces;
+using Application.Services;
 using Domain.Models;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;
@@ -14,7 +15,7 @@ using System.Threading;
 
 namespace Application
 {
-	public class CvOnlineScrapeService : IScrapeService
+	public class CvOnlineScrapeService : ScrapeServiceBase, IScrapeService
 	{
 		private readonly IScraper _scraper;
 
@@ -24,7 +25,7 @@ namespace Application
 
 		private const int delay = 1000; //in ms
 
-		public CvOnlineScrapeService(IScraper scraper, CvOnlineConfiguration configuration)
+		public CvOnlineScrapeService(IScraper scraper, CvOnlineConfiguration configuration) : base(scraper)
 		{
 			_scraper = scraper;
 
