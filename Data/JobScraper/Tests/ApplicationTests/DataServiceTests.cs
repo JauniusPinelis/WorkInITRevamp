@@ -39,5 +39,17 @@ namespace ApplicationTests
 
             urls.Where(u => u.PortalName == "CvMarket").Should().NotBeEmpty();
         }
+
+        [Fact]
+        public void ProcessCompanies_GivenMockData_DbContainsCompanies()
+		{
+            _dataService.ScrapeJobs();
+            _dataService.ProcessCompanies();
+            
+
+            var companies = _companyService.GetAll().ToList();
+
+            companies.Should().NotBeEmpty();
+		}
     }
 }

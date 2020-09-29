@@ -5,7 +5,6 @@
 		void ScrapeJobs();
 		void ScrapeHtmls();
 		void ProcessTags();
-
 		void ProcessCompanies();
 	}
 }

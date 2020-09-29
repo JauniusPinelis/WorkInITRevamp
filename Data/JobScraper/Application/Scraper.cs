@@ -3,9 +3,11 @@ using HtmlAgilityPack;
 using ScrapySharp.Network;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Application
 {
@@ -24,6 +26,17 @@ namespace Application
 			WebPage homePage = _browser.NavigateToPage(new Uri(url));
 
 			return homePage.Html;
+		}
+
+		public Image GetImage(string url)
+		{
+			using (System.Net.WebClient webClient = new System.Net.WebClient())
+			{
+				using (Stream stream = webClient.OpenRead(url))
+				{
+					return Image.FromStream(stream);
+				}
+			}
 		}
 	}
 }

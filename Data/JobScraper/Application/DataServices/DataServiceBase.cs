@@ -51,11 +51,25 @@ namespace Application.DataServices
 				{
 					var companyId = _companyService.Insert(job.Name, job.LogoUrl);
 					job.CompanyId = companyId;
+
 				}
 				else
 				{
-
+					var company = _companyService.GetByName(job.CompanyName);
+					job.CompanyId = company.Id;
 				}
+			}
+		}
+
+		public void ProcessCompanyLogos()
+		{
+			var companiesWithNoLogos = _companyService.GetAll()
+				.Where(c => c.ImageData == null
+				&& !String.IsNullOrEmpty(c.Logourl)).ToList();
+
+			foreach (var company in companiesWithNoLogos)
+			{
+
 			}
 		}
 

@@ -55,5 +55,12 @@ namespace Application.Services
 
 			return company.Id;
 		}
+
+		public Company GetByName(string companyName)
+		{
+			var company = _context.Companies.FirstOrDefault(c => c.Name == companyName);
+
+			return company;
+		}
 	}
 }
