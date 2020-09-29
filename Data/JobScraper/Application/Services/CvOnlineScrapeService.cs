@@ -83,6 +83,7 @@ namespace Application
 						jobUrl.Url = UrlHelpers.ProcessUrl(infoNode.Attributes["href"].Value);
 						jobUrl.Salary = Selectors.SelectName(node,_scrapeSettings.Salary);
 						jobUrl.CompanyName = Selectors.SelectCompany(node, _scrapeSettings.Company);
+						jobUrl.Logourl = Selectors.SelectLogoUrl(node, _scrapeSettings.LogoUrl);
 
 						jobUrls.Add(jobUrl);
 					}

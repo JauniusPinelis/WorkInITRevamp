@@ -25,5 +25,14 @@ namespace ApplicationTests
 
 			urls.Should().NotBeEmpty();
 		}
+
+		[Fact]
+		public void ScrapeUrl_GivenMockData_GetsLogoUrl()
+		{
+			var urls = _cvMarketScrapeService.ScrapeUrls();
+
+			urls.Should().NotBeEmpty();
+			urls.First().Logourl.Should().NotBeNullOrEmpty();
+		}
 	}
 }

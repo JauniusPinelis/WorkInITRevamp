@@ -44,6 +44,15 @@ namespace ApplicationTests
 		}
 
 		[Fact]
+		public void ScrapeUrl_GivenMockData_GetsLogoUrl()
+		{
+			var urls = _cvOnlineScrapeService.ScrapeUrls();
+
+			urls.Should().NotBeEmpty();
+			urls.First().Logourl.Should().NotBeNullOrEmpty();
+		}
+
+		[Fact]
 		public void ScrapeUrl_GivenMockData_GetsSalary()
 		{
 			var urls = _cvOnlineScrapeService.ScrapeUrls();

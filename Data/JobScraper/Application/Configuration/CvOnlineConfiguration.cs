@@ -16,6 +16,6 @@ namespace Application.Configuration
 
 		public string Info { get; set; } = "#wrapper";
 
-		public string LogoUrl { get; set; } = ".offer_logo img";
+		public string LogoUrl { get; set; } = ".cvo_module_offer_box img";
 	}
 }
