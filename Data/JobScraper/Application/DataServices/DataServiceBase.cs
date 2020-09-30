@@ -49,7 +49,7 @@ namespace Application.DataServices
 			{
 				if (!_companyService.DoesContain(job.CompanyName))
 				{
-					var companyId = _companyService.Insert(job.Name, job.LogoUrl);
+					var companyId = _companyService.Insert(job.CompanyName, job.LogoUrl);
 					_repository.UpdateCompany(job.Id, companyId);
 					
 
