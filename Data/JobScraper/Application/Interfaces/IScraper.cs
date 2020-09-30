@@ -12,6 +12,6 @@ namespace Application.Interfaces
     {
         HtmlNode GetHtml(string url);
 
-        Image GetImage(string url);
+        byte[] GetImage(string url);
     }
 }

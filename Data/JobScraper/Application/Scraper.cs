@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Net.Http;
+using System.Net;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace Application
 {
@@ -28,25 +31,55 @@ namespace Application
 			return homePage.Html;
 		}
 
-		public Image GetImage(string url)
-		{
-			url = url.Replace("https", "http");
-			try
+        public byte[] GetImage(string url)
+        {
+            url = url.Replace("https", "http");
+            
+            if (!url.StartsWith("http"))
 			{
-				using (System.Net.WebClient webClient = new System.Net.WebClient())
-				{
-					using (Stream stream = webClient.OpenRead(url))
-					{
-						return Image.FromStream(stream);
-					}
-				}
+                return null;
 			}
-			catch
-			{
-				//Ignore for now, could be an issue with weird formats
-				return null;
-			}
-			
-		}
-	}
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            HttpWebResponse response;
+            try
+            {
+                response = (HttpWebResponse)request.GetResponse();
+            }
+            catch (Exception ex )
+            {
+                return null;
+            }
+
+            // Check that the remote file was found. The ContentType
+            // check is performed since a request for a non-existent
+            // image file might be redirected to a 404-page, which would
+            // yield the StatusCode "OK", even though the image was not
+            // found.
+            if ((response.StatusCode == HttpStatusCode.OK ||
+                response.StatusCode == HttpStatusCode.Moved ||
+                response.StatusCode == HttpStatusCode.Redirect) &&
+                response.ContentType.StartsWith("image", StringComparison.OrdinalIgnoreCase))
+            {
+
+                // if the remote file was found, download it
+                using (Stream inputStream = response.GetResponseStream()) 
+                {
+                
+                    byte[] buffer = new byte[4096];
+                    int bytesRead;
+                    do
+                    {
+                        bytesRead = inputStream.Read(buffer, 0, buffer.Length);
+                        
+                    } while (bytesRead != 0);
+
+                    return buffer;
+                }
+
+            }
+            else
+                return null;
+        }
+    }
 }

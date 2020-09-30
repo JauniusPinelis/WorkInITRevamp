@@ -17,7 +17,7 @@ namespace Application.Services
 			_scraper = scraper;
 		}
 
-		public Image ScrapeLogo(string url)
+		public byte[] ScrapeLogo(string url)
 		{
 			return _scraper.GetImage(url);
 		}

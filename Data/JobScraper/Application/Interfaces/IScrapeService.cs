@@ -12,6 +12,6 @@ namespace Application.Interfaces
 
 		string ScrapeInfo(string url);
 
-		Image ScrapeLogo(string url);
+		byte[] ScrapeLogo(string url);
 	}
 }

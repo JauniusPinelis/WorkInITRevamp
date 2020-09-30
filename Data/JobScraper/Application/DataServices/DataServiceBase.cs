@@ -78,13 +78,8 @@ namespace Application.DataServices
 				var image = _scrapeService.ScrapeLogo(company.Logourl);
 				if (image != null)
 				{
-					using (System.IO.MemoryStream stream = new System.IO.MemoryStream())
-					{
-						image.Save(stream, System.Drawing.Imaging.ImageFormat.Bmp);
-						company.ImageData = stream.ToArray();
+					_companyService.UpdateImage(company.Id, image);
 
-						
-					}
 				}
 			}
 		}
