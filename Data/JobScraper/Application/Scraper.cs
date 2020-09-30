@@ -30,13 +30,23 @@ namespace Application
 
 		public Image GetImage(string url)
 		{
-			using (System.Net.WebClient webClient = new System.Net.WebClient())
+			url = url.Replace("https", "http");
+			try
 			{
-				using (Stream stream = webClient.OpenRead(url))
+				using (System.Net.WebClient webClient = new System.Net.WebClient())
 				{
-					return Image.FromStream(stream);
+					using (Stream stream = webClient.OpenRead(url))
+					{
+						return Image.FromStream(stream);
+					}
 				}
 			}
+			catch
+			{
+				//Ignore for now, could be an issue with weird formats
+				return null;
+			}
+			
 		}
 	}
 }

@@ -57,7 +57,10 @@ namespace Application.DataServices
 				else
 				{
 					var company = _companyService.GetByName(job.CompanyName);
-					_repository.UpdateCompany(job.Id, company.Id);
+					if (company != null)
+					{
+						_repository.UpdateCompany(job.Id, company.Id);
+					}
 				}
 			}
 		}
