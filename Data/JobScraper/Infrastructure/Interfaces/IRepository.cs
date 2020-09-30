@@ -10,5 +10,7 @@ namespace Infrastructure.Interfaces
 		void UpdateHtml(int id, string html);
 		void UpdateSalary(int id, int? min, int? max);
 		void UpdateTags(int id, IEnumerable<Tag> tags);
+
+		void UpdateCompany(int id, int companyId);
 	}
 }

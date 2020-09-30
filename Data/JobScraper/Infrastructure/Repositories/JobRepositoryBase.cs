@@ -85,5 +85,14 @@ namespace Infrastructure.Repositories
 
 			_context.SaveChanges();
 		}
+
+		public void UpdateCompany(int id, int companyId)
+		{
+			var job = FindById(id);
+
+			job.CompanyId = companyId;
+
+			_context.SaveChanges();
+		}
 	}
 }

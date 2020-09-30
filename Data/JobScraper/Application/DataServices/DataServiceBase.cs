@@ -50,13 +50,14 @@ namespace Application.DataServices
 				if (!_companyService.DoesContain(job.CompanyName))
 				{
 					var companyId = _companyService.Insert(job.Name, job.LogoUrl);
-					job.CompanyId = companyId;
+					_repository.UpdateCompany(job.Id, companyId);
+					
 
 				}
 				else
 				{
 					var company = _companyService.GetByName(job.CompanyName);
-					job.CompanyId = company.Id;
+					_repository.UpdateCompany(job.Id, company.Id);
 				}
 			}
 		}

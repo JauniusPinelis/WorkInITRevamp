@@ -14,11 +14,12 @@ namespace Application
 		}
 		public void Run()
 		{
-			_dataService.ScrapeJobs();
-			_dataService.ProcessSalaries();
+			//_dataService.ScrapeJobs();
+			//_dataService.ProcessSalaries();
 			_dataService.ProcessCompanies();
-			_dataService.ScrapeHtmls();
-			_dataService.ProcessTags();
+			_dataService.ProcessCompanyLogos();
+			//_dataService.ScrapeHtmls();
+			//_dataService.ProcessTags();
 		}
 	}
 }

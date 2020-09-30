@@ -18,6 +18,10 @@ namespace Application.Helpers
             {
                 url = "https://" + url;
             }
+            if (url.StartsWith("files"))
+			{
+                url = "http://www." + url;
+			}
 
             return url;
 		}
