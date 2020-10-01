@@ -17,5 +17,7 @@ namespace Infrastructure
         public DbSet<Tag> Tags { get; set; }
 
         public DbSet<jobUrlTag> JobUrlTags { get; set; }
+
+        public DbSet<Company> Companies { get; set; }
     }
 }
