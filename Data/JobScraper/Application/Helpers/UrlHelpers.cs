@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,6 +25,17 @@ namespace Application.Helpers
 			}
 
             return url;
+		}
+
+        public static string ExtractFileExtension(string url)
+		{
+            var urlParts = url.Split('.');
+            if (urlParts.Length > 1)
+			{
+                return urlParts.Last();
+			}
+
+            return null;
 		}
     }
 }

@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using Application.Helpers;
+using Domain.Models;
 using Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -70,13 +71,17 @@ namespace Application.Services
 			return company;
 		}
 
-		public void UpdateImage(int id, byte[] imageData)
+		public void UpdateImage(int id, byte[] imageData, string url)
 		{
+			var imageExtension = UrlHelpers.ExtractFileExtension(url);
+
 			var company = FindById(id);
 
 			if (company != null)
 			{
 				company.ImageData = imageData;
+				company.ImageExtension = imageExtension;
+
 				_context.SaveChanges();
 			}
 		}

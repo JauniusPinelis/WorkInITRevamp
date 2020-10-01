@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,16 +24,21 @@ namespace WebApi.Controllers
 
         //https://stackoverflow.com/questions/62847617/get-imagebinary-data-from-database-with-net-core-and-angular-8
         [HttpGet]
-        //[FileResultContentType("image/jpeg")]
-        public FileStreamResult GetImageStream()
+        public ActionResult<Image> GetImageStream()
         {
             var myImage = _context.Companies.Where(c => c.ImageData != null).First().ImageData;
-            var stream = new MemoryStream(myImage);
+            var extension = _context.Companies.Where(c => c.ImageData != null).First().ImageExtension;
 
-            return new FileStreamResult(stream, "image/jpeg" /*chnage this based on your image type */ )
+            using (MemoryStream memstr = new MemoryStream(myImage))
             {
-                FileDownloadName = "test.jpeg"
-            };
+                Image img = Image.FromStream(memstr);
+                return Ok(img);
+            }
+            //var stream = new MemoryStream(myImage);
+
+            //var image = Image.FromStream(stream);
+
+            //return Ok(image);
 
             //Stream imageStream = _context.Companies.Where(c => c.ImageData.Any()).First().ImageData;
             //imageStream.Seek(0, SeekOrigin.Begin);

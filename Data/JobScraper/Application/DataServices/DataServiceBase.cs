@@ -76,9 +76,10 @@ namespace Application.DataServices
 				Task.Delay(1000); //Maybe create a service for this delayer?
 
 				var image = _scrapeService.ScrapeLogo(company.Logourl);
+
 				if (image != null)
 				{
-					_companyService.UpdateImage(company.Id, image);
+					_companyService.UpdateImage(company.Id, image, company.Logourl);
 
 				}
 			}
