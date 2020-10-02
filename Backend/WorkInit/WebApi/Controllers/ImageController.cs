@@ -1,4 +1,6 @@
-﻿using Infrastructure;
+﻿using Application.Dtos;
+using AutoMapper;
+using Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
 using System;
@@ -15,39 +17,29 @@ namespace WebApi.Controllers
     [Route("[controller]")]
     public class ImageController : ControllerBase
     {
-		private readonly DataContext _context;
+        private readonly DataContext _context;
+		private readonly IMapper _mapper;
 
-		public ImageController(DataContext context)
-		{
+		public ImageController(DataContext context, IMapper mapper)
+        {
             _context = context;
-		}
+            _mapper = mapper;
+        }
 
         //https://stackoverflow.com/questions/62847617/get-imagebinary-data-from-database-with-net-core-and-angular-8
-        [HttpGet]
-        public ActionResult<Image> GetImageStream()
+        [HttpGet("{id}")]
+        public ActionResult<Image> GetCompanyLogo(int id)
         {
-            var myImage = _context.Companies.Where(c => c.ImageData != null).First().ImageData;
-            var extension = _context.Companies.Where(c => c.ImageData != null).First().ImageExtension;
+            var company = _context.Companies.FirstOrDefault(c => c.Id == id);
 
-            using (MemoryStream memstr = new MemoryStream(myImage))
-            {
-                Image img = Image.FromStream(memstr);
-                return Ok(img);
-            }
-            //var stream = new MemoryStream(myImage);
+            if (company == null)
+			{
+                return NotFound();
+			}
 
-            //var image = Image.FromStream(stream);
+            var image = _mapper.Map<Logo>(company);
 
-            //return Ok(image);
-
-            //Stream imageStream = _context.Companies.Where(c => c.ImageData.Any()).First().ImageData;
-            //imageStream.Seek(0, SeekOrigin.Begin);
-
-            //var contentDisposition = new ContentDispositionHeaderValue("attachment");
-            //contentDisposition.SetHttpFileName($"{imageId}.jpg");
-            //Response.Headers.Add(HeaderNames.ContentDisposition, contentDisposition.ToString());
-
-            //return new FileStreamResult(imageStream, "image/jpeg");
+            return Ok(image);
         }
     }
 }

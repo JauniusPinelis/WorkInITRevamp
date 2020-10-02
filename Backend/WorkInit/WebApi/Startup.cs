@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,8 +35,11 @@ namespace WebApi
 					   .AllowAnyHeader();
 			}));
 
-			services.AddControllers();
+			services.AddAutoMapper(typeof(Startup));
 			services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+
+			services.AddControllers();
+		
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
