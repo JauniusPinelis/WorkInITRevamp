@@ -28,7 +28,7 @@ namespace WebApi.Controllers
 
         //https://stackoverflow.com/questions/62847617/get-imagebinary-data-from-database-with-net-core-and-angular-8
         [HttpGet("{id}")]
-        public ActionResult<Image> GetCompanyLogo(int id)
+        public ActionResult<Logo> GetCompanyLogo(int id)
         {
             var company = _context.Companies.FirstOrDefault(c => c.Id == id);
 

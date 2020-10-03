@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application;
 using AutoMapper;
 using Infrastructure;
 using Microsoft.AspNetCore.Builder;
@@ -35,7 +36,13 @@ namespace WebApi
 					   .AllowAnyHeader();
 			}));
 
-			services.AddAutoMapper(typeof(Startup));
+			var config = new MapperConfiguration(cfg => {
+				cfg.AddProfile<MappingProfile>();
+			});
+
+			IMapper mapper = config.CreateMapper();
+
+			services.AddSingleton(mapper);
 			services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
 
 			services.AddControllers();
