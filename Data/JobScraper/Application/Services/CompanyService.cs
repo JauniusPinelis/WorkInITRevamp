@@ -49,21 +49,6 @@ namespace Application.Services
 			return company.Id;
 		}
 
-		public int Insert(string name, byte[] imageData)
-		{
-			var company = new Company()
-			{
-				Name = name,
-				ImageData = Convert.ToBase64String(imageData)
-			};
-
-			_context.Companies.Add(company);
-
-			_context.SaveChanges();
-
-			return company.Id;
-		}
-
 		public Company GetByName(string companyName)
 		{
 			var company = _context.Companies.FirstOrDefault(c => c.Name == companyName);
@@ -79,7 +64,7 @@ namespace Application.Services
 
 			if (company != null)
 			{
-				company.ImageData = Convert.ToBase64String(imageData);
+				company.ImageData = UrlHelpers.ConvertImageURLToBase64(imageData);
 				company.ImageExtension = imageExtension;
 
 				_context.SaveChanges();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -9,6 +10,15 @@ namespace Application.Helpers
 {
     public static class UrlHelpers
     {
+        public static String ConvertImageURLToBase64(Byte[] imageData)
+        {
+            StringBuilder _sb = new StringBuilder();
+
+            _sb.Append(Convert.ToBase64String(imageData, 0, imageData.Length));
+
+            return _sb.ToString();
+        }
+
         public static string ProcessUrl(string url)
 		{
             if (url.StartsWith("//"))
