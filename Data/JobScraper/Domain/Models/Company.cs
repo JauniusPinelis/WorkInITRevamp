@@ -11,7 +11,7 @@ namespace Domain.Models
     {
         public ICollection<JobUrl> Jobs { get; set; }
 
-        public byte[] ImageData { get; set; }
+        public string ImageData { get; set; }
 
         public string ImageExtension { get; set; }
 

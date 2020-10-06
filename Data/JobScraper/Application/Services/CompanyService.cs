@@ -54,7 +54,7 @@ namespace Application.Services
 			var company = new Company()
 			{
 				Name = name,
-				ImageData = imageData
+				ImageData = Convert.ToBase64String(imageData)
 			};
 
 			_context.Companies.Add(company);
@@ -79,7 +79,7 @@ namespace Application.Services
 
 			if (company != null)
 			{
-				company.ImageData = imageData;
+				company.ImageData = Convert.ToBase64String(imageData);
 				company.ImageExtension = imageExtension;
 
 				_context.SaveChanges();
