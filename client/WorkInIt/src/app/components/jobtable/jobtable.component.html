@@ -1,6 +1,6 @@
 <div class="job-table">
 
-    <nz-table #basicTable [nzData]="jobs">
+    <table>
         <thead>
           <tr>
             <th>Company</th>
@@ -13,7 +13,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let job of basicTable.data">
+          <tr *ngFor="let job of jobs">
             <td>{{job.company}}
               <img width="100" height="100" [src]="thumbnail" />
             </td>
@@ -26,6 +26,6 @@
             </td>
           </tr>
         </tbody>
-      </nz-table>
+      </table>
 </div>
 
