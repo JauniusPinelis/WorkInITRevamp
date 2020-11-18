@@ -5,5 +5,6 @@ export interface Job {
     salaryMax: Number,
     url : string,
     company: string,
+    companyName: string,
     created: Date
 }

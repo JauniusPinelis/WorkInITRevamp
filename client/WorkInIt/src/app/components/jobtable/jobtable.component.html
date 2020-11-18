@@ -1,11 +1,11 @@
 <div class="jobs-table">
-  <div class="table table-dark">
+  <div class="table">
     <table>
-      <thead>
+      <thead class="thead-light">
         <tr>
           <th>Company</th>
-          <th>Name</th>
           <th>Salary</th>
+          <th></th>
           <th>Tags</th>
           <th>Created</th>
           <th>Action</th>
@@ -16,11 +16,12 @@
           <td>
             {{ job.company }}
             <img width="100" height="100" [src]="thumbnail" />
+            {{job.company}}
           </td>
           <td>{{ job.title }}</td>
           <td>{{ job.salary }}</td>
           <td></td>
-          <td>{{ job.created }}</td>
+          <td>{{ job.created |  date:"medium" }}</td>
           <td>
             <a target="_blank" href="{{ job.url }}">View</a>
           </td>
