@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Application
+﻿namespace Application
 {
 	public class JobScraperRunner
 	{
@@ -14,12 +10,12 @@ namespace Application
 		}
 		public void Run()
 		{
-			//_dataService.ScrapeJobs();
-			//_dataService.ProcessSalaries();
-			//_dataService.ProcessCompanies();
+			_dataService.ScrapeJobs();
+			_dataService.ProcessSalaries();
+			_dataService.ProcessCompanies();
 			_dataService.ProcessCompanyLogos();
-			//_dataService.ScrapeHtmls();
-			//_dataService.ProcessTags();
+			_dataService.ScrapeHtmls();
+			_dataService.ProcessTags();
 		}
 	}
 }
