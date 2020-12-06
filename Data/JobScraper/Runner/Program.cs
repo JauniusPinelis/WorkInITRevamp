@@ -1,9 +1,9 @@
 ﻿using Application;
-using Application.Configuration;
 using Application.DataServices;
 using Application.Interfaces;
 using Application.Services;
 using AutoMapper;
+using Domain.Configuration;
 using Infrastructure;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;

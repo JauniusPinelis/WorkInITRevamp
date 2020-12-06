@@ -1,7 +1,7 @@
-﻿using Application.Configuration;
-using Application.Dtos;
+﻿using Application.Dtos;
 using Application.Helpers;
 using Application.Interfaces;
+using Domain.Configuration;
 using Domain.Models;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;

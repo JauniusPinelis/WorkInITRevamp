@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application.Configuration
+﻿namespace Domain.Configuration
 {
 	public class CvBankasConfiguration : IScrapeConfiguration
 	{
@@ -17,5 +11,5 @@ namespace Application.Configuration
 		public string Info { get; set; } = "div.jobad_txt";
 
 		public string LogoUrl { get; set; } = ".list_logo_c img";
- 	}
+	}
 }

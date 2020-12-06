@@ -1,9 +1,9 @@
 ﻿using Application.DataServices;
 using Application.Helpers;
 using Application.Interfaces;
-using Application.Services;
 using AutoMapper;
 using Domain.Extensions;
+using Domain.Interfaces;
 using Domain.Models;
 using Infrastructure;
 using Infrastructure.Repositories;

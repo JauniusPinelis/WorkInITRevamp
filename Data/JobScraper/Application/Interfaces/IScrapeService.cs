@@ -1,7 +1,5 @@
 ﻿using Application.Dtos;
-using Domain.Models;
 using System.Collections.Generic;
-using System.Drawing;
 
 namespace Application.Interfaces
 {

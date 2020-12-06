@@ -1,4 +1,4 @@
-﻿namespace Application.Services
+﻿namespace Domain.Interfaces
 {
 	public interface IDataService
 	{

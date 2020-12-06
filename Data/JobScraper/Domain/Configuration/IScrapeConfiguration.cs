@@ -1,4 +1,4 @@
-﻿namespace Application.Configuration
+﻿namespace Domain.Configuration
 {
 	public interface IScrapeConfiguration
 	{

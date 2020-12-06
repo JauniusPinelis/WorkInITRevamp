@@ -1,5 +1,5 @@
-﻿using Domain.Base;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Models.Base;
 using System.Collections.Generic;
 using System.Linq;
 

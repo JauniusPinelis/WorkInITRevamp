@@ -1,9 +1,9 @@
-﻿using Application.Configuration;
-using Application.DataServices;
+﻿using Application.DataServices;
 using Application.Dtos;
 using Application.Helpers;
 using Application.Interfaces;
 using Application.Services;
+using Domain.Configuration;
 using Domain.Models;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;
