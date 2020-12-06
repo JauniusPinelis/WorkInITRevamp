@@ -24,7 +24,7 @@ namespace Domain.Models
 		public DateTime Created { get; set; } = DateTime.Now;
 		public DateTime? LastModified { get; set; }
 		
-		public ICollection<jobUrlTag> Tags { get; set; }
+		public ICollection<JobUrlTag> Tags { get; set; }
 
 		public Company Company { get; set; }
 		public int? CompanyId { get; set; }

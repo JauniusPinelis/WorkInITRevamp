@@ -76,7 +76,7 @@ namespace Infrastructure.Repositories
 
 			foreach(var tag in tags)
 			{
-				_context.JobUrlTags.Add(new jobUrlTag()
+				_context.JobUrlTags.Add(new JobUrlTag()
 				{
 					JobUrl = JobEntity,
 					Tag = tag

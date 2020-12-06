@@ -19,7 +19,7 @@ namespace Infrastructure
 
 		public DbSet<Tag> Tags { get; set; }
 
-		public DbSet<jobUrlTag> JobUrlTags { get; set; }
+		public DbSet<JobUrlTag> JobUrlTags { get; set; }
 
 		public DbSet<Company> Companies { get; set; }
 
@@ -33,12 +33,12 @@ namespace Infrastructure
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<jobUrlTag>()
+			modelBuilder.Entity<JobUrlTag>()
 				.HasOne(bc => bc.JobUrl)
 				.WithMany(b => b.Tags)
 				.HasForeignKey(bc => bc.TagId);
 
-			modelBuilder.Entity<jobUrlTag>()
+			modelBuilder.Entity<JobUrlTag>()
 				.HasOne(bc => bc.Tag)
 				.WithMany(c => c.JobUrls)
 				.HasForeignKey(bc => bc.JobUrlId);

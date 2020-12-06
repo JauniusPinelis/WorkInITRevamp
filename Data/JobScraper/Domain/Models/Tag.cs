@@ -9,6 +9,6 @@ namespace Domain.Models
 {
 	public class Tag : NamedEntity
     {
-		public ICollection<jobUrlTag> JobUrls { get; set; }
+		public ICollection<JobUrlTag> JobUrls { get; set; }
 	}
 }
