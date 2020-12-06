@@ -3,7 +3,7 @@ using Domain.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Infrastructure.Interfaces
+namespace Domain.Interfaces
 {
 	public interface IReadRepository<T> where T : Entity
 	{

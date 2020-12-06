@@ -1,9 +1,9 @@
 ﻿using Domain.Models;
 using System.Collections.Generic;
 
-namespace Infrastructure.Interfaces
+namespace Domain.Interfaces
 {
-	public interface IRepository<T> : IReadRepository<T> where T : JobUrl 
+	public interface IRepository<T> : IReadRepository<T> where T : JobUrl
 	{
 		void Insert(T entity);
 		void InsertRange(IEnumerable<T> entities);

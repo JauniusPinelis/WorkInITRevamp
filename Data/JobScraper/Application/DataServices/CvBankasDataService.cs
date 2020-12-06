@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Application.DataServices
 {
 	public class CvBankasDataService : DataServiceBase<CvBankasJob>, IDataService
-    {
+	{
 		private readonly CvBankasScrapeService _scrapeService;
 		private readonly CvBankasRepository _repository;
 		private readonly IMapper _mapper;

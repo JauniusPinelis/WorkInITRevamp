@@ -2,8 +2,8 @@
 using Application.Helpers;
 using Application.Interfaces;
 using Application.Services;
+using Domain.Interfaces;
 using Domain.Models;
-using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Application.DataServices
 {
-    public abstract class DataServiceBase<T> where T : JobUrl
+	public abstract class DataServiceBase<T> where T : JobUrl
     {
 		private readonly IScrapeService _scrapeService;
 		private readonly CompanyService _companyService;

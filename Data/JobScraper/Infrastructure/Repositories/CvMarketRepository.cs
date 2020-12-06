@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using Domain.Interfaces;
 using Domain.Models;
-using Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class CvMarketRepository : JobRepositoryBase<CvMarketJob>, IRepository<CvMarketJob>
+	public class CvMarketRepository : JobRepositoryBase<CvMarketJob>, IRepository<CvMarketJob>
 	{
 		public CvMarketRepository(DataContext context, IMapper mapper) : base (context, mapper)
 		{
