@@ -1,11 +1,11 @@
-﻿using Application.Helpers;
+﻿using Domain.Helpers;
 using FluentAssertions;
 using System;
 using Xunit;
 
 namespace ApplicationTests
 {
-	public class ExtensionTests
+    public class ExtensionTests
 	{
 		[Fact]
 		public void ExtractSalary_GivenEmptyString_ReturnsNulls()

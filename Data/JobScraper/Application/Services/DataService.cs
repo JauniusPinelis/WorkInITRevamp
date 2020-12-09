@@ -1,8 +1,8 @@
 ﻿using Application.DataServices;
-using Application.Helpers;
 using Application.Interfaces;
 using AutoMapper;
 using Domain.Extensions;
+using Domain.Helpers;
 using Domain.Interfaces;
 using Domain.Models;
 using Infrastructure;
@@ -16,7 +16,7 @@ using System.Text;
 
 namespace Application
 {
-	public class DataService
+    public class DataService
 	{
 		private readonly UnitOfWork _unitOfWork;
 		private readonly IMapper _mapper;

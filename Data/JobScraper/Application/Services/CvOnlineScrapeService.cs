@@ -4,6 +4,7 @@ using Application.Helpers;
 using Application.Interfaces;
 using Application.Services;
 using Domain.Configuration;
+using Domain.Helpers;
 using Domain.Models;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;
@@ -15,7 +16,7 @@ using System.Threading;
 
 namespace Application
 {
-	public class CvOnlineScrapeService : ScrapeServiceBase, IScrapeService
+    public class CvOnlineScrapeService : ScrapeServiceBase, IScrapeService
 	{
 		private readonly IScraper _scraper;
 

@@ -1,4 +1,4 @@
-﻿using Application.Helpers;
+﻿using Domain.Helpers;
 using Domain.Models;
 using Infrastructure;
 using System;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Application.Services
 {
-	public class CompanyService
+    public class CompanyService
 	{
 		private readonly DataContext _context;
 

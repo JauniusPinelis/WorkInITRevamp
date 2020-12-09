@@ -1,4 +1,5 @@
-﻿using HtmlAgilityPack;
+﻿using Domain.Helpers;
+using HtmlAgilityPack;
 using ScrapySharp.Extensions;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace Application.Helpers
 {
-	public class Selectors
+    public class Selectors
 	{
 		private static string SelectValue(HtmlNode node, string tag)
 		{
