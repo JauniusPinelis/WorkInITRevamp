@@ -1,0 +1,11 @@
+{
+	"Type": "CvBankas",
+	"Name": "h3.list_h3",
+	"Posting": "article",
+	"Company": "span.dib.mt5",
+	"Salary": "span.salary_amount",
+	"Url": "a.list_a",
+	"Info": "div.jobad_txt",
+	"LogoUrl": ".list_logo_c img"
+
+}
