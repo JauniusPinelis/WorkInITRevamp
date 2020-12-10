@@ -20,9 +20,17 @@ namespace Application
 
 		public HtmlNode GetHtml(string url)
 		{
-			WebPage homePage = _browser.NavigateToPage(new Uri(url));
+			try
+			{
+				WebPage homePage = _browser.NavigateToPage(new Uri(url));
+				return homePage.Html;
+			}
+			catch
+			{
+				return null;
+			}
 
-			return homePage.Html;
+
 		}
 
 		public byte[] GetImage(string url)

@@ -1,22 +1,17 @@
-﻿using Application.DataServices;
-using Application.Dtos;
+﻿using Application.Dtos;
 using Application.Helpers;
 using Application.Interfaces;
 using Application.Services;
 using Domain.Configuration;
 using Domain.Helpers;
-using Domain.Models;
 using ScrapySharp.Extensions;
-using ScrapySharp.Network;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 
 namespace Application
 {
-    public class CvOnlineScrapeService : ScrapeServiceBase, IScrapeService
+	public class CvOnlineScrapeService : ScrapeServiceBase, IScrapeService
 	{
 		private readonly IScraper _scraper;
 
@@ -31,21 +26,6 @@ namespace Application
 			_scraper = scraper;
 
 			_scrapeSettings = configuration;
-		}
-
-		public string ScrapeInfo(string url)
-		{
-			//Sleep
-			Thread.Sleep(1);
-
-			var node = _scraper.GetHtml(url);
-			var html = node.CssSelect(_scrapeSettings.Info);
-			if (html.Any())
-			{
-				return html.First().InnerHtml;
-			}
-
-			return "";
 		}
 
 		public IEnumerable<JobDto> ScrapeUrls()
@@ -83,7 +63,7 @@ namespace Application
 
 						jobUrl.Name = infoNode.InnerText;
 						jobUrl.Url = UrlHelpers.ProcessUrl(infoNode.Attributes["href"].Value);
-						jobUrl.Salary = Selectors.SelectName(node,_scrapeSettings.Salary);
+						jobUrl.Salary = Selectors.SelectName(node, _scrapeSettings.Salary);
 						jobUrl.CompanyName = Selectors.SelectCompany(node, _scrapeSettings.Company);
 						jobUrl.Logourl = Selectors.SelectLogoUrl(node, _scrapeSettings.LogoUrl);
 

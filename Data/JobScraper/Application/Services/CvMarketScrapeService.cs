@@ -2,14 +2,10 @@
 using Application.Helpers;
 using Application.Interfaces;
 using Domain.Configuration;
-using Domain.Models;
 using ScrapySharp.Extensions;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {
@@ -23,25 +19,10 @@ namespace Application.Services
 		private readonly IScraper _scraper;
 
 		public CvMarketScrapeService(IScraper scraper, CvMarketConfiguration configuration)
-			:base(scraper)
+			: base(scraper)
 		{
 			_scraper = scraper;
 			_scrapeSettings = configuration;
-		}
-
-		public string ScrapeInfo(string url)
-		{
-			//Sleep
-			Thread.Sleep(1);
-
-			var node = _scraper.GetHtml(url);
-			var html = node.CssSelect(_scrapeSettings.Info);
-			if (html.Any())
-			{
-				return html.First().InnerHtml;
-			}
-
-			return "";
 		}
 
 		public IEnumerable<JobDto> ScrapeUrls()

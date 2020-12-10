@@ -2,15 +2,10 @@
 using Application.Helpers;
 using Application.Interfaces;
 using Domain.Configuration;
-using Domain.Models;
 using ScrapySharp.Extensions;
-using ScrapySharp.Network;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {
@@ -27,7 +22,7 @@ namespace Application.Services
 
 
 		public CvBankasScrapeService(IScraper scraper, CvBankasConfiguration cvBankasConfiguration)
-			:base(scraper)
+			: base(scraper, cvBankasConfiguration)
 		{
 			_scraper = scraper;
 			_scrapeSettings = cvBankasConfiguration;
@@ -36,21 +31,6 @@ namespace Application.Services
 		public IEnumerable<JobDto> ScrapeUrls()
 		{
 			return ScrapeUrls(2);
-		}
-
-		public string ScrapeInfo(string url)
-		{
-			//Sleep
-			Thread.Sleep(1);
-
-			var node = _scraper.GetHtml(url);
-			var html = node.CssSelect(_scrapeSettings.Info);
-			if (html.Any())
-			{
-				return html.First().InnerHtml;
-			}
-
-			return "";
 		}
 
 		public IEnumerable<JobDto> ScrapeUrls(int pageLimit)

@@ -1,5 +1,6 @@
 ﻿using Application;
 using Application.DataServices;
+using Application.Interfaces;
 using Application.Services;
 using AutoMapper;
 using Domain.Configuration;
@@ -39,7 +40,9 @@ namespace Runner
 
 			// required to run the application
 			services.Scan(scan =>
-		scan.FromCallingAssembly()
+			scan.FromAssemblies(
+				typeof(IScraper).Assembly
+			)
 			.AddClasses()
 			.AsMatchingInterface());
 
@@ -49,7 +52,6 @@ namespace Runner
 			services.AddScoped<CvBankasScrapeService>();
 			services.AddScoped<CvMarketScrapeService>();
 			services.AddScoped<UnitOfWork>();
-			//services.AddScoped<IScraper, Scraper>();
 			services.AddScoped<CvBankasConfiguration>();
 			services.AddScoped<CvOnlineConfiguration>();
 			services.AddScoped<CvMarketConfiguration>();
