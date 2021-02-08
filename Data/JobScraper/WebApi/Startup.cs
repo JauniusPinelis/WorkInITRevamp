@@ -1,50 +1,38 @@
-﻿using Application;
+using Application;
 using Application.DataServices;
-using Application.Interfaces;
 using Application.Services;
 using AutoMapper;
 using Domain.Configuration;
 using Infrastructure;
 using Infrastructure.Repositories;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.IO;
+using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 
-namespace Runner
+namespace WebApi
 {
-    public class Program
+    public class Startup
     {
-        static void Main(string[] args)
+        public Startup(IConfiguration configuration)
         {
-            var services = ConfigureServices();
-
-            var serviceProvider = services.BuildServiceProvider();
-
-            using (var client = new DataContext())
-            {
-                client.Database.Migrate();
-            }
-
-            // calls the Run method in App, which is replacing Main
-            serviceProvider.GetService<JobScraperRunner>().Run();
+            Configuration = configuration;
         }
 
-        private static IServiceCollection ConfigureServices()
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
         {
 
-            IServiceCollection services = new ServiceCollection();
-
-            var config = LoadConfiguration();
-            services.AddSingleton(config);
-
-            // required to run the application
-            services.Scan(scan =>
-            scan.FromAssemblies(
-                typeof(IScraper).Assembly
-            )
-            .AddClasses()
-            .AsMatchingInterface());
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
+            });
 
             services.AddScoped<JobScraperRunner>();
             services.AddScoped<DataService>();
@@ -65,7 +53,7 @@ namespace Runner
             services.AddScoped<CompanyService>();
 
             services.AddDbContext<DataContext>(options
-                => options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
+                => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             //Automapper
             var mapperConfig = new MapperConfiguration(mc =>
@@ -75,18 +63,28 @@ namespace Runner
 
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
-
-
-            return services;
         }
 
-        public static IConfiguration LoadConfiguration()
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false);
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
+            }
 
-            return builder.Build();
+            app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

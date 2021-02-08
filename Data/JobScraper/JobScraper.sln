@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Runner", "Runner\Runner.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{66A6FCE1-4CA3-46FC-9BB8-277691B5E2B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationTests", "Tests\ApplicationTests\ApplicationTests.csproj", "{36BAC2C5-9047-42D0-BCAF-E5803F27B165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationTests", "Tests\ApplicationTests\ApplicationTests.csproj", "{36BAC2C5-9047-42D0-BCAF-E5803F27B165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{DDA602AF-068A-4D87-B8EE-6CF63BC4365C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{36BAC2C5-9047-42D0-BCAF-E5803F27B165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36BAC2C5-9047-42D0-BCAF-E5803F27B165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36BAC2C5-9047-42D0-BCAF-E5803F27B165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA602AF-068A-4D87-B8EE-6CF63BC4365C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA602AF-068A-4D87-B8EE-6CF63BC4365C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA602AF-068A-4D87-B8EE-6CF63BC4365C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA602AF-068A-4D87-B8EE-6CF63BC4365C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
