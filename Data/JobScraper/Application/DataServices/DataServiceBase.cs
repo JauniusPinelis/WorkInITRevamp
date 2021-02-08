@@ -1,106 +1,124 @@
-﻿using Application.Dtos;
-using Application.Interfaces;
+﻿using Application.Interfaces;
 using Application.Services;
+using AutoMapper;
 using Domain.Helpers;
 using Domain.Interfaces;
 using Domain.Models;
-using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Application.DataServices
 {
     public abstract class DataServiceBase<T> where T : JobUrl
     {
-		private readonly IScrapeService _scrapeService;
-		private readonly CompanyService _companyService;
-		private readonly IRepository<T> _repository;
-		
-		public DataServiceBase(IScrapeService scrapeService, IRepository<T> repository, 
-			CompanyService companyService)
-		{
-			_repository = repository;
-			_scrapeService = scrapeService;
-			_companyService = companyService;
-		}
+        private readonly IScrapeService _scrapeService;
+        private readonly CompanyService _companyService;
+        private readonly IRepository<T> _repository;
 
-		public void ScrapeHtmls()
-		{
-			var jobs = _repository.GetAll()
-				.Where(j => !String.IsNullOrEmpty(j.Url) && String.IsNullOrEmpty(j.Html)).ToList();
+        private readonly IMapper _mapper;
 
-			foreach (var job in jobs)
-			{
-				var html = _scrapeService.ScrapeInfo(job.Url);
+        public DataServiceBase(IScrapeService scrapeService, IRepository<T> repository,
+            CompanyService companyService, IMapper mapper)
+        {
+            _repository = repository;
+            _scrapeService = scrapeService;
+            _companyService = companyService;
 
-				_repository.UpdateHtml(job.Id, html);
-			}
-		}
+            _mapper = mapper;
+        }
 
-		public void ProcessCompanies()
-		{
-			var jobsWithNoCompanies = _repository.GetAll().Where(j => !j.CompanyId.HasValue 
-			&& !String.IsNullOrEmpty(j.CompanyName)).ToList();
+        public void ScrapeJobs()
+        {
+            if (_repository.GetAll().Any())
+            {
+                var urlDtos = _scrapeService.ScrapeUrls(2);
+                var urls = _mapper.Map<IEnumerable<T>>(urlDtos);
+                _repository.InsertRange(urls);
+            }
+            else
+            {
+                var urlDtos = _scrapeService.ScrapeUrls();
+                var urls = _mapper.Map<IEnumerable<T>>(urlDtos);
+                _repository.InsertRange(urls);
+            }
+        }
 
-			foreach (var job in jobsWithNoCompanies)
-			{
-				if (!_companyService.DoesContain(job.CompanyName))
-				{
-					var companyId = _companyService.Insert(job.CompanyName, job.LogoUrl);
-					_repository.UpdateCompany(job.Id, companyId);
-					
+        public void ScrapeHtmls()
+        {
+            var jobs = _repository.GetAll()
+                .Where(j => !String.IsNullOrEmpty(j.Url) && String.IsNullOrEmpty(j.Html)).ToList();
 
-				}
-				else
-				{
-					var company = _companyService.GetByName(job.CompanyName);
-					if (company != null)
-					{
-						_repository.UpdateCompany(job.Id, company.Id);
-					}
-				}
-			}
-		}
+            foreach (var job in jobs)
+            {
+                var html = _scrapeService.ScrapeInfo(job.Url);
 
-		public void ProcessCompanyLogos()
-		{
-			var companiesWithNoLogos = _companyService.GetAll()
-				.Where(c => c.ImageData == null
-				&& !String.IsNullOrEmpty(c.Logourl)).ToList();
+                _repository.UpdateHtml(job.Id, html);
+            }
+        }
 
-			foreach (var company in companiesWithNoLogos)
-			{
-				Task.Delay(1000); //Maybe create a service for this delayer?
+        public void ProcessCompanies()
+        {
+            var jobsWithNoCompanies = _repository.GetAll().Where(j => !j.CompanyId.HasValue
+            && !String.IsNullOrEmpty(j.CompanyName)).ToList();
 
-				var image = _scrapeService.ScrapeLogo(company.Logourl);
+            foreach (var job in jobsWithNoCompanies)
+            {
+                if (!_companyService.DoesContain(job.CompanyName))
+                {
+                    var companyId = _companyService.Insert(job.CompanyName, job.LogoUrl);
+                    _repository.UpdateCompany(job.Id, companyId);
 
-				if (image != null)
-				{
-					_companyService.UpdateImage(company.Id, image, company.Logourl);
 
-				}
-			}
-		}
+                }
+                else
+                {
+                    var company = _companyService.GetByName(job.CompanyName);
+                    if (company != null)
+                    {
+                        _repository.UpdateCompany(job.Id, company.Id);
+                    }
+                }
+            }
+        }
 
-		public void ProcessTags()
-		{
-			var jobsWithNoTags = _repository.GetAll()
-				.Where(j => !j.Tags.Any() && !String.IsNullOrEmpty(j.Html)).ToList();
+        public void ProcessCompanyLogos()
+        {
+            var companiesWithNoLogos = _companyService.GetAll()
+                .Where(c => c.ImageData == null
+                && !String.IsNullOrEmpty(c.Logourl)).ToList();
 
-			var tags = _repository.GetAllTags().ToList();
+            foreach (var company in companiesWithNoLogos)
+            {
+                Task.Delay(1000); //Maybe create a service for this delayer?
 
-			foreach(var job in jobsWithNoTags)
-			{
-				var html = job.Html;
-				var extractedTags = TagHelpers.ExtractTags(html, tags);
+                var image = _scrapeService.ScrapeLogo(company.Logourl);
 
-				_repository.UpdateTags(job.Id, extractedTags);
-			}
+                if (image != null)
+                {
+                    _companyService.UpdateImage(company.Id, image, company.Logourl);
 
-			
-		}
-	}
+                }
+            }
+        }
+
+        public void ProcessTags()
+        {
+            var jobsWithNoTags = _repository.GetAll()
+                .Where(j => !j.Tags.Any() && !String.IsNullOrEmpty(j.Html)).ToList();
+
+            var tags = _repository.GetAllTags().ToList();
+
+            foreach (var job in jobsWithNoTags)
+            {
+                var html = job.Html;
+                var extractedTags = TagHelpers.ExtractTags(html, tags);
+
+                _repository.UpdateTags(job.Id, extractedTags);
+            }
+
+
+        }
+    }
 }
