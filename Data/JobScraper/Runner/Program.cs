@@ -62,6 +62,9 @@ namespace Runner
             services.AddScoped<CvBankasRepository>();
             services.AddScoped<CvMarketRepository>();
 
+
+            services.AddScoped<IFileService, FileService>();
+
             services.AddScoped<CompanyService>();
 
             services.AddDbContext<DataContext>(options
